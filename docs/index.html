@@ -636,8 +636,8 @@
   async function loadData() {
     try {
       const [latestRes, histRes] = await Promise.all([
-        fetch('data/latest.json?_=' + Date.now()),
-        fetch('data/history.json?_=' + Date.now()),
+        fetch('./data/latest.json?_=' + Date.now()),
+        fetch('./data/history.json?_=' + Date.now()),
       ]);
       latest  = await latestRes.json();
       history = await histRes.json();
