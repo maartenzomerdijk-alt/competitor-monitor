@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2026-02-12",
+    "changed": 0,
+    "unchanged": 7,
+    "errors": 0,
+    "page_stats": [
+      {"slug": "arsenal",          "my_word_count": 8044, "comp_word_count": 5530, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "liverpool",        "my_word_count": 8410, "comp_word_count": 5521, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "manchester-united","my_word_count": 8820, "comp_word_count": 6195, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "chelsea",          "my_word_count": 8540, "comp_word_count": 5515, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "newcastle-united", "my_word_count": 4100, "comp_word_count": 5310, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "fa-cup",           "my_word_count": 5200, "comp_word_count": 4130, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "world-cup",        "my_word_count": 8570, "comp_word_count": 6910, "change_pct": 0.0, "status": "unchanged"}
+    ]
+  },
+  {
+    "date": "2026-02-13",
+    "changed": 0,
+    "unchanged": 7,
+    "errors": 0,
+    "page_stats": [
+      {"slug": "arsenal",          "my_word_count": 8044, "comp_word_count": 5530, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "liverpool",        "my_word_count": 8410, "comp_word_count": 5521, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "manchester-united","my_word_count": 8820, "comp_word_count": 6195, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "chelsea",          "my_word_count": 8540, "comp_word_count": 5515, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "newcastle-united", "my_word_count": 4100, "comp_word_count": 5310, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "fa-cup",           "my_word_count": 5200, "comp_word_count": 4130, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "world-cup",        "my_word_count": 8570, "comp_word_count": 6910, "change_pct": 0.0, "status": "unchanged"}
+    ]
+  },
+  {
+    "date": "2026-02-14",
+    "changed": 1,
+    "unchanged": 6,
+    "errors": 0,
+    "page_stats": [
+      {"slug": "arsenal",          "my_word_count": 8044, "comp_word_count": 5530, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "liverpool",        "my_word_count": 8410, "comp_word_count": 5521, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "manchester-united","my_word_count": 8820, "comp_word_count": 6195, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "chelsea",          "my_word_count": 8540, "comp_word_count": 5515, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "newcastle-united", "my_word_count": 4100, "comp_word_count": 5440, "change_pct": 2.4, "status": "unchanged"},
+      {"slug": "fa-cup",           "my_word_count": 5205, "comp_word_count": 4135, "change_pct": 6.1, "status": "changed"},
+      {"slug": "world-cup",        "my_word_count": 8570, "comp_word_count": 6910, "change_pct": 0.0, "status": "unchanged"}
+    ]
+  },
+  {
+    "date": "2026-02-15",
+    "changed": 0,
+    "unchanged": 7,
+    "errors": 0,
+    "page_stats": [
+      {"slug": "arsenal",          "my_word_count": 8050, "comp_word_count": 5532, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "liverpool",        "my_word_count": 8415, "comp_word_count": 5522, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "manchester-united","my_word_count": 8830, "comp_word_count": 6198, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "chelsea",          "my_word_count": 8545, "comp_word_count": 5516, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "newcastle-united", "my_word_count": 4102, "comp_word_count": 5510, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "fa-cup",           "my_word_count": 5205, "comp_word_count": 4135, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "world-cup",        "my_word_count": 8572, "comp_word_count": 6912, "change_pct": 0.0, "status": "unchanged"}
+    ]
+  },
+  {
+    "date": "2026-02-16",
+    "changed": 0,
+    "unchanged": 7,
+    "errors": 0,
+    "page_stats": [
+      {"slug": "arsenal",          "my_word_count": 8055, "comp_word_count": 5533, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "liverpool",        "my_word_count": 8418, "comp_word_count": 5522, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "manchester-united","my_word_count": 8835, "comp_word_count": 6200, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "chelsea",          "my_word_count": 8548, "comp_word_count": 5517, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "newcastle-united", "my_word_count": 4104, "comp_word_count": 5540, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "fa-cup",           "my_word_count": 5206, "comp_word_count": 4136, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "world-cup",        "my_word_count": 8575, "comp_word_count": 6915, "change_pct": 0.0, "status": "unchanged"}
+    ]
+  },
+  {
+    "date": "2026-02-17",
+    "changed": 0,
+    "unchanged": 7,
+    "errors": 0,
+    "page_stats": [
+      {"slug": "arsenal",          "my_word_count": 8058, "comp_word_count": 5534, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "liverpool",        "my_word_count": 8420, "comp_word_count": 5523, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "manchester-united","my_word_count": 8840, "comp_word_count": 6201, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "chelsea",          "my_word_count": 8552, "comp_word_count": 5518, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "newcastle-united", "my_word_count": 4105, "comp_word_count": 5560, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "fa-cup",           "my_word_count": 5207, "comp_word_count": 4136, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "world-cup",        "my_word_count": 8578, "comp_word_count": 6916, "change_pct": 0.0, "status": "unchanged"}
+    ]
+  },
+  {
+    "date": "2026-02-18",
+    "changed": 1,
+    "unchanged": 6,
+    "errors": 0,
+    "page_stats": [
+      {"slug": "arsenal",          "my_word_count": 8060, "comp_word_count": 5535, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "liverpool",        "my_word_count": 8422, "comp_word_count": 5524, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "manchester-united","my_word_count": 8845, "comp_word_count": 6202, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "chelsea",          "my_word_count": 8554, "comp_word_count": 5519, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "newcastle-united", "my_word_count": 4106, "comp_word_count": 5585, "change_pct": 8.3, "status": "changed"},
+      {"slug": "fa-cup",           "my_word_count": 5208, "comp_word_count": 4137, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "world-cup",        "my_word_count": 8580, "comp_word_count": 6917, "change_pct": 0.0, "status": "unchanged"}
+    ]
+  },
+  {
+    "date": "2026-02-19",
+    "changed": 1,
+    "unchanged": 5,
+    "errors": 1,
+    "page_stats": [
+      {"slug": "arsenal",          "my_word_count": 8062, "comp_word_count": 5535, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "liverpool",        "my_word_count": 8425, "comp_word_count": 5524, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "manchester-united","my_word_count": 8850, "comp_word_count": 6203, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "chelsea",          "my_word_count": 8557, "comp_word_count": 5519, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "newcastle-united", "my_word_count": 4107, "comp_word_count": 5585, "change_pct": 8.3, "status": "changed"},
+      {"slug": "fa-cup",           "my_word_count": 5208, "comp_word_count": 4137, "change_pct": 0.0, "status": "unchanged"},
+      {"slug": "world-cup",        "my_word_count": 8581, "comp_word_count": 6918, "change_pct": 0.0, "status": "unchanged"}
+    ]
+  }
+]

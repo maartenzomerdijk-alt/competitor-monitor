@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-02-19T08:00:00Z",
+  "date": "2026-02-19",
+  "summary": {
+    "total_pages": 7,
+    "changed": 1,
+    "unchanged": 5,
+    "errors": 1,
+    "avg_my_words": 7541,
+    "avg_comp_words": 5929
+  },
+  "pages": [
+    {
+      "slug": "arsenal",
+      "my_url": "https://www.livefootballtickets.com/premier-league/arsenal-tickets.html",
+      "competitor_url": "https://seatpick.com/arsenal-tickets",
+      "my_word_count": 8062,
+      "competitor_word_count": 5535,
+      "content_depth_score_mine": 7,
+      "content_depth_score_competitor": 6,
+      "last_change_detected": null,
+      "change_pct": 0.0,
+      "change_summary": "",
+      "content_gaps": [],
+      "keywords_they_cover": [],
+      "recommendations": "",
+      "status": "unchanged",
+      "my_title": "Arsenal Tickets | Buy Official Arsenal FC Tickets",
+      "my_h1": "Arsenal Tickets",
+      "my_headings": [
+        {"level": 2, "text": "Arsenal Home Fixtures"},
+        {"level": 2, "text": "Emirates Stadium Guide"},
+        {"level": 2, "text": "How to Buy Arsenal Tickets"}
+      ],
+      "comp_title": "Arsenal Tickets - SeatPick",
+      "comp_h1": "Arsenal Football Club Tickets",
+      "comp_headings": [
+        {"level": 2, "text": "Upcoming Arsenal Matches"},
+        {"level": 2, "text": "About Arsenal FC"}
+      ]
+    },
+    {
+      "slug": "liverpool",
+      "my_url": "https://www.livefootballtickets.com/premier-league/liverpool-tickets.html",
+      "competitor_url": "https://seatpick.com/liverpool-tickets",
+      "my_word_count": 8425,
+      "competitor_word_count": 5524,
+      "content_depth_score_mine": 8,
+      "content_depth_score_competitor": 6,
+      "last_change_detected": null,
+      "change_pct": 0.0,
+      "change_summary": "",
+      "content_gaps": [],
+      "keywords_they_cover": [],
+      "recommendations": "",
+      "status": "unchanged",
+      "my_title": "Liverpool Tickets | Buy Liverpool FC Tickets",
+      "my_h1": "Liverpool FC Tickets",
+      "my_headings": [
+        {"level": 2, "text": "Liverpool Home Fixtures"},
+        {"level": 2, "text": "Anfield Stadium Guide"},
+        {"level": 2, "text": "Liverpool Hospitality Packages"}
+      ],
+      "comp_title": "Liverpool Tickets - SeatPick",
+      "comp_h1": "Liverpool Football Club Tickets",
+      "comp_headings": [
+        {"level": 2, "text": "Upcoming Liverpool Matches"},
+        {"level": 2, "text": "About Liverpool FC"}
+      ]
+    },
+    {
+      "slug": "manchester-united",
+      "my_url": "https://www.livefootballtickets.com/premier-league/manchester-united-tickets.html",
+      "competitor_url": "https://seatpick.com/manchester-united-tickets",
+      "my_word_count": 8850,
+      "competitor_word_count": 6203,
+      "content_depth_score_mine": 8,
+      "content_depth_score_competitor": 7,
+      "last_change_detected": null,
+      "change_pct": 0.0,
+      "change_summary": "",
+      "content_gaps": [],
+      "keywords_they_cover": [],
+      "recommendations": "",
+      "status": "unchanged",
+      "my_title": "Manchester United Tickets | Buy Man Utd Tickets",
+      "my_h1": "Manchester United Tickets",
+      "my_headings": [
+        {"level": 2, "text": "Man Utd Home Fixtures"},
+        {"level": 2, "text": "Old Trafford Stadium Guide"},
+        {"level": 2, "text": "Manchester United Hospitality"}
+      ],
+      "comp_title": "Manchester United Tickets - SeatPick",
+      "comp_h1": "Manchester United Football Club Tickets",
+      "comp_headings": [
+        {"level": 2, "text": "Upcoming Man Utd Matches"},
+        {"level": 2, "text": "About Manchester United"}
+      ]
+    },
+    {
+      "slug": "chelsea",
+      "my_url": "https://www.livefootballtickets.com/premier-league/fc-chelsea-tickets.html",
+      "competitor_url": "https://seatpick.com/chelsea-tickets",
+      "my_word_count": 8557,
+      "competitor_word_count": 5519,
+      "content_depth_score_mine": 7,
+      "content_depth_score_competitor": 5,
+      "last_change_detected": null,
+      "change_pct": 0.0,
+      "change_summary": "",
+      "content_gaps": [],
+      "keywords_they_cover": [],
+      "recommendations": "",
+      "status": "unchanged",
+      "my_title": "Chelsea Tickets | Buy Chelsea FC Tickets",
+      "my_h1": "Chelsea FC Tickets",
+      "my_headings": [
+        {"level": 2, "text": "Chelsea Home Fixtures"},
+        {"level": 2, "text": "Stamford Bridge Guide"},
+        {"level": 2, "text": "Chelsea Hospitality"}
+      ],
+      "comp_title": "Chelsea Tickets - SeatPick",
+      "comp_h1": "Chelsea Football Club Tickets",
+      "comp_headings": [
+        {"level": 2, "text": "Upcoming Chelsea Matches"},
+        {"level": 2, "text": "About Chelsea FC"}
+      ]
+    },
+    {
+      "slug": "newcastle-united",
+      "my_url": "https://www.livefootballtickets.com/premier-league/newcastle-united-tickets.html",
+      "competitor_url": "https://seatpick.com/newcastle-united-tickets",
+      "my_word_count": 4107,
+      "competitor_word_count": 5585,
+      "content_depth_score_mine": 4,
+      "content_depth_score_competitor": 6,
+      "last_change_detected": "2026-02-18T08:12:34Z",
+      "change_pct": 8.3,
+      "change_summary": "Competitor added a new section on Newcastle United's Champions League campaign and updated ticket pricing for the second half of the season. Strategic focus appears to be targeting 'Newcastle Champions League tickets' search terms.",
+      "content_gaps": [
+        "Champions League section missing",
+        "Stadium renovation history not covered",
+        "Away fans guide absent",
+        "Hospitality package details thin"
+      ],
+      "keywords_they_cover": ["newcastle champions league tickets", "st james park guide", "toon army hospitality"],
+      "recommendations": "1. Add a Champions League section with fixture list. 2. Expand stadium guide to 400+ words. 3. Add away supporters section.",
+      "status": "changed",
+      "my_title": "Newcastle United Tickets | Buy Newcastle Tickets",
+      "my_h1": "Newcastle United Tickets",
+      "my_headings": [
+        {"level": 2, "text": "Newcastle Home Fixtures"},
+        {"level": 2, "text": "St James' Park Guide"}
+      ],
+      "comp_title": "Newcastle United Tickets - SeatPick",
+      "comp_h1": "Newcastle United Football Club Tickets",
+      "comp_headings": [
+        {"level": 2, "text": "Upcoming Newcastle Matches"},
+        {"level": 2, "text": "Newcastle Champions League 2025-26"},
+        {"level": 2, "text": "About Newcastle United"}
+      ]
+    },
+    {
+      "slug": "fa-cup",
+      "my_url": "https://www.livefootballtickets.com/fa-cup-tickets.html",
+      "competitor_url": "https://seatpick.com/fa-cup-tickets",
+      "my_word_count": 5208,
+      "competitor_word_count": 4137,
+      "content_depth_score_mine": 6,
+      "content_depth_score_competitor": 5,
+      "last_change_detected": null,
+      "change_pct": 0.0,
+      "change_summary": "",
+      "content_gaps": [],
+      "keywords_they_cover": [],
+      "recommendations": "",
+      "status": "unchanged",
+      "my_title": "FA Cup Tickets | Buy FA Cup Football Tickets",
+      "my_h1": "FA Cup Tickets",
+      "my_headings": [
+        {"level": 2, "text": "FA Cup Fixtures 2025-26"},
+        {"level": 2, "text": "Wembley Stadium Guide"},
+        {"level": 2, "text": "FA Cup Finals History"}
+      ],
+      "comp_title": "FA Cup Tickets - SeatPick",
+      "comp_h1": "FA Cup Football Tickets",
+      "comp_headings": [
+        {"level": 2, "text": "Upcoming FA Cup Matches"},
+        {"level": 2, "text": "About the FA Cup"}
+      ]
+    },
+    {
+      "slug": "world-cup",
+      "my_url": "https://www.livefootballtickets.com/world-cup-tickets.html",
+      "competitor_url": "https://seatpick.com/world-cup-tickets",
+      "my_word_count": 8581,
+      "competitor_word_count": 6918,
+      "content_depth_score_mine": 8,
+      "content_depth_score_competitor": 7,
+      "last_change_detected": null,
+      "change_pct": 0.0,
+      "change_summary": "",
+      "content_gaps": [],
+      "keywords_they_cover": [],
+      "recommendations": "",
+      "status": "unchanged",
+      "my_title": "World Cup Tickets | Buy FIFA World Cup 2026 Tickets",
+      "my_h1": "World Cup 2026 Tickets",
+      "my_headings": [
+        {"level": 2, "text": "World Cup 2026 Fixtures"},
+        {"level": 2, "text": "Host Cities Guide"},
+        {"level": 2, "text": "How to Buy World Cup Tickets"}
+      ],
+      "comp_title": "World Cup Tickets - SeatPick",
+      "comp_h1": "FIFA World Cup Tickets",
+      "comp_headings": [
+        {"level": 2, "text": "Upcoming World Cup Matches"},
+        {"level": 2, "text": "About FIFA World Cup 2026"}
+      ]
+    }
+  ]
+}

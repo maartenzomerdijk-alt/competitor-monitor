@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Competitor Content Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0D1B2A;
+      --navy-light: #152338;
+      --navy-card:  #1A2D44;
+      --navy-hover: #1E3350;
+      --border:     #253D5A;
+      --green:      #00C853;
+      --green-dim:  rgba(0,200,83,.15);
+      --amber:      #FFB300;
+      --red:        #F44336;
+      --text:       #E8EDF2;
+      --text-muted: #7A95B0;
+      --bar-bg:     #253D5A;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--navy);
+      color: var(--text);
+      min-height: 100vh;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── Header ──────────────────────────────────────────────────────────── */
+    .header {
+      background: var(--navy-light);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .header-left h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+    .header-left p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .last-updated {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .btn-refresh {
+      background: var(--green);
+      color: #000;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    .btn-refresh:hover { opacity: .85; }
+
+    /* ── Summary bar ─────────────────────────────────────────────────────── */
+    .summary-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .kpi {
+      background: var(--navy-light);
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .kpi-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      color: var(--text-muted);
+    }
+    .kpi-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+    .kpi-value.green  { color: var(--green); }
+    .kpi-value.amber  { color: var(--amber); }
+    .kpi-value.red    { color: var(--red); }
+
+    /* ── Main layout ─────────────────────────────────────────────────────── */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    section + section { margin-top: 48px; }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── Page cards grid ─────────────────────────────────────────────────── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color .15s;
+    }
+    .card:hover { border-color: #3A5A80; }
+    .card.status-changed  { border-left: 3px solid var(--amber); }
+    .card.status-error    { border-left: 3px solid var(--red); }
+    .card.status-unchanged{ border-left: 3px solid var(--green); }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-slug {
+      font-weight: 700;
+      font-size: 15px;
+      color: #fff;
+      text-transform: capitalize;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+    .badge-changed   { background: rgba(255,179,0,.2);   color: var(--amber); }
+    .badge-unchanged { background: var(--green-dim);     color: var(--green); }
+    .badge-error     { background: rgba(244,67,54,.15);  color: var(--red);   }
+
+    .card-body { padding: 14px 16px; }
+
+    /* word count bars */
+    .wc-row {
+      display: grid;
+      grid-template-columns: 56px 1fr 52px;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .wc-label { font-size: 11px; color: var(--text-muted); font-weight: 600; }
+    .wc-value { font-size: 11px; color: var(--text-muted); text-align: right; }
+    .bar-track {
+      height: 6px;
+      background: var(--bar-bg);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width .4s ease;
+    }
+    .bar-fill.mine { background: var(--green); }
+    .bar-fill.comp { background: #4A8EFF; }
+
+    /* depth scores */
+    .scores-row {
+      display: flex;
+      gap: 16px;
+      margin: 12px 0 14px;
+    }
+    .score-item {
+      flex: 1;
+      background: var(--navy);
+      border-radius: 6px;
+      padding: 8px 10px;
+    }
+    .score-label { font-size: 10px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: .4px; }
+    .score-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      margin-top: 2px;
+    }
+    .score-value span { font-size: 12px; color: var(--text-muted); font-weight: 400; }
+
+    /* change info */
+    .change-pct {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .change-pct strong { color: var(--amber); }
+
+    /* AI summary (collapsible) */
+    .summary-toggle {
+      width: 100%;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      cursor: pointer;
+      padding: 7px 10px;
+      border-radius: 5px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background .15s;
+      margin-bottom: 6px;
+    }
+    .summary-toggle:hover { background: var(--navy-hover); color: var(--text); }
+    .summary-toggle .arrow { transition: transform .2s; }
+    .summary-toggle.open .arrow { transform: rotate(180deg); }
+    .summary-text {
+      display: none;
+      font-size: 12px;
+      color: var(--text);
+      background: var(--navy);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 10px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+    .summary-text.visible { display: block; }
+
+    /* content gap pills */
+    .gaps-title { font-size: 11px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: .4px; margin-bottom: 6px; }
+    .gaps-list { display: flex; flex-wrap: wrap; gap: 6px; }
+    .gap-pill {
+      font-size: 11px;
+      background: rgba(74,142,255,.15);
+      color: #7AB4FF;
+      border: 1px solid rgba(74,142,255,.3);
+      padding: 3px 8px;
+      border-radius: 20px;
+    }
+    .no-gaps { font-size: 12px; color: var(--text-muted); font-style: italic; }
+
+    /* card footer */
+    .card-footer {
+      padding: 10px 16px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card-links { display: flex; gap: 10px; }
+    .link-small {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color .15s;
+    }
+    .link-small:hover { color: var(--green); }
+    .btn-compare {
+      background: none;
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background .15s, color .15s;
+    }
+    .btn-compare:hover { background: var(--green); color: #000; }
+
+    /* ── Change history table ─────────────────────────────────────────────── */
+    .table-wrapper { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    thead tr { border-bottom: 2px solid var(--border); }
+    th {
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: var(--text-muted);
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+    }
+    th:hover { color: var(--text); }
+    th .sort-icon { margin-left: 4px; opacity: .4; }
+    th.sorted .sort-icon { opacity: 1; color: var(--green); }
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background .1s;
+    }
+    tbody tr:hover { background: var(--navy-hover); }
+    td { padding: 10px 14px; vertical-align: middle; }
+    td.date { color: var(--text-muted); font-size: 12px; }
+    td.slug  { font-weight: 600; text-transform: capitalize; }
+    td.pct   { font-weight: 600; }
+    td.pct.high   { color: var(--amber); }
+    td.pct.normal { color: var(--green); }
+
+    .load-more-row { text-align: center; padding: 16px; }
+    .btn-load-more {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      padding: 7px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: border-color .15s, color .15s;
+    }
+    .btn-load-more:hover { border-color: var(--green); color: var(--green); }
+
+    /* ── Comparison modal ────────────────────────────────────────────────── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.7);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.visible { display: flex; }
+    .modal {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      width: 100%;
+      max-width: 980px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .modal-header h2 { font-size: 16px; font-weight: 700; color: #fff; text-transform: capitalize; }
+    .modal-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 22px;
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 6px;
+      border-radius: 4px;
+      transition: color .15s;
+    }
+    .modal-close:hover { color: #fff; }
+    .modal-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .modal-side {
+      padding: 20px 24px;
+    }
+    .modal-side + .modal-side {
+      border-left: 1px solid var(--border);
+    }
+    .modal-side-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .modal-side-label.mine { color: var(--green); }
+    .modal-side-label.comp { color: #4A8EFF; }
+    .modal-field { margin-bottom: 14px; }
+    .modal-field-label {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .modal-field-value {
+      font-size: 13px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .heading-list { list-style: none; }
+    .heading-list li {
+      font-size: 12px;
+      color: var(--text);
+      padding: 3px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 8px;
+    }
+    .heading-list li:last-child { border-bottom: none; }
+    .h-level {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      background: var(--bar-bg);
+      padding: 1px 5px;
+      border-radius: 3px;
+      flex-shrink: 0;
+      align-self: start;
+      margin-top: 2px;
+    }
+    .modal-footer {
+      padding: 14px 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .btn-open-page {
+      font-size: 12px;
+      padding: 7px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn-open-page.mine { background: var(--green-dim); color: var(--green); border: 1px solid var(--green); }
+    .btn-open-page.comp { background: rgba(74,142,255,.15); color: #7AB4FF; border: 1px solid rgba(74,142,255,.4); }
+
+    /* ── Responsive ───────────────────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .summary-bar { grid-template-columns: repeat(2, 1fr); }
+      .cards-grid  { grid-template-columns: 1fr; }
+      .container   { padding: 20px 16px; }
+      .modal-body  { grid-template-columns: 1fr; }
+      .modal-side + .modal-side { border-left: none; border-top: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────────────── -->
+<header class="header">
+  <div class="header-left">
+    <h1>Competitor Content Monitor</h1>
+    <p>livefootballtickets.com vs seatpick.com &mdash; updated daily at 08:00 UTC</p>
+  </div>
+  <div class="header-right">
+    <span class="last-updated" id="lastUpdated">Loading&hellip;</span>
+    <button class="btn-refresh" onclick="loadData()">&#8635; Refresh</button>
+  </div>
+</header>
+
+<!-- ── Summary bar ─────────────────────────────────────────────────────────── -->
+<div class="summary-bar">
+  <div class="kpi">
+    <span class="kpi-label">Pages tracked</span>
+    <span class="kpi-value" id="kpiTotal">—</span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label">Changed today</span>
+    <span class="kpi-value amber" id="kpiChanged">—</span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label">Avg my words</span>
+    <span class="kpi-value green" id="kpiMyWords">—</span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label">Avg competitor words</span>
+    <span class="kpi-value" id="kpiCompWords">—</span>
+  </div>
+</div>
+
+<!-- ── Main ────────────────────────────────────────────────────────────────── -->
+<main class="container">
+
+  <!-- Page cards -->
+  <section>
+    <h2 class="section-title">Page Comparisons</h2>
+    <div class="cards-grid" id="cardsGrid">
+      <p style="color:var(--text-muted);font-size:13px;">Loading&hellip;</p>
+    </div>
+  </section>
+
+  <!-- Change history -->
+  <section>
+    <h2 class="section-title">Change History</h2>
+    <div class="table-wrapper">
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th data-col="date"    class="sorted">Date <span class="sort-icon">&#9660;</span></th>
+            <th data-col="slug"   >Page <span class="sort-icon">&#9650;</span></th>
+            <th data-col="my_word_count"  >My words <span class="sort-icon">&#9650;</span></th>
+            <th data-col="comp_word_count">Comp words <span class="sort-icon">&#9650;</span></th>
+            <th data-col="change_pct"     >Change % <span class="sort-icon">&#9650;</span></th>
+            <th data-col="status" >Status <span class="sort-icon">&#9650;</span></th>
+          </tr>
+        </thead>
+        <tbody id="historyBody">
+          <tr><td colspan="6" style="color:var(--text-muted);padding:20px;">Loading&hellip;</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="load-more-row" id="loadMoreRow" style="display:none;">
+      <button class="btn-load-more" id="btnLoadMore" onclick="showMoreHistory()">Load more</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Comparison modal ─────────────────────────────────────────────────────── -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle">Page comparison</h2>
+      <button class="modal-close" onclick="closeModalDirect()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-side">
+        <div class="modal-side-label mine">&#9632; livefootballtickets.com</div>
+        <div class="modal-field">
+          <div class="modal-field-label">Title</div>
+          <div class="modal-field-value" id="myTitle">—</div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">H1</div>
+          <div class="modal-field-value" id="myH1">—</div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Word count</div>
+          <div class="modal-field-value" id="myWc">—</div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Content depth score</div>
+          <div class="modal-field-value" id="myScore">—</div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Headings</div>
+          <ul class="heading-list" id="myHeadings"></ul>
+        </div>
+      </div>
+      <div class="modal-side">
+        <div class="modal-side-label comp">&#9632; seatpick.com</div>
+        <div class="modal-field">
+          <div class="modal-field-label">Title</div>
+          <div class="modal-field-value" id="compTitle">—</div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">H1</div>
+          <div class="modal-field-value" id="compH1">—</div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Word count</div>
+          <div class="modal-field-value" id="compWc">—</div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Content depth score</div>
+          <div class="modal-field-value" id="compScore">—</div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Headings</div>
+          <ul class="heading-list" id="compHeadings"></ul>
+        </div>
+        <div class="modal-field" id="modalRecs" style="display:none;">
+          <div class="modal-field-label">Recommendations</div>
+          <div class="modal-field-value" id="modalRecsText" style="white-space:pre-line;font-size:12px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#" id="btnMyPage"   class="btn-open-page mine" target="_blank" rel="noopener">Open my page &#8599;</a>
+      <a href="#" id="btnCompPage" class="btn-open-page comp" target="_blank" rel="noopener">Open competitor &#8599;</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  /* ── State ───────────────────────────────────────────────────────────────── */
+  let latest  = null;
+  let history = [];
+  let historyFlat = [];      // all rows expanded from history
+  let historyShown = 20;
+  let sortCol = 'date';
+  let sortDir = -1;          // -1 = desc
+
+  /* ── Data loading ────────────────────────────────────────────────────────── */
+  async function loadData() {
+    try {
+      const [latestRes, histRes] = await Promise.all([
+        fetch('data/latest.json?_=' + Date.now()),
+        fetch('data/history.json?_=' + Date.now()),
+      ]);
+      latest  = await latestRes.json();
+      history = await histRes.json();
+
+      renderHeader();
+      renderSummary();
+      renderCards();
+      buildHistoryFlat();
+      renderHistory();
+    } catch (e) {
+      console.error('Failed to load data', e);
+    }
+  }
+
+  /* ── Header ──────────────────────────────────────────────────────────────── */
+  function renderHeader() {
+    const d = new Date(latest.generated_at);
+    document.getElementById('lastUpdated').textContent =
+      'Last run: ' + d.toLocaleString('en-GB', { dateStyle:'medium', timeStyle:'short' });
+  }
+
+  /* ── Summary bar ─────────────────────────────────────────────────────────── */
+  function renderSummary() {
+    const s = latest.summary;
+    document.getElementById('kpiTotal').textContent    = s.total_pages;
+    document.getElementById('kpiChanged').textContent  = s.changed;
+    document.getElementById('kpiMyWords').textContent  = s.avg_my_words.toLocaleString();
+    document.getElementById('kpiCompWords').textContent= s.avg_comp_words.toLocaleString();
+  }
+
+  /* ── Cards ───────────────────────────────────────────────────────────────── */
+  function renderCards() {
+    const grid = document.getElementById('cardsGrid');
+    const maxWc = Math.max(...latest.pages.map(p => Math.max(p.my_word_count, p.competitor_word_count)));
+
+    grid.innerHTML = latest.pages.map(p => cardHTML(p, maxWc)).join('');
+  }
+
+  function cardHTML(p, maxWc) {
+    const myPct   = maxWc ? Math.round(p.my_word_count   / maxWc * 100) : 0;
+    const compPct = maxWc ? Math.round(p.competitor_word_count / maxWc * 100) : 0;
+    const badgeCls = `badge badge-${p.status}`;
+    const badgeTxt = p.status === 'changed' ? 'Changed' : p.status === 'error' ? 'Error' : 'Unchanged';
+
+    const gapPills = p.content_gaps && p.content_gaps.length
+      ? p.content_gaps.map(g => `<span class="gap-pill">${esc(g)}</span>`).join('')
+      : '<span class="no-gaps">No gaps identified yet</span>';
+
+    const summarySection = p.change_summary
+      ? `<button class="summary-toggle" onclick="toggleSummary(this)">
+           AI change summary <span class="arrow">&#9660;</span>
+         </button>
+         <div class="summary-text">${esc(p.change_summary)}</div>`
+      : '';
+
+    const changeLine = p.change_pct > 0
+      ? `<p class="change-pct">Last change: <strong>${p.change_pct}%</strong></p>`
+      : '';
+
+    const slugDisplay = p.slug.replace(/-/g,' ');
+
+    return `
+    <div class="card status-${p.status}">
+      <div class="card-header">
+        <span class="card-slug">${esc(slugDisplay)}</span>
+        <span class="${badgeCls}">${badgeTxt}</span>
+      </div>
+      <div class="card-body">
+        <div class="wc-row">
+          <span class="wc-label">Mine</span>
+          <div class="bar-track"><div class="bar-fill mine" style="width:${myPct}%"></div></div>
+          <span class="wc-value">${p.my_word_count.toLocaleString()}</span>
+        </div>
+        <div class="wc-row">
+          <span class="wc-label">Comp</span>
+          <div class="bar-track"><div class="bar-fill comp" style="width:${compPct}%"></div></div>
+          <span class="wc-value">${p.competitor_word_count.toLocaleString()}</span>
+        </div>
+        <div class="scores-row">
+          <div class="score-item">
+            <div class="score-label">My depth</div>
+            <div class="score-value">${p.content_depth_score_mine}<span>/10</span></div>
+          </div>
+          <div class="score-item">
+            <div class="score-label">Comp depth</div>
+            <div class="score-value">${p.content_depth_score_competitor}<span>/10</span></div>
+          </div>
+        </div>
+        ${changeLine}
+        ${summarySection}
+        <div class="gaps-title">Content gaps</div>
+        <div class="gaps-list">${gapPills}</div>
+      </div>
+      <div class="card-footer">
+        <div class="card-links">
+          <a href="${p.my_url}" class="link-small" target="_blank" rel="noopener">My page &#8599;</a>
+          <a href="${p.competitor_url}" class="link-small" target="_blank" rel="noopener">Competitor &#8599;</a>
+        </div>
+        <button class="btn-compare" onclick='openModal(${JSON.stringify(p)})'>Compare &#8594;</button>
+      </div>
+    </div>`;
+  }
+
+  function toggleSummary(btn) {
+    btn.classList.toggle('open');
+    btn.nextElementSibling.classList.toggle('visible');
+  }
+
+  /* ── Change history table ────────────────────────────────────────────────── */
+  function buildHistoryFlat() {
+    historyFlat = [];
+    for (const day of history) {
+      for (const ps of (day.page_stats || [])) {
+        historyFlat.push({
+          date:            day.date,
+          slug:            ps.slug,
+          my_word_count:   ps.my_word_count,
+          comp_word_count: ps.comp_word_count,
+          change_pct:      ps.change_pct,
+          status:          ps.status,
+        });
+      }
+    }
+    sortHistory();
+  }
+
+  function sortHistory() {
+    historyFlat.sort((a, b) => {
+      let av = a[sortCol], bv = b[sortCol];
+      if (typeof av === 'string') av = av.toLowerCase();
+      if (typeof bv === 'string') bv = bv.toLowerCase();
+      return av < bv ? sortDir : av > bv ? -sortDir : 0;
+    });
+  }
+
+  function renderHistory() {
+    const tbody = document.getElementById('historyBody');
+    const rows  = historyFlat.slice(0, historyShown);
+
+    tbody.innerHTML = rows.map(r => `
+      <tr>
+        <td class="date">${r.date}</td>
+        <td class="slug">${r.slug.replace(/-/g,' ')}</td>
+        <td>${r.my_word_count.toLocaleString()}</td>
+        <td>${r.comp_word_count.toLocaleString()}</td>
+        <td class="pct ${r.change_pct >= 5 ? 'high' : 'normal'}">${r.change_pct > 0 ? r.change_pct.toFixed(1) + '%' : '—'}</td>
+        <td><span class="badge badge-${r.status}">${r.status}</span></td>
+      </tr>`).join('');
+
+    const loadMoreRow = document.getElementById('loadMoreRow');
+    loadMoreRow.style.display = historyFlat.length > historyShown ? 'block' : 'none';
+  }
+
+  function showMoreHistory() {
+    historyShown += 20;
+    renderHistory();
+  }
+
+  // Column sort
+  document.querySelectorAll('#historyTable th[data-col]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.col;
+      if (sortCol === col) {
+        sortDir *= -1;
+      } else {
+        sortCol = col;
+        sortDir = -1;
+      }
+      document.querySelectorAll('#historyTable th').forEach(t => t.classList.remove('sorted'));
+      th.classList.add('sorted');
+      th.querySelector('.sort-icon').textContent = sortDir === -1 ? '▼' : '▲';
+      historyShown = 20;
+      sortHistory();
+      renderHistory();
+    });
+  });
+
+  /* ── Modal ───────────────────────────────────────────────────────────────── */
+  function openModal(p) {
+    document.getElementById('modalTitle').textContent = p.slug.replace(/-/g,' ') + ' — side-by-side';
+
+    setText('myTitle',  p.my_title   || '—');
+    setText('myH1',     p.my_h1      || '—');
+    setText('myWc',     p.my_word_count.toLocaleString() + ' words');
+    setText('myScore',  p.content_depth_score_mine + ' / 10');
+    renderHeadings('myHeadings',   p.my_headings   || []);
+
+    setText('compTitle', p.comp_title || '—');
+    setText('compH1',    p.comp_h1    || '—');
+    setText('compWc',    p.competitor_word_count.toLocaleString() + ' words');
+    setText('compScore', p.content_depth_score_competitor + ' / 10');
+    renderHeadings('compHeadings', p.comp_headings || []);
+
+    if (p.recommendations && !p.recommendations.startsWith('[Unavailable')) {
+      document.getElementById('modalRecs').style.display    = 'block';
+      document.getElementById('modalRecsText').textContent  = p.recommendations;
+    } else {
+      document.getElementById('modalRecs').style.display = 'none';
+    }
+
+    document.getElementById('btnMyPage').href   = p.my_url;
+    document.getElementById('btnCompPage').href = p.competitor_url;
+
+    document.getElementById('modalOverlay').classList.add('visible');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function renderHeadings(elId, headings) {
+    const el = document.getElementById(elId);
+    if (!headings.length) {
+      el.innerHTML = '<li style="color:var(--text-muted);font-size:12px;">No headings recorded</li>';
+      return;
+    }
+    el.innerHTML = headings.map(h =>
+      `<li><span class="h-level">H${h.level}</span>${esc(h.text)}</li>`
+    ).join('');
+  }
+
+  function closeModal(e) {
+    if (e.target === document.getElementById('modalOverlay')) closeModalDirect();
+  }
+  function closeModalDirect() {
+    document.getElementById('modalOverlay').classList.remove('visible');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalDirect(); });
+
+  /* ── Helpers ─────────────────────────────────────────────────────────────── */
+  function setText(id, val) { document.getElementById(id).textContent = val; }
+  function esc(s) {
+    return String(s)
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+
+  /* ── Init ────────────────────────────────────────────────────────────────── */
+  loadData();
+</script>
+</body>
+</html>

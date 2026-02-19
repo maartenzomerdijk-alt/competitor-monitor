@@ -1,0 +1,36 @@
+pages:
+  - slug: arsenal
+    my_url: https://www.livefootballtickets.com/premier-league/arsenal-tickets.html
+    competitor_url: https://seatpick.com/arsenal-tickets
+
+  - slug: liverpool
+    my_url: https://www.livefootballtickets.com/premier-league/liverpool-tickets.html
+    competitor_url: https://seatpick.com/liverpool-tickets
+
+  - slug: manchester-united
+    my_url: https://www.livefootballtickets.com/premier-league/manchester-united-tickets.html
+    competitor_url: https://seatpick.com/manchester-united-tickets
+
+  - slug: chelsea
+    my_url: https://www.livefootballtickets.com/premier-league/fc-chelsea-tickets.html
+    competitor_url: https://seatpick.com/chelsea-tickets
+
+  - slug: newcastle-united
+    my_url: https://www.livefootballtickets.com/premier-league/newcastle-united-tickets.html
+    competitor_url: https://seatpick.com/newcastle-united-tickets
+
+  - slug: fa-cup
+    my_url: https://www.livefootballtickets.com/fa-cup-tickets.html
+    competitor_url: https://seatpick.com/fa-cup-tickets
+
+  - slug: world-cup
+    my_url: https://www.livefootballtickets.com/world-cup-tickets.html
+    competitor_url: https://seatpick.com/world-cup-tickets
+
+settings:
+  change_threshold_pct: 5
+  scrape_delay_min: 2
+  scrape_delay_max: 5
+  schedule_hour: 8
+  retry_wait_seconds: 60
+  max_retries: 3

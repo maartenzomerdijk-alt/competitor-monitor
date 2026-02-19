@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-02-19T11:23:06.279958Z",
+  "date": "2026-02-19",
+  "significant_changes": [],
+  "comparisons": [
+    {
+      "slug": "arsenal",
+      "my_url": "https://www.livefootballtickets.com/premier-league/arsenal-tickets.html",
+      "competitor_url": "https://seatpick.com/arsenal-tickets",
+      "my_word_count": 8062,
+      "competitor_word_count": 5535,
+      "my_depth_score": 0,
+      "competitor_depth_score": 0,
+      "content_gaps": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnB4qnbxN9ty2E7ycK'}]",
+      "keywords_they_cover": [],
+      "recommendations": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnB4qnbxN9ty2E7ycK'}]"
+    },
+    {
+      "slug": "liverpool",
+      "my_url": "https://www.livefootballtickets.com/premier-league/liverpool-tickets.html",
+      "competitor_url": "https://seatpick.com/liverpool-tickets",
+      "my_word_count": 8425,
+      "competitor_word_count": 5524,
+      "my_depth_score": 0,
+      "competitor_depth_score": 0,
+      "content_gaps": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnCB4azKZVSyajeV79'}]",
+      "keywords_they_cover": [],
+      "recommendations": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnCB4azKZVSyajeV79'}]"
+    },
+    {
+      "slug": "manchester-united",
+      "my_url": "https://www.livefootballtickets.com/premier-league/manchester-united-tickets.html",
+      "competitor_url": "https://seatpick.com/manchester-united-tickets",
+      "my_word_count": 8850,
+      "competitor_word_count": 6203,
+      "my_depth_score": 0,
+      "competitor_depth_score": 0,
+      "content_gaps": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnDH3UeuwXAYfeW23m'}]",
+      "keywords_they_cover": [],
+      "recommendations": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnDH3UeuwXAYfeW23m'}]"
+    },
+    {
+      "slug": "chelsea",
+      "my_url": "https://www.livefootballtickets.com/premier-league/fc-chelsea-tickets.html",
+      "competitor_url": "https://seatpick.com/chelsea-tickets",
+      "my_word_count": 8557,
+      "competitor_word_count": 5519,
+      "my_depth_score": 0,
+      "competitor_depth_score": 0,
+      "content_gaps": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnEL3hzqB12H1K4dfz'}]",
+      "keywords_they_cover": [],
+      "recommendations": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnEL3hzqB12H1K4dfz'}]"
+    },
+    {
+      "slug": "newcastle-united",
+      "my_url": "https://www.livefootballtickets.com/premier-league/newcastle-united-tickets.html",
+      "competitor_url": "https://seatpick.com/newcastle-united-tickets",
+      "my_word_count": 4107,
+      "competitor_word_count": 5585,
+      "my_depth_score": 0,
+      "competitor_depth_score": 0,
+      "content_gaps": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnFMomXAuznQsUow3h'}]",
+      "keywords_they_cover": [],
+      "recommendations": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnFMomXAuznQsUow3h'}]"
+    },
+    {
+      "slug": "fa-cup",
+      "my_url": "https://www.livefootballtickets.com/fa-cup-tickets.html",
+      "competitor_url": "https://seatpick.com/fa-cup-tickets",
+      "my_word_count": 5208,
+      "competitor_word_count": 4137,
+      "my_depth_score": 0,
+      "competitor_depth_score": 0,
+      "content_gaps": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnGRZ35Bakz8bVLAbY'}]",
+      "keywords_they_cover": [],
+      "recommendations": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnGRZ35Bakz8bVLAbY'}]"
+    },
+    {
+      "slug": "world-cup",
+      "my_url": "https://www.livefootballtickets.com/world-cup-tickets.html",
+      "competitor_url": "https://seatpick.com/world-cup-tickets",
+      "my_word_count": 8581,
+      "competitor_word_count": 6918,
+      "my_depth_score": 0,
+      "competitor_depth_score": 0,
+      "content_gaps": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnHPbdLW74o8rc5rBX'}]",
+      "keywords_they_cover": [],
+      "recommendations": "[Unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnHPbdLW74o8rc5rBX'}]"
+    }
+  ]
+}

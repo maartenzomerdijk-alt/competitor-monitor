@@ -1,0 +1,182 @@
+2026-02-19 12:09:54,315 [INFO] storage.db — Database initialised at competitor_monitor.db
+2026-02-19 12:09:54,316 [INFO] storage.db — Seeded 7 page pairs into DB
+2026-02-19 12:09:54,316 [INFO] main — Database initialised and pages seeded.
+2026-02-19 12:11:06,142 [INFO] storage.db — Database initialised at competitor_monitor.db
+2026-02-19 12:11:06,143 [INFO] storage.db — Seeded 7 page pairs into DB
+2026-02-19 12:11:06,144 [INFO] main — === Starting scrape phase ===
+2026-02-19 12:11:06,246 [INFO] main — Scraping [mine] arsenal (https://www.livefootballtickets.com/premier-league/arsenal-tickets.html)
+2026-02-19 12:11:06,246 [INFO] scraper.crawler — Fetching https://www.livefootballtickets.com/premier-league/arsenal-tickets.html (attempt 1/3, UA: ...Chrome/122.0.0.0 Safari/537.36)
+2026-02-19 12:11:13,200 [INFO] scraper.crawler — Successfully fetched https://www.livefootballtickets.com/premier-league/arsenal-tickets.html (1016856 chars)
+2026-02-19 12:11:13,290 [INFO] main — Scraping [competitor] arsenal (https://seatpick.com/arsenal-tickets)
+2026-02-19 12:11:13,290 [INFO] scraper.crawler — Fetching https://seatpick.com/arsenal-tickets (attempt 1/3, UA: ...Chrome/122.0.0.0 Safari/537.36)
+2026-02-19 12:11:20,231 [INFO] scraper.crawler — Successfully fetched https://seatpick.com/arsenal-tickets (1586715 chars)
+2026-02-19 12:11:20,336 [INFO] main — Scraping [mine] liverpool (https://www.livefootballtickets.com/premier-league/liverpool-tickets.html)
+2026-02-19 12:11:20,336 [INFO] scraper.crawler — Fetching https://www.livefootballtickets.com/premier-league/liverpool-tickets.html (attempt 1/3, UA: ...) Gecko/20100101 Firefox/124.0)
+2026-02-19 12:11:25,235 [INFO] scraper.crawler — Successfully fetched https://www.livefootballtickets.com/premier-league/liverpool-tickets.html (1000463 chars)
+2026-02-19 12:11:25,324 [INFO] main — Scraping [competitor] liverpool (https://seatpick.com/liverpool-tickets)
+2026-02-19 12:11:25,324 [INFO] scraper.crawler — Fetching https://seatpick.com/liverpool-tickets (attempt 1/3, UA: ...Chrome/122.0.0.0 Safari/537.36)
+2026-02-19 12:11:32,090 [INFO] scraper.crawler — Successfully fetched https://seatpick.com/liverpool-tickets (1588032 chars)
+2026-02-19 12:11:32,200 [INFO] main — Scraping [mine] manchester-united (https://www.livefootballtickets.com/premier-league/manchester-united-tickets.html)
+2026-02-19 12:11:32,200 [INFO] scraper.crawler — Fetching https://www.livefootballtickets.com/premier-league/manchester-united-tickets.html (attempt 1/3, UA: ....0 Safari/537.36 Edg/121.0.0.0)
+2026-02-19 12:11:36,473 [INFO] scraper.crawler — Successfully fetched https://www.livefootballtickets.com/premier-league/manchester-united-tickets.html (978461 chars)
+2026-02-19 12:11:36,570 [INFO] main — Scraping [competitor] manchester-united (https://seatpick.com/manchester-united-tickets)
+2026-02-19 12:11:36,570 [INFO] scraper.crawler — Fetching https://seatpick.com/manchester-united-tickets (attempt 1/3, UA: ....0 Safari/537.36 Edg/121.0.0.0)
+2026-02-19 12:11:44,151 [INFO] scraper.crawler — Successfully fetched https://seatpick.com/manchester-united-tickets (1596058 chars)
+2026-02-19 12:11:44,258 [INFO] main — Scraping [mine] chelsea (https://www.livefootballtickets.com/premier-league/fc-chelsea-tickets.html)
+2026-02-19 12:11:44,258 [INFO] scraper.crawler — Fetching https://www.livefootballtickets.com/premier-league/fc-chelsea-tickets.html (attempt 1/3, UA: ...Version/17.3.1 Safari/605.1.15)
+2026-02-19 12:11:50,566 [INFO] scraper.crawler — Successfully fetched https://www.livefootballtickets.com/premier-league/fc-chelsea-tickets.html (976426 chars)
+2026-02-19 12:11:50,651 [INFO] main — Scraping [competitor] chelsea (https://seatpick.com/chelsea-tickets)
+2026-02-19 12:11:50,651 [INFO] scraper.crawler — Fetching https://seatpick.com/chelsea-tickets (attempt 1/3, UA: ...Chrome/122.0.0.0 Safari/537.36)
+2026-02-19 12:11:56,785 [INFO] scraper.crawler — Successfully fetched https://seatpick.com/chelsea-tickets (1585084 chars)
+2026-02-19 12:11:56,888 [INFO] main — Scraping [mine] newcastle-united (https://www.livefootballtickets.com/premier-league/newcastle-united-tickets.html)
+2026-02-19 12:11:56,888 [INFO] scraper.crawler — Fetching https://www.livefootballtickets.com/premier-league/newcastle-united-tickets.html (attempt 1/3, UA: ...Chrome/122.0.0.0 Safari/537.36)
+2026-02-19 12:12:02,394 [INFO] scraper.crawler — Successfully fetched https://www.livefootballtickets.com/premier-league/newcastle-united-tickets.html (860202 chars)
+2026-02-19 12:12:02,494 [INFO] main — Scraping [competitor] newcastle-united (https://seatpick.com/newcastle-united-tickets)
+2026-02-19 12:12:02,494 [INFO] scraper.crawler — Fetching https://seatpick.com/newcastle-united-tickets (attempt 1/3, UA: ...Version/17.3.1 Safari/605.1.15)
+2026-02-19 12:12:10,746 [INFO] scraper.crawler — Successfully fetched https://seatpick.com/newcastle-united-tickets (1591528 chars)
+2026-02-19 12:12:10,852 [INFO] main — Scraping [mine] fa-cup (https://www.livefootballtickets.com/fa-cup-tickets.html)
+2026-02-19 12:12:10,852 [INFO] scraper.crawler — Fetching https://www.livefootballtickets.com/fa-cup-tickets.html (attempt 1/3, UA: ...Chrome/122.0.0.0 Safari/537.36)
+2026-02-19 12:12:16,694 [INFO] scraper.crawler — Successfully fetched https://www.livefootballtickets.com/fa-cup-tickets.html (849737 chars)
+2026-02-19 12:12:16,761 [INFO] main — Scraping [competitor] fa-cup (https://seatpick.com/fa-cup-tickets)
+2026-02-19 12:12:16,761 [INFO] scraper.crawler — Fetching https://seatpick.com/fa-cup-tickets (attempt 1/3, UA: ...Chrome/122.0.0.0 Safari/537.36)
+2026-02-19 12:12:22,241 [INFO] scraper.crawler — Successfully fetched https://seatpick.com/fa-cup-tickets (1368916 chars)
+2026-02-19 12:12:22,329 [INFO] main — Scraping [mine] world-cup (https://www.livefootballtickets.com/world-cup-tickets.html)
+2026-02-19 12:12:22,329 [INFO] scraper.crawler — Fetching https://www.livefootballtickets.com/world-cup-tickets.html (attempt 1/3, UA: ...Version/17.3.1 Safari/605.1.15)
+2026-02-19 12:12:29,656 [INFO] scraper.crawler — Successfully fetched https://www.livefootballtickets.com/world-cup-tickets.html (1012895 chars)
+2026-02-19 12:12:29,748 [INFO] main — Scraping [competitor] world-cup (https://seatpick.com/world-cup-tickets)
+2026-02-19 12:12:29,748 [INFO] scraper.crawler — Fetching https://seatpick.com/world-cup-tickets (attempt 1/3, UA: ...) Gecko/20100101 Firefox/124.0)
+2026-02-19 12:12:36,598 [INFO] scraper.crawler — Successfully fetched https://seatpick.com/world-cup-tickets (1726410 chars)
+2026-02-19 12:12:36,706 [INFO] main — === Starting diff phase ===
+2026-02-19 12:12:37,505 [INFO] main — [mine] arsenal — 99.5% change (SIGNIFICANT)
+2026-02-19 12:12:37,508 [ERROR] analysis.ai_summary — Claude diff summary failed: ANTHROPIC_API_KEY is not set
+2026-02-19 12:12:37,512 [INFO] storage.snapshots — Saved diff 1 for page_id=1 (99.5% change)
+2026-02-19 12:12:37,512 [WARNING] notifications.alerts — SLACK_WEBHOOK_URL not set — skipping Slack notification
+2026-02-19 12:12:37,545 [INFO] main — === Starting comparison phase ===
+2026-02-19 12:12:37,550 [INFO] analysis.compare — Running AI comparison for slug='arsenal'
+2026-02-19 12:12:37,550 [ERROR] analysis.ai_summary — Claude comparison failed for arsenal: ANTHROPIC_API_KEY is not set
+2026-02-19 12:12:37,550 [INFO] analysis.compare — Comparison done for 'arsenal': my score=0, competitor score=0
+2026-02-19 12:12:37,554 [INFO] analysis.compare — Running AI comparison for slug='liverpool'
+2026-02-19 12:12:37,554 [ERROR] analysis.ai_summary — Claude comparison failed for liverpool: ANTHROPIC_API_KEY is not set
+2026-02-19 12:12:37,554 [INFO] analysis.compare — Comparison done for 'liverpool': my score=0, competitor score=0
+2026-02-19 12:12:37,558 [INFO] analysis.compare — Running AI comparison for slug='manchester-united'
+2026-02-19 12:12:37,558 [ERROR] analysis.ai_summary — Claude comparison failed for manchester-united: ANTHROPIC_API_KEY is not set
+2026-02-19 12:12:37,558 [INFO] analysis.compare — Comparison done for 'manchester-united': my score=0, competitor score=0
+2026-02-19 12:12:37,561 [INFO] analysis.compare — Running AI comparison for slug='chelsea'
+2026-02-19 12:12:37,561 [ERROR] analysis.ai_summary — Claude comparison failed for chelsea: ANTHROPIC_API_KEY is not set
+2026-02-19 12:12:37,561 [INFO] analysis.compare — Comparison done for 'chelsea': my score=0, competitor score=0
+2026-02-19 12:12:37,564 [INFO] analysis.compare — Running AI comparison for slug='newcastle-united'
+2026-02-19 12:12:37,564 [ERROR] analysis.ai_summary — Claude comparison failed for newcastle-united: ANTHROPIC_API_KEY is not set
+2026-02-19 12:12:37,564 [INFO] analysis.compare — Comparison done for 'newcastle-united': my score=0, competitor score=0
+2026-02-19 12:12:37,567 [INFO] analysis.compare — Running AI comparison for slug='fa-cup'
+2026-02-19 12:12:37,567 [ERROR] analysis.ai_summary — Claude comparison failed for fa-cup: ANTHROPIC_API_KEY is not set
+2026-02-19 12:12:37,567 [INFO] analysis.compare — Comparison done for 'fa-cup': my score=0, competitor score=0
+2026-02-19 12:12:37,571 [INFO] analysis.compare — Running AI comparison for slug='world-cup'
+2026-02-19 12:12:37,571 [ERROR] analysis.ai_summary — Claude comparison failed for world-cup: ANTHROPIC_API_KEY is not set
+2026-02-19 12:12:37,571 [INFO] analysis.compare — Comparison done for 'world-cup': my score=0, competitor score=0
+2026-02-19 12:12:37,571 [WARNING] notifications.alerts — SLACK_WEBHOOK_URL not set — skipping Slack comparison summary
+2026-02-19 12:12:37,571 [INFO] main — === Writing report ===
+2026-02-19 12:12:37,572 [INFO] notifications.alerts — JSON report written to reports/2026-02-19.json
+2026-02-19 12:12:37,572 [INFO] main — Report written to reports/2026-02-19.json
+2026-02-19 12:12:37,573 [INFO] main — Pipeline complete — 1 significant changes, 7 comparisons
+2026-02-19 12:18:00,320 [INFO] storage.db — Database initialised at competitor_monitor.db
+2026-02-19 12:18:00,321 [INFO] storage.db — Seeded 7 page pairs into DB
+2026-02-19 12:18:00,321 [INFO] main — === Running comparison phase only ===
+2026-02-19 12:18:00,677 [INFO] analysis.compare — Running AI comparison for slug='arsenal'
+2026-02-19 12:18:00,993 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:18:00,994 [ERROR] analysis.ai_summary — Claude comparison failed for arsenal: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLPn4d6261hhtRYgGSf'}
+2026-02-19 12:18:00,994 [INFO] analysis.compare — Comparison done for 'arsenal': my score=0, competitor score=0
+2026-02-19 12:18:01,002 [INFO] analysis.compare — Running AI comparison for slug='liverpool'
+2026-02-19 12:18:01,287 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:18:01,288 [ERROR] analysis.ai_summary — Claude comparison failed for liverpool: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLPoGYoCSo3MLfwXRRC'}
+2026-02-19 12:18:01,289 [INFO] analysis.compare — Comparison done for 'liverpool': my score=0, competitor score=0
+2026-02-19 12:18:01,300 [INFO] analysis.compare — Running AI comparison for slug='manchester-united'
+2026-02-19 12:18:01,558 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:18:01,558 [ERROR] analysis.ai_summary — Claude comparison failed for manchester-united: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLPpWTmKVuAyax2XwNs'}
+2026-02-19 12:18:01,559 [INFO] analysis.compare — Comparison done for 'manchester-united': my score=0, competitor score=0
+2026-02-19 12:18:01,570 [INFO] analysis.compare — Running AI comparison for slug='chelsea'
+2026-02-19 12:18:01,873 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:18:01,878 [ERROR] analysis.ai_summary — Claude comparison failed for chelsea: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLPqevS9m6sYGnfdGDo'}
+2026-02-19 12:18:01,879 [INFO] analysis.compare — Comparison done for 'chelsea': my score=0, competitor score=0
+2026-02-19 12:18:01,891 [INFO] analysis.compare — Running AI comparison for slug='newcastle-united'
+2026-02-19 12:18:02,163 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:18:02,166 [ERROR] analysis.ai_summary — Claude comparison failed for newcastle-united: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLPry3d1vmcE8RRPYcQ'}
+2026-02-19 12:18:02,167 [INFO] analysis.compare — Comparison done for 'newcastle-united': my score=0, competitor score=0
+2026-02-19 12:18:02,175 [INFO] analysis.compare — Running AI comparison for slug='fa-cup'
+2026-02-19 12:18:02,441 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:18:02,441 [ERROR] analysis.ai_summary — Claude comparison failed for fa-cup: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLPtDxANeUnXAhtPq2Y'}
+2026-02-19 12:18:02,442 [INFO] analysis.compare — Comparison done for 'fa-cup': my score=0, competitor score=0
+2026-02-19 12:18:02,452 [INFO] analysis.compare — Running AI comparison for slug='world-cup'
+2026-02-19 12:18:02,685 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:18:02,685 [ERROR] analysis.ai_summary — Claude comparison failed for world-cup: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLPuPeXqvrDT6MA17bQ'}
+2026-02-19 12:18:02,686 [INFO] analysis.compare — Comparison done for 'world-cup': my score=0, competitor score=0
+2026-02-19 12:18:02,686 [WARNING] notifications.alerts — SLACK_WEBHOOK_URL not set — skipping Slack comparison summary
+2026-02-19 12:18:02,688 [INFO] notifications.alerts — JSON report written to reports/2026-02-19.json
+2026-02-19 12:18:02,688 [INFO] main — Comparison report written to reports/2026-02-19.json
+2026-02-19 12:22:02,810 [INFO] storage.db — Database initialised at competitor_monitor.db
+2026-02-19 12:22:02,811 [INFO] storage.db — Seeded 7 page pairs into DB
+2026-02-19 12:22:02,812 [INFO] main — === Running comparison phase only ===
+2026-02-19 12:22:03,128 [INFO] analysis.compare — Running AI comparison for slug='arsenal'
+2026-02-19 12:22:03,454 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:22:03,455 [ERROR] analysis.ai_summary — Claude comparison failed for arsenal: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLhehN3MPg9beVKSZoA'}
+2026-02-19 12:22:03,456 [INFO] analysis.compare — Comparison done for 'arsenal': my score=0, competitor score=0
+2026-02-19 12:22:03,464 [INFO] analysis.compare — Running AI comparison for slug='liverpool'
+2026-02-19 12:22:03,698 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:22:03,699 [ERROR] analysis.ai_summary — Claude comparison failed for liverpool: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLhfpLUKHAdQSe9KT3N'}
+2026-02-19 12:22:03,699 [INFO] analysis.compare — Comparison done for 'liverpool': my score=0, competitor score=0
+2026-02-19 12:22:03,708 [INFO] analysis.compare — Running AI comparison for slug='manchester-united'
+2026-02-19 12:22:03,984 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:22:03,984 [ERROR] analysis.ai_summary — Claude comparison failed for manchester-united: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLhgvK5tdtXM3FRCBCV'}
+2026-02-19 12:22:03,985 [INFO] analysis.compare — Comparison done for 'manchester-united': my score=0, competitor score=0
+2026-02-19 12:22:03,996 [INFO] analysis.compare — Running AI comparison for slug='chelsea'
+2026-02-19 12:22:04,230 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:22:04,231 [ERROR] analysis.ai_summary — Claude comparison failed for chelsea: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLhi714jZomGAK9vfiC'}
+2026-02-19 12:22:04,232 [INFO] analysis.compare — Comparison done for 'chelsea': my score=0, competitor score=0
+2026-02-19 12:22:04,243 [INFO] analysis.compare — Running AI comparison for slug='newcastle-united'
+2026-02-19 12:22:04,456 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:22:04,456 [ERROR] analysis.ai_summary — Claude comparison failed for newcastle-united: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLhj7mSg74zjAdMT1cf'}
+2026-02-19 12:22:04,456 [INFO] analysis.compare — Comparison done for 'newcastle-united': my score=0, competitor score=0
+2026-02-19 12:22:04,464 [INFO] analysis.compare — Running AI comparison for slug='fa-cup'
+2026-02-19 12:22:04,883 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:22:04,884 [ERROR] analysis.ai_summary — Claude comparison failed for fa-cup: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLhk83RC1x2Nzmzua69'}
+2026-02-19 12:22:04,885 [INFO] analysis.compare — Comparison done for 'fa-cup': my score=0, competitor score=0
+2026-02-19 12:22:04,896 [INFO] analysis.compare — Running AI comparison for slug='world-cup'
+2026-02-19 12:22:05,126 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:22:05,127 [ERROR] analysis.ai_summary — Claude comparison failed for world-cup: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLhmwveuVfCCn3PDabD'}
+2026-02-19 12:22:05,127 [INFO] analysis.compare — Comparison done for 'world-cup': my score=0, competitor score=0
+2026-02-19 12:22:05,127 [WARNING] notifications.alerts — SLACK_WEBHOOK_URL not set — skipping Slack comparison summary
+2026-02-19 12:22:05,129 [INFO] notifications.alerts — JSON report written to reports/2026-02-19.json
+2026-02-19 12:22:05,129 [INFO] main — Comparison report written to reports/2026-02-19.json
+2026-02-19 12:23:04,186 [INFO] storage.db — Database initialised at competitor_monitor.db
+2026-02-19 12:23:04,187 [INFO] storage.db — Seeded 7 page pairs into DB
+2026-02-19 12:23:04,187 [INFO] main — === Running comparison phase only ===
+2026-02-19 12:23:04,532 [INFO] analysis.compare — Running AI comparison for slug='arsenal'
+2026-02-19 12:23:04,804 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:23:04,805 [ERROR] analysis.ai_summary — Claude comparison failed for arsenal: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnB4qnbxN9ty2E7ycK'}
+2026-02-19 12:23:04,806 [INFO] analysis.compare — Comparison done for 'arsenal': my score=0, competitor score=0
+2026-02-19 12:23:04,814 [INFO] analysis.compare — Running AI comparison for slug='liverpool'
+2026-02-19 12:23:05,075 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:23:05,076 [ERROR] analysis.ai_summary — Claude comparison failed for liverpool: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnCB4azKZVSyajeV79'}
+2026-02-19 12:23:05,076 [INFO] analysis.compare — Comparison done for 'liverpool': my score=0, competitor score=0
+2026-02-19 12:23:05,084 [INFO] analysis.compare — Running AI comparison for slug='manchester-united'
+2026-02-19 12:23:05,311 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:23:05,311 [ERROR] analysis.ai_summary — Claude comparison failed for manchester-united: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnDH3UeuwXAYfeW23m'}
+2026-02-19 12:23:05,312 [INFO] analysis.compare — Comparison done for 'manchester-united': my score=0, competitor score=0
+2026-02-19 12:23:05,321 [INFO] analysis.compare — Running AI comparison for slug='chelsea'
+2026-02-19 12:23:05,568 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:23:05,569 [ERROR] analysis.ai_summary — Claude comparison failed for chelsea: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnEL3hzqB12H1K4dfz'}
+2026-02-19 12:23:05,569 [INFO] analysis.compare — Comparison done for 'chelsea': my score=0, competitor score=0
+2026-02-19 12:23:05,580 [INFO] analysis.compare — Running AI comparison for slug='newcastle-united'
+2026-02-19 12:23:05,808 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:23:05,808 [ERROR] analysis.ai_summary — Claude comparison failed for newcastle-united: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnFMomXAuznQsUow3h'}
+2026-02-19 12:23:05,809 [INFO] analysis.compare — Comparison done for 'newcastle-united': my score=0, competitor score=0
+2026-02-19 12:23:05,820 [INFO] analysis.compare — Running AI comparison for slug='fa-cup'
+2026-02-19 12:23:06,046 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:23:06,046 [ERROR] analysis.ai_summary — Claude comparison failed for fa-cup: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnGRZ35Bakz8bVLAbY'}
+2026-02-19 12:23:06,047 [INFO] analysis.compare — Comparison done for 'fa-cup': my score=0, competitor score=0
+2026-02-19 12:23:06,054 [INFO] analysis.compare — Running AI comparison for slug='world-cup'
+2026-02-19 12:23:06,278 [INFO] httpx — HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-02-19 12:23:06,278 [ERROR] analysis.ai_summary — Claude comparison failed for world-cup: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CYHLnHPbdLW74o8rc5rBX'}
+2026-02-19 12:23:06,279 [INFO] analysis.compare — Comparison done for 'world-cup': my score=0, competitor score=0
+2026-02-19 12:23:06,279 [WARNING] notifications.alerts — SLACK_WEBHOOK_URL not set — skipping Slack comparison summary
+2026-02-19 12:23:06,282 [INFO] notifications.alerts — JSON report written to reports/2026-02-19.json
+2026-02-19 12:23:06,282 [INFO] main — Comparison report written to reports/2026-02-19.json
