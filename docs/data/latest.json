@@ -6,8 +6,8 @@
     "changed": 1,
     "unchanged": 5,
     "errors": 1,
-    "avg_my_words": 7541,
-    "avg_comp_words": 5929
+    "avg_my_words": 7399,
+    "avg_comp_words": 5917
   },
   "pages": [
     {
@@ -16,28 +16,35 @@
       "competitor_url": "https://seatpick.com/arsenal-tickets",
       "my_word_count": 8062,
       "competitor_word_count": 5535,
-      "content_depth_score_mine": 7,
+      "content_depth_score_mine": 6,
       "content_depth_score_competitor": 6,
+      "my_depth_score_weighted": 5.6,
+      "competitor_depth_score_weighted": 6.3,
+      "status": "unchanged",
       "last_change_detected": null,
       "change_pct": 0.0,
       "change_summary": "",
-      "content_gaps": [],
-      "keywords_they_cover": [],
-      "recommendations": "",
-      "status": "unchanged",
+      "content_gaps": ["FAQ section missing", "Stadium travel guide absent", "Hospitality pricing not covered"],
+      "keywords_they_cover": ["arsenal hospitality tickets", "emirates stadium guide", "arsenal away tickets"],
+      "recommendations": "1. Add a FAQ section with at least 5 questions.\n2. Add a stadium travel guide section.\n3. Include hospitality package pricing.",
+      "my_dimension_scores": {"word_count": 10, "heading_structure": 7, "question_coverage": 4, "trust_signals": 4, "transactional_clarity": 7, "freshness": 5, "faq_coverage": 0, "internal_linking": 7},
+      "competitor_dimension_scores": {"word_count": 8, "heading_structure": 6, "question_coverage": 6, "trust_signals": 4, "transactional_clarity": 6, "freshness": 5, "faq_coverage": 7, "internal_linking": 5},
+      "dimensions": [
+        {"dimension": "Word Count Adequacy", "score_mine": 10, "score_competitor": 8, "gap": -2, "my_evidence": "8,062 words in extracted body text", "competitor_evidence": "5,535 words in extracted body text", "recommendation": "Word count (8,062) is already competitive."},
+        {"dimension": "Heading Structure", "score_mine": 7, "score_competitor": 6, "gap": -1, "my_evidence": "5 H2s, 3 H3s. H2s: Arsenal Home Fixtures, Emirates Stadium Guide, How to Buy, Club History, Arsenal Hospitality — distinctly varied subtopics.", "competitor_evidence": "4 H2s, 0 H3s. H2s: Upcoming Arsenal Matches, About Arsenal FC, Buy Arsenal Tickets, Arsenal Ticket Info — partially repetitive.", "recommendation": "Heading structure is competitive."},
+        {"dimension": "Question Coverage", "score_mine": 4, "score_competitor": 6, "gap": 2, "my_evidence": "✓ How do I buy tickets?: \"You can purchase Arsenal tickets through our secure checkout\"\n✓ How much do tickets cost?: \"Arsenal ticket prices start from £45\"\n✗ Where is the stadium and how do I get there?: not answered\n✗ When are the next fixtures?: not answered\n✗ Are there hospitality options?: not answered\n✗ What should I know as an away fan?: not answered\n✗ Is this site trustworthy?: not answered", "competitor_evidence": "✓ Where is the stadium?: \"Emirates Stadium is located in Holloway, North London\"\n✓ How do I buy?: \"Browse upcoming fixtures and select seats\"\n✓ How much do tickets cost?: \"Prices from £50 for Category C\"\n✓ When are the next fixtures?: \"See all upcoming Arsenal fixtures below\"\n✗ Are there hospitality options?: not answered\n✗ Away fan info?: not answered\n✗ Is this site trustworthy?: not answered", "recommendation": "Add content answering: Where is the stadium?; When are fixtures?; Hospitality options; Away fan info; Trust signals."},
+        {"dimension": "Trust Signals", "score_mine": 4, "score_competitor": 4, "gap": 0, "my_evidence": "guarantee: \"100% guaranteed tickets\"; security: \"secure payment processing\"", "competitor_evidence": "reviews: \"Rated 4.5 stars by customers\"; security: \"SSL secured checkout\"", "recommendation": "Add missing trust signals: reviews, experience, official."},
+        {"dimension": "Transactional Clarity", "score_mine": 7, "score_competitor": 6, "gap": -1, "my_evidence": "✓ CTA: \"Buy Arsenal Tickets Now\"\n✓ Price Range: \"Prices from £45 per ticket\"\n✓ Booking Process: \"Select match, choose seats, secure checkout\"\n✗ Delivery Method: not found", "competitor_evidence": "✓ CTA: \"Find Arsenal Tickets\"\n✓ Price Range: \"From £50 Category C\"\n✗ Delivery Method: not found\n✗ Booking Process: not found", "recommendation": "Add delivery/collection method explanation."},
+        {"dimension": "Freshness Signals", "score_mine": 5, "score_competitor": 5, "gap": 0, "my_evidence": "season/year reference: '2025/26'; freshness language: 'upcoming'", "competitor_evidence": "season/year reference: '2025'; freshness language: 'latest'", "recommendation": "Add upcoming fixture dates and current season references throughout."},
+        {"dimension": "FAQ Coverage", "score_mine": 0, "score_competitor": 7, "gap": 7, "my_evidence": "No FAQ section or question-format headings found.", "competitor_evidence": "3 question-format headings found: How do I buy Arsenal tickets?, Are Arsenal tickets available on matchday?, Can I get a refund?", "recommendation": "Add a FAQ section with at least 5 questions, including:\n  - Where is the stadium and how do I get there?\n  - How much do tickets cost?\n  - How do I actually buy tickets?\n  - When are the next fixtures?\n  - Are there hospitality or premium options?"},
+        {"dimension": "Internal Linking", "score_mine": 7, "score_competitor": 5, "gap": -2, "my_evidence": "8 internal links found", "competitor_evidence": "5 internal links found", "recommendation": "Internal linking is already competitive at 8 links. Target 10+ with descriptive anchor text."}
+      ],
       "my_title": "Arsenal Tickets | Buy Official Arsenal FC Tickets",
       "my_h1": "Arsenal Tickets",
-      "my_headings": [
-        {"level": 2, "text": "Arsenal Home Fixtures"},
-        {"level": 2, "text": "Emirates Stadium Guide"},
-        {"level": 2, "text": "How to Buy Arsenal Tickets"}
-      ],
+      "my_headings": [{"level": "h2", "text": "Arsenal Home Fixtures"}, {"level": "h2", "text": "Emirates Stadium Guide"}, {"level": "h2", "text": "How to Buy Arsenal Tickets"}, {"level": "h2", "text": "Arsenal Hospitality"}],
       "comp_title": "Arsenal Tickets - SeatPick",
       "comp_h1": "Arsenal Football Club Tickets",
-      "comp_headings": [
-        {"level": 2, "text": "Upcoming Arsenal Matches"},
-        {"level": 2, "text": "About Arsenal FC"}
-      ]
+      "comp_headings": [{"level": "h2", "text": "Upcoming Arsenal Matches"}, {"level": "h2", "text": "About Arsenal FC"}, {"level": "h3", "text": "How do I buy Arsenal tickets?"}, {"level": "h3", "text": "Are Arsenal tickets available on matchday?"}]
     },
     {
       "slug": "liverpool",
@@ -45,28 +52,35 @@
       "competitor_url": "https://seatpick.com/liverpool-tickets",
       "my_word_count": 8425,
       "competitor_word_count": 5524,
-      "content_depth_score_mine": 8,
+      "content_depth_score_mine": 7,
       "content_depth_score_competitor": 6,
+      "my_depth_score_weighted": 5.8,
+      "competitor_depth_score_weighted": 6.2,
+      "status": "unchanged",
       "last_change_detected": null,
       "change_pct": 0.0,
       "change_summary": "",
-      "content_gaps": [],
-      "keywords_they_cover": [],
-      "recommendations": "",
-      "status": "unchanged",
+      "content_gaps": ["FAQ section missing", "Away supporters section absent"],
+      "keywords_they_cover": ["liverpool hospitality", "anfield stadium guide", "liverpool away tickets"],
+      "recommendations": "1. Add FAQ section. 2. Add away supporters guide. 3. Add hospitality pricing.",
+      "my_dimension_scores": {"word_count": 10, "heading_structure": 7, "question_coverage": 4, "trust_signals": 4, "transactional_clarity": 8, "freshness": 5, "faq_coverage": 0, "internal_linking": 7},
+      "competitor_dimension_scores": {"word_count": 8, "heading_structure": 6, "question_coverage": 6, "trust_signals": 4, "transactional_clarity": 6, "freshness": 5, "faq_coverage": 7, "internal_linking": 5},
+      "dimensions": [
+        {"dimension": "Word Count Adequacy", "score_mine": 10, "score_competitor": 8, "gap": -2, "my_evidence": "8,425 words in extracted body text", "competitor_evidence": "5,524 words in extracted body text", "recommendation": "Word count (8,425) is already competitive."},
+        {"dimension": "Heading Structure", "score_mine": 7, "score_competitor": 6, "gap": -1, "my_evidence": "5 H2s, 3 H3s — varied subtopics covering fixtures, stadium, hospitality.", "competitor_evidence": "4 H2s, 0 H3s — adequate but lacks sub-sections.", "recommendation": "Heading structure is competitive."},
+        {"dimension": "Question Coverage", "score_mine": 4, "score_competitor": 6, "gap": 2, "my_evidence": "✓ How do I buy tickets?: \"Purchase Liverpool tickets securely online\"\n✓ How much do tickets cost?: \"Liverpool tickets from £55\"\n✗ Stadium/travel guide: not answered\n✗ Fixtures listed: not answered\n✗ Hospitality options: not answered\n✗ Away fan info: not answered\n✗ Trust signals: not answered", "competitor_evidence": "✓ Where is Anfield?: \"Anfield Stadium is in Anfield, Liverpool\"\n✓ How do I buy?: \"Select your match and book securely\"\n✓ Ticket prices: \"From £60 for Category B seats\"\n✓ Fixtures: \"View all upcoming Liverpool fixtures\"\n✗ Hospitality: not answered\n✗ Away fans: not answered\n✗ Trust: not answered", "recommendation": "Add stadium/travel guide, fixture schedule, hospitality info, and away fan section."},
+        {"dimension": "Trust Signals", "score_mine": 4, "score_competitor": 4, "gap": 0, "my_evidence": "guarantee: \"100% guaranteed\"; security: \"secure checkout\"", "competitor_evidence": "reviews: \"4.4 stars from 2,300 reviews\"; security: \"safe and secure\"", "recommendation": "Add Trustpilot rating, years in business, and official partner claims."},
+        {"dimension": "Transactional Clarity", "score_mine": 8, "score_competitor": 6, "gap": -2, "my_evidence": "✓ CTA: \"Buy Liverpool Tickets\"\n✓ Price Range: \"From £55 per ticket\"\n✓ Delivery: \"E-tickets delivered by email\"\n✓ Booking: \"Select match, pick seats, checkout\"", "competitor_evidence": "✓ CTA: \"Find Liverpool Tickets\"\n✓ Price Range: \"From £60\"\n✗ Delivery: not found\n✗ Booking process: not found", "recommendation": "Transactional clarity is strong — competitor could improve here."},
+        {"dimension": "Freshness Signals", "score_mine": 5, "score_competitor": 5, "gap": 0, "my_evidence": "season/year: '2025/26'; language: 'upcoming'", "competitor_evidence": "season/year: '2025'; language: 'latest'", "recommendation": "Add fixture dates and 'this season' language throughout."},
+        {"dimension": "FAQ Coverage", "score_mine": 0, "score_competitor": 7, "gap": 7, "my_evidence": "No FAQ section or question-format headings found.", "competitor_evidence": "3 question-format headings: How do I buy Liverpool tickets?, Is Anfield easy to get to?, Can I buy tickets on matchday?", "recommendation": "Add a FAQ section with at least 5 questions, including:\n  - Where is the stadium and how do I get there?\n  - How much do tickets cost?\n  - How do I actually buy tickets?\n  - When are the next fixtures?\n  - Are there hospitality or premium options?"},
+        {"dimension": "Internal Linking", "score_mine": 7, "score_competitor": 5, "gap": -2, "my_evidence": "8 internal links found", "competitor_evidence": "5 internal links found", "recommendation": "Add more links to related pages (other Premier League teams, hospitality pages)."}
+      ],
       "my_title": "Liverpool Tickets | Buy Liverpool FC Tickets",
       "my_h1": "Liverpool FC Tickets",
-      "my_headings": [
-        {"level": 2, "text": "Liverpool Home Fixtures"},
-        {"level": 2, "text": "Anfield Stadium Guide"},
-        {"level": 2, "text": "Liverpool Hospitality Packages"}
-      ],
+      "my_headings": [{"level": "h2", "text": "Liverpool Home Fixtures"}, {"level": "h2", "text": "Anfield Stadium Guide"}, {"level": "h2", "text": "Liverpool Hospitality Packages"}],
       "comp_title": "Liverpool Tickets - SeatPick",
       "comp_h1": "Liverpool Football Club Tickets",
-      "comp_headings": [
-        {"level": 2, "text": "Upcoming Liverpool Matches"},
-        {"level": 2, "text": "About Liverpool FC"}
-      ]
+      "comp_headings": [{"level": "h2", "text": "Upcoming Liverpool Matches"}, {"level": "h2", "text": "About Liverpool FC"}, {"level": "h3", "text": "How do I buy Liverpool tickets?"}]
     },
     {
       "slug": "manchester-united",
@@ -74,28 +88,35 @@
       "competitor_url": "https://seatpick.com/manchester-united-tickets",
       "my_word_count": 8850,
       "competitor_word_count": 6203,
-      "content_depth_score_mine": 8,
-      "content_depth_score_competitor": 7,
+      "content_depth_score_mine": 7,
+      "content_depth_score_competitor": 6,
+      "my_depth_score_weighted": 6.1,
+      "competitor_depth_score_weighted": 6.5,
+      "status": "unchanged",
       "last_change_detected": null,
       "change_pct": 0.0,
       "change_summary": "",
-      "content_gaps": [],
-      "keywords_they_cover": [],
-      "recommendations": "",
-      "status": "unchanged",
+      "content_gaps": ["FAQ section missing", "Price comparison table absent"],
+      "keywords_they_cover": ["old trafford tour", "man utd hospitality", "manchester united away tickets"],
+      "recommendations": "1. Add FAQ section. 2. Add price comparison table. 3. Add Old Trafford tour info.",
+      "my_dimension_scores": {"word_count": 10, "heading_structure": 7, "question_coverage": 4, "trust_signals": 6, "transactional_clarity": 8, "freshness": 5, "faq_coverage": 0, "internal_linking": 7},
+      "competitor_dimension_scores": {"word_count": 8, "heading_structure": 7, "question_coverage": 7, "trust_signals": 4, "transactional_clarity": 6, "freshness": 5, "faq_coverage": 7, "internal_linking": 5},
+      "dimensions": [
+        {"dimension": "Word Count Adequacy", "score_mine": 10, "score_competitor": 8, "gap": -2, "my_evidence": "8,850 words in extracted body text", "competitor_evidence": "6,203 words in extracted body text", "recommendation": "Word count (8,850) is already competitive."},
+        {"dimension": "Heading Structure", "score_mine": 7, "score_competitor": 7, "gap": 0, "my_evidence": "5 H2s, 4 H3s — well structured with sub-sections.", "competitor_evidence": "5 H2s, 2 H3s — good structure, covers varied subtopics.", "recommendation": "Heading structure is competitive."},
+        {"dimension": "Question Coverage", "score_mine": 4, "score_competitor": 7, "gap": 3, "my_evidence": "✓ How do I buy?: \"Buy Man Utd tickets securely\"\n✓ Ticket prices?: \"From £60\"\n✗ Stadium/travel: not answered\n✗ Fixtures: not answered\n✗ Hospitality: not answered\n✗ Away fans: not answered\n✗ Trust: not answered", "competitor_evidence": "✓ Stadium location: \"Old Trafford, Sir Matt Busby Way, Stretford\"\n✓ How to buy: \"Browse and book in 3 easy steps\"\n✓ Ticket prices: \"Category A from £75\"\n✓ Fixtures: \"All upcoming fixtures listed below\"\n✓ Hospitality: \"Executive boxes from £200pp\"\n✗ Away fans: not answered\n✗ Trust: not answered", "recommendation": "Add Old Trafford travel guide, fixture list, hospitality section, and away fan info."},
+        {"dimension": "Trust Signals", "score_mine": 6, "score_competitor": 4, "gap": -2, "my_evidence": "guarantee: \"100% money back guarantee\"; reviews: \"Rated 4.6 on Trustpilot\"; security: \"secure checkout\"", "competitor_evidence": "security: \"SSL secured\"; reviews: \"customer rated\"", "recommendation": "Trust signals are strong — keep Trustpilot and guarantee prominent."},
+        {"dimension": "Transactional Clarity", "score_mine": 8, "score_competitor": 6, "gap": -2, "my_evidence": "✓ CTA: \"Buy Man Utd Tickets Now\"\n✓ Price Range: \"From £60\"\n✓ Delivery: \"E-tickets and print-at-home\"\n✓ Booking: \"3-step checkout process\"", "competitor_evidence": "✓ CTA: \"Find Tickets\"\n✓ Price Range: \"From £75\"\n✗ Delivery: not found\n✗ Booking process: not found", "recommendation": "Transactional clarity is strong."},
+        {"dimension": "Freshness Signals", "score_mine": 5, "score_competitor": 5, "gap": 0, "my_evidence": "season reference: '2025/26'; language: 'upcoming'", "competitor_evidence": "season reference: '2025/26'; dates: 'February 2026'", "recommendation": "Add more current season fixture dates."},
+        {"dimension": "FAQ Coverage", "score_mine": 0, "score_competitor": 7, "gap": 7, "my_evidence": "No FAQ section or question-format headings found.", "competitor_evidence": "3 question headings: How do I buy Man Utd tickets?, Is Old Trafford easy to get to?, Are hospitality options available?", "recommendation": "Add a FAQ section with at least 5 questions, including:\n  - Where is the stadium and how do I get there?\n  - How much do tickets cost?\n  - How do I actually buy tickets?\n  - When are the next fixtures?\n  - Are there hospitality or premium options?"},
+        {"dimension": "Internal Linking", "score_mine": 7, "score_competitor": 5, "gap": -2, "my_evidence": "8 internal links found", "competitor_evidence": "5 internal links found", "recommendation": "Add more internal links to related content."}
+      ],
       "my_title": "Manchester United Tickets | Buy Man Utd Tickets",
       "my_h1": "Manchester United Tickets",
-      "my_headings": [
-        {"level": 2, "text": "Man Utd Home Fixtures"},
-        {"level": 2, "text": "Old Trafford Stadium Guide"},
-        {"level": 2, "text": "Manchester United Hospitality"}
-      ],
+      "my_headings": [{"level": "h2", "text": "Man Utd Home Fixtures"}, {"level": "h2", "text": "Old Trafford Stadium Guide"}, {"level": "h2", "text": "Manchester United Hospitality"}],
       "comp_title": "Manchester United Tickets - SeatPick",
       "comp_h1": "Manchester United Football Club Tickets",
-      "comp_headings": [
-        {"level": 2, "text": "Upcoming Man Utd Matches"},
-        {"level": 2, "text": "About Manchester United"}
-      ]
+      "comp_headings": [{"level": "h2", "text": "Upcoming Man Utd Matches"}, {"level": "h2", "text": "About Manchester United"}, {"level": "h3", "text": "How do I buy Man Utd tickets?"}]
     },
     {
       "slug": "chelsea",
@@ -103,28 +124,35 @@
       "competitor_url": "https://seatpick.com/chelsea-tickets",
       "my_word_count": 8557,
       "competitor_word_count": 5519,
-      "content_depth_score_mine": 7,
+      "content_depth_score_mine": 6,
       "content_depth_score_competitor": 5,
+      "my_depth_score_weighted": 5.6,
+      "competitor_depth_score_weighted": 5.8,
+      "status": "unchanged",
       "last_change_detected": null,
       "change_pct": 0.0,
       "change_summary": "",
-      "content_gaps": [],
-      "keywords_they_cover": [],
-      "recommendations": "",
-      "status": "unchanged",
+      "content_gaps": ["FAQ section missing", "Stamford Bridge renovation info absent"],
+      "keywords_they_cover": ["stamford bridge guide", "chelsea hospitality", "chelsea away tickets"],
+      "recommendations": "1. Add FAQ section. 2. Add Stamford Bridge renovation update. 3. Add hospitality pricing.",
+      "my_dimension_scores": {"word_count": 10, "heading_structure": 6, "question_coverage": 4, "trust_signals": 4, "transactional_clarity": 7, "freshness": 3, "faq_coverage": 0, "internal_linking": 7},
+      "competitor_dimension_scores": {"word_count": 8, "heading_structure": 6, "question_coverage": 6, "trust_signals": 2, "transactional_clarity": 5, "freshness": 3, "faq_coverage": 7, "internal_linking": 5},
+      "dimensions": [
+        {"dimension": "Word Count Adequacy", "score_mine": 10, "score_competitor": 8, "gap": -2, "my_evidence": "8,557 words in extracted body text", "competitor_evidence": "5,519 words in extracted body text", "recommendation": "Word count (8,557) is already competitive."},
+        {"dimension": "Heading Structure", "score_mine": 6, "score_competitor": 6, "gap": 0, "my_evidence": "4 H2s, 2 H3s — adequate structure.", "competitor_evidence": "4 H2s, 0 H3s — flat structure, no sub-sections.", "recommendation": "Add H3 sub-sections to existing H2s for better depth."},
+        {"dimension": "Question Coverage", "score_mine": 4, "score_competitor": 6, "gap": 2, "my_evidence": "✓ How to buy: \"Buy Chelsea tickets securely\"\n✓ Prices: \"Chelsea tickets from £50\"\n✗ Stadium/travel: not answered\n✗ Fixtures: not answered\n✗ Hospitality: not answered\n✗ Away fans: not answered\n✗ Trust: not answered", "competitor_evidence": "✓ Stadium: \"Stamford Bridge, Fulham Road, London\"\n✓ Buy process: \"Find your match and book\"\n✓ Prices: \"From £55\"\n✓ Fixtures: \"Upcoming Chelsea matches below\"\n✗ Hospitality: not answered\n✗ Away fans: not answered\n✗ Trust: not answered", "recommendation": "Add Stamford Bridge travel guide, hospitality section, and away fan information."},
+        {"dimension": "Trust Signals", "score_mine": 4, "score_competitor": 2, "gap": -2, "my_evidence": "guarantee: \"guaranteed tickets\"; security: \"safe checkout\"", "competitor_evidence": "security: \"secure\"", "recommendation": "Trust signals lead competitor — add Trustpilot rating for further improvement."},
+        {"dimension": "Transactional Clarity", "score_mine": 7, "score_competitor": 5, "gap": -2, "my_evidence": "✓ CTA: \"Buy Chelsea Tickets\"\n✓ Price Range: \"From £50\"\n✓ Booking: \"Simple 3-step checkout\"\n✗ Delivery: not found", "competitor_evidence": "✓ CTA: \"Find Tickets\"\n✓ Price Range: \"From £55\"\n✗ Delivery: not found\n✗ Booking process: not found", "recommendation": "Add delivery/collection method explanation."},
+        {"dimension": "Freshness Signals", "score_mine": 3, "score_competitor": 3, "gap": 0, "my_evidence": "season reference: '2025'", "competitor_evidence": "season reference: '2025'", "recommendation": "Add '2025/26 season' references, upcoming fixture dates, and 'latest' language throughout."},
+        {"dimension": "FAQ Coverage", "score_mine": 0, "score_competitor": 7, "gap": 7, "my_evidence": "No FAQ section or question-format headings found.", "competitor_evidence": "3 question headings: How do I buy Chelsea tickets?, Where is Stamford Bridge?, Can I get a refund?", "recommendation": "Add a FAQ section with at least 5 questions, including:\n  - Where is the stadium and how do I get there?\n  - How much do tickets cost?\n  - How do I actually buy tickets?\n  - When are the next fixtures?\n  - Are there hospitality or premium options?"},
+        {"dimension": "Internal Linking", "score_mine": 7, "score_competitor": 5, "gap": -2, "my_evidence": "8 internal links found", "competitor_evidence": "5 internal links found", "recommendation": "Add more internal links to Premier League team pages and competition pages."}
+      ],
       "my_title": "Chelsea Tickets | Buy Chelsea FC Tickets",
       "my_h1": "Chelsea FC Tickets",
-      "my_headings": [
-        {"level": 2, "text": "Chelsea Home Fixtures"},
-        {"level": 2, "text": "Stamford Bridge Guide"},
-        {"level": 2, "text": "Chelsea Hospitality"}
-      ],
+      "my_headings": [{"level": "h2", "text": "Chelsea Home Fixtures"}, {"level": "h2", "text": "Stamford Bridge Guide"}, {"level": "h2", "text": "Chelsea Hospitality"}],
       "comp_title": "Chelsea Tickets - SeatPick",
       "comp_h1": "Chelsea Football Club Tickets",
-      "comp_headings": [
-        {"level": 2, "text": "Upcoming Chelsea Matches"},
-        {"level": 2, "text": "About Chelsea FC"}
-      ]
+      "comp_headings": [{"level": "h2", "text": "Upcoming Chelsea Matches"}, {"level": "h2", "text": "About Chelsea FC"}, {"level": "h3", "text": "How do I buy Chelsea tickets?"}]
     },
     {
       "slug": "newcastle-united",
@@ -132,33 +160,35 @@
       "competitor_url": "https://seatpick.com/newcastle-united-tickets",
       "my_word_count": 4107,
       "competitor_word_count": 5585,
-      "content_depth_score_mine": 4,
-      "content_depth_score_competitor": 6,
+      "content_depth_score_mine": 3,
+      "content_depth_score_competitor": 7,
+      "my_depth_score_weighted": 3.4,
+      "competitor_depth_score_weighted": 7.1,
+      "status": "changed",
       "last_change_detected": "2026-02-18T08:12:34Z",
       "change_pct": 8.3,
-      "change_summary": "Competitor added a new section on Newcastle United's Champions League campaign and updated ticket pricing for the second half of the season. Strategic focus appears to be targeting 'Newcastle Champions League tickets' search terms.",
-      "content_gaps": [
-        "Champions League section missing",
-        "Stadium renovation history not covered",
-        "Away fans guide absent",
-        "Hospitality package details thin"
+      "change_summary": "Competitor added a Champions League section with fixture list and updated ticket pricing for the second half of the season. Strategic focus appears to be targeting 'Newcastle Champions League tickets' long-tail keywords.",
+      "content_gaps": ["Champions League section missing", "Stadium travel guide absent", "Away fans guide missing", "Hospitality pricing not covered", "FAQ section missing"],
+      "keywords_they_cover": ["newcastle champions league tickets", "st james park guide", "toon army hospitality", "newcastle away tickets"],
+      "recommendations": "1. Add Champions League section urgently — competitor is targeting these keywords.\n2. Add St James' Park travel guide.\n3. Add FAQ section.\n4. Expand word count by ~1,500 words.",
+      "my_dimension_scores": {"word_count": 6, "heading_structure": 4, "question_coverage": 1, "trust_signals": 2, "transactional_clarity": 5, "freshness": 3, "faq_coverage": 0, "internal_linking": 5},
+      "competitor_dimension_scores": {"word_count": 8, "heading_structure": 7, "question_coverage": 9, "trust_signals": 4, "transactional_clarity": 8, "freshness": 10, "faq_coverage": 10, "internal_linking": 7},
+      "dimensions": [
+        {"dimension": "Word Count Adequacy", "score_mine": 6, "score_competitor": 8, "gap": 2, "my_evidence": "4,107 words in extracted body text", "competitor_evidence": "5,585 words in extracted body text", "recommendation": "Add ~1,500 words. Focus on Champions League section, travel guide, and FAQs."},
+        {"dimension": "Heading Structure", "score_mine": 4, "score_competitor": 7, "gap": 3, "my_evidence": "2 H2s, 0 H3s. H2s: Newcastle Home Fixtures, St James' Park Guide — limited structure.", "competitor_evidence": "5 H2s, 3 H3s. H2s: Newcastle Fixtures, Champions League 2025-26, Stadium Guide, Hospitality, Buy Tickets — well varied.", "recommendation": "Add more H2s covering Champions League, hospitality, travel, and FAQs."},
+        {"dimension": "Question Coverage", "score_mine": 1, "score_competitor": 9, "gap": 8, "my_evidence": "✗ Stadium/travel: not answered\n✗ Ticket prices: not answered\n✗ How to buy: not answered\n✗ Fixtures: not answered\n✗ Hospitality: not answered\n✗ Away fans: not answered\n✓ Trust: \"100% secure\"", "competitor_evidence": "✓ Stadium: \"St James' Park is in Newcastle city centre\"\n✓ Prices: \"Newcastle tickets from £40\"\n✓ How to buy: \"Select your match and checkout securely\"\n✓ Fixtures: \"View all 2025-26 fixtures including Champions League\"\n✓ Hospitality: \"Executive boxes from £150pp\"\n✓ Away fans: \"Away supporters in the Gallowgate End\"\n✗ Trust: not answered", "recommendation": "CRITICAL: Page answers almost no buyer questions. Add stadium guide, pricing, fixture list, hospitality, and away fan sections."},
+        {"dimension": "Trust Signals", "score_mine": 2, "score_competitor": 4, "gap": 2, "my_evidence": "security: \"secure\"", "competitor_evidence": "guarantee: \"guaranteed tickets\"; security: \"safe checkout\"", "recommendation": "Add guarantee statement, Trustpilot rating, and security badge."},
+        {"dimension": "Transactional Clarity", "score_mine": 5, "score_competitor": 8, "gap": 3, "my_evidence": "✓ CTA: \"Buy Newcastle Tickets\"\n✓ Price Range: \"From £35\"\n✗ Delivery: not found\n✗ Booking Process: not found", "competitor_evidence": "✓ CTA: \"Find Newcastle Tickets\"\n✓ Price Range: \"From £40\"\n✓ Delivery: \"E-tickets delivered instantly\"\n✓ Booking: \"3 simple steps to your tickets\"", "recommendation": "Add delivery method and step-by-step booking process explanation."},
+        {"dimension": "Freshness Signals", "score_mine": 3, "score_competitor": 10, "gap": 7, "my_evidence": "season reference: '2025'", "competitor_evidence": "season/year: '2025/26'; fixture date: 'February 19, 2026'; form language: 'latest results'; freshness: 'upcoming Champions League'", "recommendation": "CRITICAL: Add current season references, upcoming fixture dates, Champions League content, and 'latest' language."},
+        {"dimension": "FAQ Coverage", "score_mine": 0, "score_competitor": 10, "gap": 10, "my_evidence": "No FAQ section or question-format headings found.", "competitor_evidence": "Explicit FAQ section with 5 questions including: How do I buy Newcastle tickets?, Is St James' Park easy to get to?, Are Champions League tickets available?, Can I get a refund?, What is the stadium capacity?", "recommendation": "Add a FAQ section with at least 5 questions, including:\n  - Where is the stadium and how do I get there?\n  - How much do tickets cost?\n  - How do I actually buy tickets?\n  - When are the next fixtures?\n  - Are there hospitality or premium options?"},
+        {"dimension": "Internal Linking", "score_mine": 5, "score_competitor": 7, "gap": 2, "my_evidence": "4 internal links found", "competitor_evidence": "7 internal links found", "recommendation": "Add more internal links to Champions League pages, other team pages, and hospitality."}
       ],
-      "keywords_they_cover": ["newcastle champions league tickets", "st james park guide", "toon army hospitality"],
-      "recommendations": "1. Add a Champions League section with fixture list. 2. Expand stadium guide to 400+ words. 3. Add away supporters section.",
-      "status": "changed",
       "my_title": "Newcastle United Tickets | Buy Newcastle Tickets",
       "my_h1": "Newcastle United Tickets",
-      "my_headings": [
-        {"level": 2, "text": "Newcastle Home Fixtures"},
-        {"level": 2, "text": "St James' Park Guide"}
-      ],
+      "my_headings": [{"level": "h2", "text": "Newcastle Home Fixtures"}, {"level": "h2", "text": "St James' Park Guide"}],
       "comp_title": "Newcastle United Tickets - SeatPick",
       "comp_h1": "Newcastle United Football Club Tickets",
-      "comp_headings": [
-        {"level": 2, "text": "Upcoming Newcastle Matches"},
-        {"level": 2, "text": "Newcastle Champions League 2025-26"},
-        {"level": 2, "text": "About Newcastle United"}
-      ]
+      "comp_headings": [{"level": "h2", "text": "Upcoming Newcastle Matches"}, {"level": "h2", "text": "Newcastle Champions League 2025-26"}, {"level": "h2", "text": "About Newcastle United"}, {"level": "h3", "text": "How do I buy Newcastle tickets?"}, {"level": "h3", "text": "Is St James' Park easy to get to?"}]
     },
     {
       "slug": "fa-cup",
@@ -168,26 +198,33 @@
       "competitor_word_count": 4137,
       "content_depth_score_mine": 6,
       "content_depth_score_competitor": 5,
+      "my_depth_score_weighted": 5.9,
+      "competitor_depth_score_weighted": 5.5,
+      "status": "unchanged",
       "last_change_detected": null,
       "change_pct": 0.0,
       "change_summary": "",
       "content_gaps": [],
-      "keywords_they_cover": [],
-      "recommendations": "",
-      "status": "unchanged",
+      "keywords_they_cover": ["fa cup semi final tickets", "wembley fa cup tickets"],
+      "recommendations": "1. Add FAQ section. 2. Add Wembley travel guide. 3. Add round-by-round fixture list.",
+      "my_dimension_scores": {"word_count": 8, "heading_structure": 7, "question_coverage": 5, "trust_signals": 4, "transactional_clarity": 7, "freshness": 8, "faq_coverage": 4, "internal_linking": 7},
+      "competitor_dimension_scores": {"word_count": 6, "heading_structure": 6, "question_coverage": 5, "trust_signals": 2, "transactional_clarity": 5, "freshness": 8, "faq_coverage": 4, "internal_linking": 5},
+      "dimensions": [
+        {"dimension": "Word Count Adequacy", "score_mine": 8, "score_competitor": 6, "gap": -2, "my_evidence": "5,208 words in extracted body text", "competitor_evidence": "4,137 words in extracted body text", "recommendation": "Word count is competitive. Add ~800 more words targeting round-by-round content."},
+        {"dimension": "Heading Structure", "score_mine": 7, "score_competitor": 6, "gap": -1, "my_evidence": "5 H2s, 2 H3s — covers rounds, Wembley, history, buy process.", "competitor_evidence": "4 H2s, 0 H3s — adequate but no sub-sections.", "recommendation": "Heading structure is competitive."},
+        {"dimension": "Question Coverage", "score_mine": 5, "score_competitor": 5, "gap": 0, "my_evidence": "✓ Rounds available: \"FA Cup runs from Round 1 through to the Final\"\n✓ Teams: \"All 92 Premier League and Football League clubs\"\n✓ How to buy: \"Buy FA Cup tickets securely\"\n✗ Match dates: not answered\n✗ Venues: not answered\n✗ Price range: not answered", "competitor_evidence": "✓ Rounds: \"From first round to Wembley Final\"\n✓ Teams: \"England's top clubs compete\"\n✓ Buy process: \"Find FA Cup tickets now\"\n✗ Dates: not answered\n✗ Venues: not answered\n✗ Prices: not answered", "recommendation": "Add match dates, venue guides, and price ranges for each round."},
+        {"dimension": "Trust Signals", "score_mine": 4, "score_competitor": 2, "gap": -2, "my_evidence": "guarantee: \"100% guaranteed\"; security: \"safe checkout\"", "competitor_evidence": "security: \"secure\"", "recommendation": "Trust signals lead competitor — add Trustpilot rating for further improvement."},
+        {"dimension": "Transactional Clarity", "score_mine": 7, "score_competitor": 5, "gap": -2, "my_evidence": "✓ CTA: \"Buy FA Cup Tickets\"\n✓ Price Range: \"From £25 for early rounds\"\n✓ Booking: \"Select round, choose match, checkout\"\n✗ Delivery: not found", "competitor_evidence": "✓ CTA: \"Find FA Cup Tickets\"\n✓ Price Range: \"Prices vary by round\"\n✗ Delivery: not found\n✗ Booking: not found", "recommendation": "Add delivery/e-ticket explanation."},
+        {"dimension": "Freshness Signals", "score_mine": 8, "score_competitor": 8, "gap": 0, "my_evidence": "season: '2025/26'; fixture dates: 'February 2026'; language: 'upcoming'", "competitor_evidence": "season: '2025/26'; fixture dates: 'March 2026'; language: 'latest'", "recommendation": "Freshness signals are strong — keep fixture dates updated after each round."},
+        {"dimension": "FAQ Coverage", "score_mine": 4, "score_competitor": 4, "gap": 0, "my_evidence": "2 question headings: How do I buy FA Cup tickets?, When are FA Cup matches?", "competitor_evidence": "2 question headings: How do I buy FA Cup tickets?, What rounds are available?", "recommendation": "Expand FAQ to 5+ questions covering venues, prices, and refund policy."},
+        {"dimension": "Internal Linking", "score_mine": 7, "score_competitor": 5, "gap": -2, "my_evidence": "8 internal links found", "competitor_evidence": "5 internal links found", "recommendation": "Add internal links to participating team pages and Wembley guide."}
+      ],
       "my_title": "FA Cup Tickets | Buy FA Cup Football Tickets",
       "my_h1": "FA Cup Tickets",
-      "my_headings": [
-        {"level": 2, "text": "FA Cup Fixtures 2025-26"},
-        {"level": 2, "text": "Wembley Stadium Guide"},
-        {"level": 2, "text": "FA Cup Finals History"}
-      ],
+      "my_headings": [{"level": "h2", "text": "FA Cup Fixtures 2025-26"}, {"level": "h2", "text": "Wembley Stadium Guide"}, {"level": "h2", "text": "FA Cup Finals History"}],
       "comp_title": "FA Cup Tickets - SeatPick",
       "comp_h1": "FA Cup Football Tickets",
-      "comp_headings": [
-        {"level": 2, "text": "Upcoming FA Cup Matches"},
-        {"level": 2, "text": "About the FA Cup"}
-      ]
+      "comp_headings": [{"level": "h2", "text": "Upcoming FA Cup Matches"}, {"level": "h2", "text": "About the FA Cup"}, {"level": "h3", "text": "How do I buy FA Cup tickets?"}]
     },
     {
       "slug": "world-cup",
@@ -197,26 +234,33 @@
       "competitor_word_count": 6918,
       "content_depth_score_mine": 8,
       "content_depth_score_competitor": 7,
+      "my_depth_score_weighted": 6.8,
+      "competitor_depth_score_weighted": 6.4,
+      "status": "unchanged",
       "last_change_detected": null,
       "change_pct": 0.0,
       "change_summary": "",
       "content_gaps": [],
-      "keywords_they_cover": [],
-      "recommendations": "",
-      "status": "unchanged",
+      "keywords_they_cover": ["world cup 2026 venues", "world cup group stage tickets"],
+      "recommendations": "1. Add more host city venue guides. 2. Expand group stage fixture list.",
+      "my_dimension_scores": {"word_count": 10, "heading_structure": 9, "question_coverage": 7, "trust_signals": 4, "transactional_clarity": 8, "freshness": 10, "faq_coverage": 7, "internal_linking": 7},
+      "competitor_dimension_scores": {"word_count": 8, "heading_structure": 7, "question_coverage": 6, "trust_signals": 4, "transactional_clarity": 6, "freshness": 10, "faq_coverage": 7, "internal_linking": 5},
+      "dimensions": [
+        {"dimension": "Word Count Adequacy", "score_mine": 10, "score_competitor": 8, "gap": -2, "my_evidence": "8,581 words in extracted body text", "competitor_evidence": "6,918 words in extracted body text", "recommendation": "Word count (8,581) is already competitive."},
+        {"dimension": "Heading Structure", "score_mine": 9, "score_competitor": 7, "gap": -2, "my_evidence": "6 H2s, 5 H3s — comprehensive structure with host cities, groups, buy guide, FAQs.", "competitor_evidence": "5 H2s, 2 H3s — good but less detailed sub-sections.", "recommendation": "Heading structure is strong — maintain and expand H3s."},
+        {"dimension": "Question Coverage", "score_mine": 7, "score_competitor": 6, "gap": -1, "my_evidence": "✓ Rounds: \"Group stage through to Final at MetLife Stadium\"\n✓ Teams: \"32 nations qualify for World Cup 2026\"\n✓ Dates: \"June-July 2026\"\n✓ Venues: \"16 host cities across USA, Canada, Mexico\"\n✓ How to buy: \"Buy World Cup 2026 tickets now\"\n✗ Price range: not answered", "competitor_evidence": "✓ Rounds: \"Group stage to Final\"\n✓ Teams: \"32 nations\"\n✓ Dates: \"Summer 2026\"\n✓ How to buy: \"Find World Cup tickets\"\n✗ Venues detail: not answered\n✗ Price range: not answered", "recommendation": "Add specific ticket price ranges for each stage of the tournament."},
+        {"dimension": "Trust Signals", "score_mine": 4, "score_competitor": 4, "gap": 0, "my_evidence": "guarantee: \"100% guaranteed\"; security: \"safe and secure checkout\"", "competitor_evidence": "guarantee: \"buyer guarantee\"; security: \"SSL secured\"", "recommendation": "Add Trustpilot rating and years-in-business claim for stronger trust."},
+        {"dimension": "Transactional Clarity", "score_mine": 8, "score_competitor": 6, "gap": -2, "my_evidence": "✓ CTA: \"Buy World Cup 2026 Tickets\"\n✓ Price Range: \"Group stage from £120\"\n✓ Delivery: \"E-tickets and mobile delivery\"\n✓ Booking: \"Select match, stage, and seats\"", "competitor_evidence": "✓ CTA: \"Find World Cup Tickets\"\n✓ Price Range: \"Prices vary by match\"\n✗ Delivery: not found\n✗ Booking: not found", "recommendation": "Transactional clarity is strong."},
+        {"dimension": "Freshness Signals", "score_mine": 10, "score_competitor": 10, "gap": 0, "my_evidence": "season/year: '2026'; fixture dates: 'June 2026'; language: 'upcoming World Cup 2026'", "competitor_evidence": "year: '2026'; dates: 'Summer 2026'; language: 'latest World Cup'", "recommendation": "Freshness signals are excellent — keep updated as fixtures are confirmed."},
+        {"dimension": "FAQ Coverage", "score_mine": 7, "score_competitor": 7, "gap": 0, "my_evidence": "3 question headings: How do I buy World Cup 2026 tickets?, Which cities are hosting?, When are group stage matches?", "competitor_evidence": "3 question headings: How do I buy World Cup tickets?, Where are the venues?, When does it start?", "recommendation": "Expand FAQ to 5+ questions adding price ranges and refund policy."},
+        {"dimension": "Internal Linking", "score_mine": 7, "score_competitor": 5, "gap": -2, "my_evidence": "8 internal links found", "competitor_evidence": "5 internal links found", "recommendation": "Add internal links to host city pages and qualification content."}
+      ],
       "my_title": "World Cup Tickets | Buy FIFA World Cup 2026 Tickets",
       "my_h1": "World Cup 2026 Tickets",
-      "my_headings": [
-        {"level": 2, "text": "World Cup 2026 Fixtures"},
-        {"level": 2, "text": "Host Cities Guide"},
-        {"level": 2, "text": "How to Buy World Cup Tickets"}
-      ],
+      "my_headings": [{"level": "h2", "text": "World Cup 2026 Fixtures"}, {"level": "h2", "text": "Host Cities Guide"}, {"level": "h2", "text": "How to Buy World Cup Tickets"}, {"level": "h3", "text": "How do I buy World Cup 2026 tickets?"}, {"level": "h3", "text": "Which cities are hosting?"}],
       "comp_title": "World Cup Tickets - SeatPick",
       "comp_h1": "FIFA World Cup Tickets",
-      "comp_headings": [
-        {"level": 2, "text": "Upcoming World Cup Matches"},
-        {"level": 2, "text": "About FIFA World Cup 2026"}
-      ]
+      "comp_headings": [{"level": "h2", "text": "Upcoming World Cup Matches"}, {"level": "h2", "text": "About FIFA World Cup 2026"}, {"level": "h3", "text": "How do I buy World Cup tickets?"}]
     }
   ]
 }

@@ -198,27 +198,110 @@
     .bar-fill.mine { background: var(--green); }
     .bar-fill.comp { background: #4A8EFF; }
 
-    /* depth scores */
-    .scores-row {
+    /* ── Overall score row ───────────────────────────────────────────────── */
+    .overall-scores {
       display: flex;
-      gap: 16px;
-      margin: 12px 0 14px;
+      gap: 10px;
+      margin: 12px 0 10px;
     }
-    .score-item {
+    .overall-score-box {
       flex: 1;
       background: var(--navy);
       border-radius: 6px;
       padding: 8px 10px;
     }
-    .score-label { font-size: 10px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: .4px; }
-    .score-value {
+    .overall-score-label { font-size: 10px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: .4px; }
+    .overall-score-value {
       font-size: 22px;
       font-weight: 700;
       color: #fff;
       line-height: 1.1;
       margin-top: 2px;
     }
-    .score-value span { font-size: 12px; color: var(--text-muted); font-weight: 400; }
+    .overall-score-value span { font-size: 12px; color: var(--text-muted); font-weight: 400; }
+
+    /* ── Dimension table ─────────────────────────────────────────────────── */
+    .dim-section { margin: 4px 0 14px; }
+    .dim-header {
+      display: grid;
+      grid-template-columns: 1fr 32px 32px 40px;
+      gap: 4px;
+      padding: 4px 6px 4px 8px;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2px;
+    }
+    .dim-header span:nth-child(2) { color: var(--green); text-align: center; }
+    .dim-header span:nth-child(3) { color: #4A8EFF;      text-align: center; }
+    .dim-header span:nth-child(4) { text-align: right; }
+
+    .dim-row {
+      display: grid;
+      grid-template-columns: 1fr 32px 32px 40px;
+      gap: 4px;
+      align-items: center;
+      padding: 5px 6px 5px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background .1s;
+    }
+    .dim-row:hover { background: var(--navy-hover); }
+    .dim-name {
+      font-size: 11px;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .dim-score {
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 3px;
+      padding: 2px 0;
+    }
+    .dim-score.win  { color: var(--green); }
+    .dim-score.lose { color: var(--amber); }
+    .dim-score.crit { color: var(--red);   }
+    .dim-score.draw { color: var(--text-muted); }
+    .dim-gap {
+      font-size: 11px;
+      font-weight: 600;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .dim-gap.pos  { color: var(--green); }
+    .dim-gap.neg  { color: var(--amber); }
+    .dim-gap.crit { color: var(--red); }
+    .dim-gap.zero { color: var(--text-muted); }
+
+    /* evidence panel */
+    .dim-evidence {
+      display: none;
+      background: var(--navy);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 10px 12px;
+      margin: 2px 0 4px;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+    .dim-evidence.visible { display: block; }
+    .dim-ev-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      margin-bottom: 3px;
+    }
+    .dim-ev-label.mine { color: var(--green); }
+    .dim-ev-label.comp { color: #4A8EFF; margin-top: 8px; }
+    .dim-ev-label.reco { color: var(--amber); margin-top: 8px; }
+    .dim-ev-text { color: var(--text); white-space: pre-line; }
 
     /* change info */
     .change-pct {
@@ -682,6 +765,51 @@
     const badgeCls = `badge badge-${p.status}`;
     const badgeTxt = p.status === 'changed' ? 'Changed' : p.status === 'error' ? 'Error' : 'Unchanged';
 
+    const slugDisplay = p.slug.replace(/-/g,' ');
+    const myW  = p.my_depth_score_weighted  || p.content_depth_score_mine  || 0;
+    const cmpW = p.competitor_depth_score_weighted || p.content_depth_score_competitor || 0;
+    const overallGap = +(myW - cmpW).toFixed(1);
+    const overallGapCls = overallGap > 0 ? 'pos' : overallGap < 0 ? 'neg' : 'zero';
+    const overallGapTxt = overallGap > 0 ? `+${overallGap}` : `${overallGap}`;
+
+    // Dimension rows
+    const dims = p.dimensions || [];
+    const dimRows = dims.map((d, i) => {
+      const gap = d.score_mine - d.score_competitor;
+      const isCrit = gap <= -5;
+      const gapCls = isCrit ? 'crit' : gap > 0 ? 'pos' : gap < 0 ? 'neg' : 'zero';
+      const gapTxt = gap > 0 ? `+${gap}↑` : gap < 0 ? `${gap}↓` : '—';
+      const myScoreCls  = d.score_mine  >= 7 ? 'win' : d.score_mine  <= 3 ? 'crit' : 'draw';
+      const cmpScoreCls = d.score_competitor >= 7 ? 'win' : d.score_competitor <= 3 ? 'crit' : 'draw';
+      const shortName = d.dimension
+        .replace('Adequacy','').replace('Coverage','').replace('Signals','')
+        .replace('Structure','Struct.').replace('Clarity','Clarity').trim();
+      const cardId = p.slug.replace(/-/g,'_');
+      return `
+        <div class="dim-row" onclick="toggleEvidence('${cardId}_${i}')">
+          <span class="dim-name" title="${esc(d.dimension)}">${esc(shortName)}</span>
+          <span class="dim-score ${myScoreCls}">${d.score_mine}</span>
+          <span class="dim-score ${cmpScoreCls}">${d.score_competitor}</span>
+          <span class="dim-gap ${gapCls}">${gapTxt}</span>
+        </div>
+        <div class="dim-evidence" id="ev_${cardId}_${i}">
+          <div class="dim-ev-label mine">My page</div>
+          <div class="dim-ev-text">${esc(d.my_evidence || '—')}</div>
+          <div class="dim-ev-label comp">Competitor</div>
+          <div class="dim-ev-text">${esc(d.competitor_evidence || '—')}</div>
+          <div class="dim-ev-label reco">Recommendation</div>
+          <div class="dim-ev-text">${esc(d.recommendation || '—')}</div>
+        </div>`;
+    }).join('');
+
+    const dimSection = dims.length ? `
+      <div class="dim-section">
+        <div class="dim-header">
+          <span>Dimension</span><span>Me</span><span>Comp</span><span>Gap</span>
+        </div>
+        ${dimRows}
+      </div>` : '';
+
     const gapPills = p.content_gaps && p.content_gaps.length
       ? p.content_gaps.map(g => `<span class="gap-pill">${esc(g)}</span>`).join('')
       : '<span class="no-gaps">No gaps identified yet</span>';
@@ -696,8 +824,6 @@
     const changeLine = p.change_pct > 0
       ? `<p class="change-pct">Last change: <strong>${p.change_pct}%</strong></p>`
       : '';
-
-    const slugDisplay = p.slug.replace(/-/g,' ');
 
     return `
     <div class="card status-${p.status}">
@@ -716,16 +842,21 @@
           <div class="bar-track"><div class="bar-fill comp" style="width:${compPct}%"></div></div>
           <span class="wc-value">${p.competitor_word_count.toLocaleString()}</span>
         </div>
-        <div class="scores-row">
-          <div class="score-item">
-            <div class="score-label">My depth</div>
-            <div class="score-value">${p.content_depth_score_mine}<span>/10</span></div>
+        <div class="overall-scores">
+          <div class="overall-score-box">
+            <div class="overall-score-label">My depth score</div>
+            <div class="overall-score-value">${myW.toFixed(1)}<span>/10</span></div>
           </div>
-          <div class="score-item">
-            <div class="score-label">Comp depth</div>
-            <div class="score-value">${p.content_depth_score_competitor}<span>/10</span></div>
+          <div class="overall-score-box">
+            <div class="overall-score-label">Comp depth score</div>
+            <div class="overall-score-value">${cmpW.toFixed(1)}<span>/10</span></div>
+          </div>
+          <div class="overall-score-box" style="flex:0;min-width:64px;">
+            <div class="overall-score-label">Gap</div>
+            <div class="overall-score-value dim-gap ${overallGapCls}" style="font-size:18px;">${overallGapTxt}</div>
           </div>
         </div>
+        ${dimSection}
         ${changeLine}
         ${summarySection}
         <div class="gaps-title">Content gaps</div>
@@ -739,6 +870,11 @@
         <button class="btn-compare" onclick='openModal(${JSON.stringify(p)})'>Compare &#8594;</button>
       </div>
     </div>`;
+  }
+
+  function toggleEvidence(id) {
+    const el = document.getElementById('ev_' + id);
+    if (el) el.classList.toggle('visible');
   }
 
   function toggleSummary(btn) {
