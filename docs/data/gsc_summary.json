@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-02-19T08:00:00Z",
+  "date_range": { "start": "2025-11-21", "end": "2026-02-17" },
+  "total_clicks_90d": 12450,
+  "total_impressions_90d": 385200,
+  "keywords_losing_rank": 18,
+  "quick_win_opportunities": 12,
+  "pages_tracked": 7,
+  "by_page": [
+    { "slug": "arsenal",           "clicks": 3840, "impressions": 87200, "losing_count": 2, "opp_count": 3 },
+    { "slug": "liverpool",         "clicks": 2180, "impressions": 72400, "losing_count": 3, "opp_count": 2 },
+    { "slug": "manchester-united", "clicks": 1840, "impressions": 68100, "losing_count": 3, "opp_count": 2 },
+    { "slug": "chelsea",           "clicks": 2190, "impressions": 61800, "losing_count": 2, "opp_count": 2 },
+    { "slug": "newcastle-united",  "clicks": 610,  "impressions": 48400, "losing_count": 5, "opp_count": 2 },
+    { "slug": "fa-cup",            "clicks": 980,  "impressions": 28900, "losing_count": 2, "opp_count": 1 },
+    { "slug": "world-cup",         "clicks": 810,  "impressions": 18400, "losing_count": 1, "opp_count": 0 }
+  ]
+}

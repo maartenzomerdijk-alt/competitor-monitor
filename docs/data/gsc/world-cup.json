@@ -1,0 +1,43 @@
+{
+  "slug": "world-cup",
+  "page_url": "https://www.livefootballtickets.com/world-cup-tickets.html",
+  "fetched_at": "2026-02-19T08:00:00Z",
+  "date_range": { "start": "2025-11-21", "end": "2026-02-17" },
+  "summary": {
+    "total_clicks_90d": 4820,
+    "total_impressions_90d": 96400,
+    "avg_position": 7.8,
+    "top_keyword": "world cup tickets 2026",
+    "top_keyword_position": 3.2,
+    "keywords_tracked": 15,
+    "losing_rank_count": 0,
+    "opportunities_count": 3
+  },
+  "keywords": [
+    { "keyword": "world cup tickets 2026",        "clicks": 1240, "impressions": 18400, "ctr": 6.7, "avg_position": 3.2,  "position_30d_ago": 3.4,  "position_last_7d": 3.0,  "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "buy world cup tickets",          "clicks": 820,  "impressions": 14200, "ctr": 5.8, "avg_position": 4.8,  "position_30d_ago": 5.0,  "position_last_7d": 4.6,  "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "world cup 2026 tickets",         "clicks": 680,  "impressions": 11800, "ctr": 5.8, "avg_position": 5.4,  "position_30d_ago": 5.6,  "position_last_7d": 5.2,  "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "fifa world cup tickets",         "clicks": 480,  "impressions": 9200,  "ctr": 5.2, "avg_position": 6.8,  "position_30d_ago": 7.0,  "position_last_7d": 6.6,  "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "world cup group stage tickets",  "clicks": 320,  "impressions": 7400,  "ctr": 4.3, "avg_position": 8.4,  "position_30d_ago": 8.6,  "position_last_7d": 8.2,  "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "world cup final tickets",        "clicks": 280,  "impressions": 6800,  "ctr": 4.1, "avg_position": 7.2,  "position_30d_ago": 7.4,  "position_last_7d": 7.0,  "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "world cup 2026 usa tickets",     "clicks": 240,  "impressions": 5800,  "ctr": 4.1, "avg_position": 9.6,  "position_30d_ago": 9.8,  "position_last_7d": 9.4,  "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "world cup tickets price",        "clicks": 180,  "impressions": 6200,  "ctr": 2.9, "avg_position": 11.4, "position_30d_ago": 11.6, "position_last_7d": 11.2, "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "cheap world cup tickets",        "clicks": 140,  "impressions": 5600,  "ctr": 2.5, "avg_position": 12.8, "position_30d_ago": 13.0, "position_last_7d": 12.6, "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "world cup semi final tickets",   "clicks": 120,  "impressions": 4200,  "ctr": 2.9, "avg_position": 10.2, "position_30d_ago": 10.4, "position_last_7d": 10.0, "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "world cup 2026 venues tickets",  "clicks": 88,   "impressions": 5800,  "ctr": 1.5, "avg_position": 14.6, "position_30d_ago": 14.8, "position_last_7d": 14.4, "position_delta": -0.4, "trend": "improving", "opportunity": true  },
+    { "keyword": "metlife stadium world cup",      "clicks": 62,   "impressions": 4800,  "ctr": 1.3, "avg_position": 16.2, "position_30d_ago": 16.4, "position_last_7d": 16.0, "position_delta": -0.4, "trend": "improving", "opportunity": true  },
+    { "keyword": "world cup hospitality packages", "clicks": 48,   "impressions": 5200,  "ctr": 0.9, "avg_position": 17.8, "position_30d_ago": 18.0, "position_last_7d": 17.6, "position_delta": -0.4, "trend": "improving", "opportunity": true  },
+    { "keyword": "world cup qualifier tickets",    "clicks": 38,   "impressions": 2400,  "ctr": 1.6, "avg_position": 12.4, "position_30d_ago": 12.6, "position_last_7d": 12.2, "position_delta": -0.4, "trend": "improving", "opportunity": false },
+    { "keyword": "england world cup tickets",      "clicks": 32,   "impressions": 1800,  "ctr": 1.8, "avg_position": 11.8, "position_30d_ago": 12.0, "position_last_7d": 11.6, "position_delta": -0.4, "trend": "improving", "opportunity": false }
+  ],
+  "losing_rank": [],
+  "opportunities": [
+    { "keyword": "world cup 2026 venues tickets",  "clicks": 88,  "impressions": 5800, "ctr": 1.5, "avg_position": 14.6, "trend": "improving", "opportunity": true },
+    { "keyword": "metlife stadium world cup",      "clicks": 62,  "impressions": 4800, "ctr": 1.3, "avg_position": 16.2, "trend": "improving", "opportunity": true },
+    { "keyword": "world cup hospitality packages", "clicks": 48,  "impressions": 5200, "ctr": 0.9, "avg_position": 17.8, "trend": "improving", "opportunity": true }
+  ],
+  "gap_correlations": [
+    { "topic": "world cup 2026 venues",       "gsc_signal": { "keyword": "world cup 2026 venues tickets", "impressions_90d": 5800, "avg_position": 14.6, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 15. Adding venue guide content could push you to page 1." } },
+    { "topic": "world cup group stage tickets","gsc_signal": { "keyword": "world cup group stage tickets","impressions_90d": 7400, "avg_position": 8.4,  "priority": "MEDIUM", "verdict": "Already ranking position 8 — strengthen content to improve further." } }
+  ]
+}

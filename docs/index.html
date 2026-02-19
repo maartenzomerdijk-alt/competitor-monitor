@@ -566,6 +566,152 @@
       .modal-body  { grid-template-columns: 1fr; }
       .modal-side + .modal-side { border-left: none; border-top: 1px solid var(--border); }
     }
+
+    /* ── GSC Summary bar ──────────────────────────────────────────────────── */
+    .gsc-bar-divider {
+      background: var(--navy-light);
+      border-bottom: 1px solid var(--border);
+      padding: 6px 24px;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      color: rgba(0,200,83,.7);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .gsc-bar-divider::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      flex-shrink: 0;
+    }
+    .summary-bar-gsc .kpi { background: rgba(13,27,42,.98); }
+
+    /* ── GSC card panel ───────────────────────────────────────────────────── */
+    .gsc-section {
+      margin-top: 14px;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+    .gsc-toggle {
+      width: 100%;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: 5px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background .15s;
+    }
+    .gsc-toggle:hover { background: var(--navy-hover); color: var(--text); }
+    .gsc-arrow { margin-left: auto; font-size: 10px; transition: transform .2s; }
+    .gsc-toggle.open .gsc-arrow { transform: rotate(180deg); }
+    .gsc-kw-count { color: var(--text-muted); font-size: 11px; }
+    .gsc-losing-badge {
+      font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px;
+      background: rgba(255,179,0,.2); color: var(--amber);
+    }
+    .gsc-opp-badge {
+      font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px;
+      background: var(--green-dim); color: var(--green);
+    }
+    .gsc-body { display: none; margin-top: 8px; }
+    .gsc-body.gsc-open { display: block; }
+
+    .losing-alert {
+      background: rgba(255,179,0,.08);
+      border: 1px solid rgba(255,179,0,.3);
+      border-radius: 5px;
+      padding: 7px 10px;
+      font-size: 11px;
+      color: var(--amber);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .losing-worst { font-style: italic; }
+
+    .kwt {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+    .kwt thead tr { border-bottom: 1px solid var(--border); }
+    .kwt th {
+      padding: 4px 6px;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      color: var(--text-muted);
+      text-align: left;
+    }
+    .kwt th.kwt-num, .kwt th.kwt-trend { text-align: right; }
+    .kwt td { padding: 4px 6px; vertical-align: middle; }
+    .kwt tbody tr { border-bottom: 1px solid rgba(37,61,90,.5); }
+    .kwt tbody tr:last-child { border-bottom: none; }
+    .kwt tbody tr:hover { background: var(--navy-hover); }
+    .kwt-kw { color: var(--text); max-width: 155px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .kwt-num { text-align: right; color: var(--text-muted); width: 44px; }
+    .kwt-trend { text-align: right; font-weight: 700; font-size: 13px; width: 28px; }
+    .td { color: var(--red); }
+    .ti { color: var(--green); }
+    .ts { color: var(--text-muted); }
+    .kw-losing .kwt-kw { color: var(--amber); }
+
+    .btn-kwx {
+      width: 100%;
+      background: none;
+      border: 1px dashed var(--border);
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin: 4px 0 8px;
+      transition: border-color .15s, color .15s;
+    }
+    .btn-kwx:hover { border-color: var(--green); color: var(--green); }
+
+    .opp-section { margin-top: 8px; }
+    .opp-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .4px; color: var(--green); margin-bottom: 5px;
+    }
+    .opp-list { display: flex; flex-wrap: wrap; gap: 5px; }
+    .opp-pill {
+      font-size: 10px;
+      background: var(--green-dim);
+      color: var(--green);
+      border: 1px solid rgba(0,200,83,.3);
+      padding: 3px 8px;
+      border-radius: 20px;
+      cursor: default;
+    }
+    .opp-pill em { color: var(--text-muted); font-style: normal; }
+
+    .gsc-badge {
+      display: inline-block;
+      font-size: 9px;
+      background: rgba(74,142,255,.15);
+      color: #7AB4FF;
+      border: 1px solid rgba(74,142,255,.3);
+      padding: 1px 5px;
+      border-radius: 8px;
+      margin-left: 4px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -599,6 +745,27 @@
   <div class="kpi">
     <span class="kpi-label">Avg competitor words</span>
     <span class="kpi-value" id="kpiCompWords">—</span>
+  </div>
+</div>
+
+<!-- ── GSC Summary bar ─────────────────────────────────────────────────────── -->
+<div class="gsc-bar-divider" id="gscBarDivider" style="display:none;">Search Console &mdash; 90-day overview</div>
+<div class="summary-bar summary-bar-gsc" id="gscSummaryBar" style="display:none;">
+  <div class="kpi">
+    <span class="kpi-label">Organic clicks (90d)</span>
+    <span class="kpi-value green" id="gscKpiClicks">—</span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label">Impressions (90d)</span>
+    <span class="kpi-value" id="gscKpiImpressions">—</span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label">Keywords losing rank</span>
+    <span class="kpi-value amber" id="gscKpiLosing">—</span>
+  </div>
+  <div class="kpi">
+    <span class="kpi-label">Quick win opportunities</span>
+    <span class="kpi-value green" id="gscKpiOpps">—</span>
   </div>
 </div>
 
@@ -714,25 +881,44 @@
   let historyShown = 20;
   let sortCol = 'date';
   let sortDir = -1;          // -1 = desc
+  let gscMap     = {};       // slug → per-page GSC data
+  let gscSummary = null;     // gsc_summary.json
 
   /* ── Data loading ────────────────────────────────────────────────────────── */
   async function loadData() {
     try {
-      const [latestRes, histRes] = await Promise.all([
-        fetch('./data/latest.json?_=' + Date.now()),
-        fetch('./data/history.json?_=' + Date.now()),
+      const ts = Date.now();
+      const [latestRes, histRes, gscSumRes] = await Promise.all([
+        fetch('./data/latest.json?_=' + ts),
+        fetch('./data/history.json?_=' + ts),
+        fetch('./data/gsc_summary.json?_=' + ts).catch(() => null),
       ]);
       latest  = await latestRes.json();
       history = await histRes.json();
+      gscSummary = gscSumRes ? await gscSumRes.json().catch(() => null) : null;
+
+      await loadGscData();
 
       renderHeader();
       renderSummary();
+      renderGscSummary();
       renderCards();
       buildHistoryFlat();
       renderHistory();
     } catch (e) {
       console.error('Failed to load data', e);
     }
+  }
+
+  async function loadGscData() {
+    if (!latest || !latest.pages) return;
+    const ts = Date.now();
+    await Promise.all(latest.pages.map(p =>
+      fetch('./data/gsc/' + p.slug + '.json?_=' + ts)
+        .then(r => r.ok ? r.json() : null)
+        .catch(() => null)
+        .then(d => { if (d) gscMap[p.slug] = d; })
+    ));
   }
 
   /* ── Header ──────────────────────────────────────────────────────────────── */
@@ -749,6 +935,16 @@
     document.getElementById('kpiChanged').textContent  = s.changed;
     document.getElementById('kpiMyWords').textContent  = s.avg_my_words.toLocaleString();
     document.getElementById('kpiCompWords').textContent= s.avg_comp_words.toLocaleString();
+  }
+
+  function renderGscSummary() {
+    if (!gscSummary) return;
+    document.getElementById('gscBarDivider').style.display = '';
+    document.getElementById('gscSummaryBar').style.display = '';
+    setText('gscKpiClicks',      gscSummary.total_clicks_90d.toLocaleString());
+    setText('gscKpiImpressions', (gscSummary.total_impressions_90d / 1000).toFixed(0) + 'k');
+    setText('gscKpiLosing',      gscSummary.keywords_losing_rank);
+    setText('gscKpiOpps',        gscSummary.quick_win_opportunities);
   }
 
   /* ── Cards ───────────────────────────────────────────────────────────────── */
@@ -810,8 +1006,20 @@
         ${dimRows}
       </div>` : '';
 
+    const gscPage  = gscMap[p.slug];
+    const gapCorrs = gscPage ? (gscPage.gap_correlations || []) : [];
     const gapPills = p.content_gaps && p.content_gaps.length
-      ? p.content_gaps.map(g => `<span class="gap-pill">${esc(g)}</span>`).join('')
+      ? p.content_gaps.map(g => {
+          const gLow = g.toLowerCase();
+          const corr = gapCorrs.find(c => {
+            const tLow = c.topic.toLowerCase();
+            return tLow.includes(gLow.slice(0, 12)) || gLow.includes(tLow.slice(0, 12));
+          });
+          const badge = corr
+            ? `<span class="gsc-badge" title="${esc(corr.gsc_signal.verdict)}">GSC: ${corr.gsc_signal.impressions_90d.toLocaleString()} imp @ pos ${Math.round(corr.gsc_signal.avg_position)}</span>`
+            : '';
+          return `<span class="gap-pill">${esc(g)}${badge}</span>`;
+        }).join('')
       : '<span class="no-gaps">No gaps identified yet</span>';
 
     const summarySection = p.change_summary
@@ -861,6 +1069,7 @@
         ${summarySection}
         <div class="gaps-title">Content gaps</div>
         <div class="gaps-list">${gapPills}</div>
+        ${gscPanelHTML(gscPage)}
       </div>
       <div class="card-footer">
         <div class="card-links">
@@ -1000,6 +1209,91 @@
     document.body.style.overflow = '';
   }
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalDirect(); });
+
+  /* ── GSC panel ───────────────────────────────────────────────────────────── */
+  function gscPanelHTML(gsc) {
+    if (!gsc) return '';
+    const kws    = gsc.keywords      || [];
+    const losing = gsc.losing_rank   || [];
+    const opps   = gsc.opportunities || [];
+    if (!kws.length) return '';
+
+    const slugId = (gsc.slug || '').replace(/-/g, '_');
+
+    // Losing rank alert
+    const losingHtml = losing.length ? (() => {
+      const w = losing[0]; // worst (highest delta) is first
+      return `<div class="losing-alert">
+        &#9888; <strong>${losing.length} keyword${losing.length > 1 ? 's' : ''} losing rank</strong>
+        &mdash; <span class="losing-worst">${esc(w.keyword)}</span>
+        dropped <strong>${w.position_delta.toFixed(1)} positions</strong> in 7 days
+      </div>`;
+    })() : '';
+
+    // Keyword table rows
+    const renderRow = k => {
+      const tCls  = k.trend === 'dropping' ? 'td' : k.trend === 'improving' ? 'ti' : 'ts';
+      const tIcon = k.trend === 'dropping' ? '&#8595;' : k.trend === 'improving' ? '&#8593;' : '&#8594;';
+      const isL   = losing.some(l => l.keyword === k.keyword);
+      return `<tr class="${isL ? 'kw-losing' : ''}">
+        <td class="kwt-kw" title="${esc(k.keyword)}">${esc(k.keyword)}</td>
+        <td class="kwt-num">${k.clicks}</td>
+        <td class="kwt-num">${k.avg_position.toFixed(1)}</td>
+        <td class="kwt-trend ${tCls}">${tIcon}</td>
+      </tr>`;
+    };
+
+    const top5    = kws.slice(0, 5).map(renderRow).join('');
+    const rest    = kws.slice(5).map(renderRow).join('');
+    const hasMore = kws.length > 5;
+
+    // Opportunity pills
+    const oppsHtml = opps.length ? `
+      <div class="opp-section">
+        <div class="opp-label">&#127919; Quick wins</div>
+        <div class="opp-list">
+          ${opps.map(o => `<span class="opp-pill" title="${esc(o.keyword)} &mdash; pos ${o.avg_position.toFixed(1)}, ${o.impressions.toLocaleString()} impressions, CTR ${o.ctr}%">
+            ${esc(o.keyword)} <em>pos&nbsp;${o.avg_position.toFixed(1)}&nbsp;&middot;&nbsp;${(o.impressions / 1000).toFixed(1)}k&nbsp;imp</em>
+          </span>`).join('')}
+        </div>
+      </div>` : '';
+
+    return `
+      <div class="gsc-section">
+        <button class="gsc-toggle" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('gsc-open')">
+          <span>Search Console</span>
+          <span class="gsc-kw-count">${kws.length}&nbsp;kw</span>
+          ${losing.length ? `<span class="gsc-losing-badge">${losing.length}&nbsp;losing</span>` : ''}
+          ${opps.length   ? `<span class="gsc-opp-badge">${opps.length}&nbsp;opp${opps.length > 1 ? 's' : ''}</span>` : ''}
+          <span class="gsc-arrow">&#9660;</span>
+        </button>
+        <div class="gsc-body">
+          ${losingHtml}
+          <table class="kwt">
+            <thead><tr>
+              <th class="kwt-kw">Keyword</th>
+              <th class="kwt-num">Clicks</th>
+              <th class="kwt-num">Pos</th>
+              <th class="kwt-trend">Trend</th>
+            </tr></thead>
+            <tbody>${top5}</tbody>
+            ${hasMore ? `<tbody id="kwe_${slugId}" style="display:none;">${rest}</tbody>` : ''}
+          </table>
+          ${hasMore ? `<button class="btn-kwx" data-total="${kws.length}" onclick="toggleKwExpand('${slugId}',this)">Show all ${kws.length} keywords &#9660;</button>` : ''}
+          ${oppsHtml}
+        </div>
+      </div>`;
+  }
+
+  function toggleKwExpand(slugId, btn) {
+    const extra = document.getElementById('kwe_' + slugId);
+    if (!extra) return;
+    const isHidden = extra.style.display === 'none';
+    extra.style.display = isHidden ? '' : 'none';
+    btn.innerHTML = isHidden
+      ? 'Show fewer &#9650;'
+      : 'Show all ' + (btn.dataset.total || '') + ' keywords &#9660;';
+  }
 
   /* ── Helpers ─────────────────────────────────────────────────────────────── */
   function setText(id, val) { document.getElementById(id).textContent = val; }

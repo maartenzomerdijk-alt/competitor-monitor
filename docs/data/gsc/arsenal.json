@@ -1,0 +1,52 @@
+{
+  "slug": "arsenal",
+  "page_url": "https://www.livefootballtickets.com/premier-league/arsenal-tickets.html",
+  "fetched_at": "2026-02-19T08:00:00Z",
+  "date_range": { "start": "2025-11-21", "end": "2026-02-17" },
+  "summary": {
+    "total_clicks_90d": 3840,
+    "total_impressions_90d": 87200,
+    "avg_position": 8.4,
+    "top_keyword": "arsenal tickets",
+    "top_keyword_position": 4.1,
+    "keywords_tracked": 20,
+    "losing_rank_count": 2,
+    "opportunities_count": 3
+  },
+  "keywords": [
+    { "keyword": "arsenal tickets",          "clicks": 920, "impressions": 14200, "ctr": 6.5, "avg_position": 4.1,  "position_30d_ago": 4.4,  "position_last_7d": 4.0,  "position_delta": -0.4, "trend": "stable",    "opportunity": false },
+    { "keyword": "buy arsenal tickets",       "clicks": 540, "impressions": 9800,  "ctr": 5.5, "avg_position": 6.2,  "position_30d_ago": 5.8,  "position_last_7d": 7.1,  "position_delta": 1.3,  "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal fc tickets",        "clicks": 410, "impressions": 7600,  "ctr": 5.4, "avg_position": 5.9,  "position_30d_ago": 5.5,  "position_last_7d": 5.7,  "position_delta": 0.2,  "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal home tickets",      "clicks": 280, "impressions": 5400,  "ctr": 5.2, "avg_position": 7.3,  "position_30d_ago": 6.8,  "position_last_7d": 9.2,  "position_delta": 2.4,  "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal away tickets",      "clicks": 190, "impressions": 4100,  "ctr": 4.6, "avg_position": 9.1,  "position_30d_ago": 7.2,  "position_last_7d": 14.8, "position_delta": 7.6,  "trend": "dropping",  "opportunity": false },
+    { "keyword": "arsenal tickets 2026",      "clicks": 165, "impressions": 3800,  "ctr": 4.3, "avg_position": 8.4,  "position_30d_ago": 8.9,  "position_last_7d": 7.8,  "position_delta": -1.1, "trend": "stable",    "opportunity": false },
+    { "keyword": "emirates stadium tickets",  "clicks": 130, "impressions": 3200,  "ctr": 4.1, "avg_position": 10.2, "position_30d_ago": 9.4,  "position_last_7d": 11.8, "position_delta": 2.4,  "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal hospitality tickets","clicks": 82, "impressions": 5800,  "ctr": 1.4, "avg_position": 16.3, "position_30d_ago": 14.1, "position_last_7d": 19.2, "position_delta": 5.1,  "trend": "dropping",  "opportunity": true  },
+    { "keyword": "arsenal premier league tickets","clicks": 74,"impressions": 2800, "ctr": 2.6, "avg_position": 11.4, "position_30d_ago": 12.1, "position_last_7d": 10.8, "position_delta": -1.3, "trend": "stable",    "opportunity": false },
+    { "keyword": "cheapest arsenal tickets",  "clicks": 68, "impressions": 4200,  "ctr": 1.6, "avg_position": 14.8, "position_30d_ago": 15.2, "position_last_7d": 14.2, "position_delta": -1.0, "trend": "stable",    "opportunity": true  },
+    { "keyword": "arsenal tickets price",     "clicks": 61, "impressions": 3600,  "ctr": 1.7, "avg_position": 13.1, "position_30d_ago": 13.8, "position_last_7d": 12.6, "position_delta": -1.2, "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal season tickets",    "clicks": 58, "impressions": 2100,  "ctr": 2.8, "avg_position": 9.4,  "position_30d_ago": 9.1,  "position_last_7d": 9.8,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal vs chelsea tickets","clicks": 54, "impressions": 1800,  "ctr": 3.0, "avg_position": 8.8,  "position_30d_ago": 8.4,  "position_last_7d": 9.2,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal man city tickets",  "clicks": 49, "impressions": 1600,  "ctr": 3.1, "avg_position": 7.6,  "position_30d_ago": 7.2,  "position_last_7d": 8.1,  "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
+    { "keyword": "emirates stadium guide",    "clicks": 38, "impressions": 5200,  "ctr": 0.7, "avg_position": 18.4, "position_30d_ago": 17.9, "position_last_7d": 19.1, "position_delta": 1.2,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "arsenal ticket prices 2025","clicks": 32, "impressions": 2400,  "ctr": 1.3, "avg_position": 15.6, "position_30d_ago": 14.8, "position_last_7d": 16.4, "position_delta": 1.6,  "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal cup tickets",       "clicks": 28, "impressions": 1400,  "ctr": 2.0, "avg_position": 11.2, "position_30d_ago": 10.8, "position_last_7d": 11.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "north london derby tickets","clicks": 25, "impressions": 3100,  "ctr": 0.8, "avg_position": 19.6, "position_30d_ago": 20.2, "position_last_7d": 18.8, "position_delta": -1.4, "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal vip tickets",       "clicks": 18, "impressions": 2200,  "ctr": 0.8, "avg_position": 22.1, "position_30d_ago": 21.4, "position_last_7d": 23.8, "position_delta": 2.4,  "trend": "stable",    "opportunity": false },
+    { "keyword": "arsenal champions league",  "clicks": 16, "impressions": 1800,  "ctr": 0.9, "avg_position": 24.3, "position_30d_ago": 23.8, "position_last_7d": 25.1, "position_delta": 1.3,  "trend": "stable",    "opportunity": false }
+  ],
+  "losing_rank": [
+    { "keyword": "arsenal away tickets",       "position_30d_ago": 7.2,  "position_last_7d": 14.8, "position_delta": 7.6, "impressions_last_7d": 320 },
+    { "keyword": "arsenal hospitality tickets","position_30d_ago": 14.1, "position_last_7d": 19.2, "position_delta": 5.1, "impressions_last_7d": 450 }
+  ],
+  "opportunities": [
+    { "keyword": "arsenal hospitality tickets","clicks": 82, "impressions": 5800, "ctr": 1.4, "avg_position": 16.3, "position_30d_ago": 14.1, "position_last_7d": 19.2, "position_delta": 5.1, "trend": "dropping", "opportunity": true },
+    { "keyword": "cheapest arsenal tickets",   "clicks": 68, "impressions": 4200, "ctr": 1.6, "avg_position": 14.8, "position_30d_ago": 15.2, "position_last_7d": 14.2, "position_delta": -1.0,"trend": "stable",   "opportunity": true },
+    { "keyword": "emirates stadium guide",     "clicks": 38, "impressions": 5200, "ctr": 0.7, "avg_position": 18.4, "position_30d_ago": 17.9, "position_last_7d": 19.1, "position_delta": 1.2, "trend": "stable",   "opportunity": true }
+  ],
+  "gap_correlations": [
+    { "topic": "arsenal hospitality tickets", "gsc_signal": { "keyword": "arsenal hospitality tickets", "impressions_90d": 5800, "avg_position": 16.3, "priority": "HIGH", "verdict": "Google shows your page for this but you rank position 16. Adding content on this topic could push you to page 1." } },
+    { "topic": "emirates stadium guide",      "gsc_signal": { "keyword": "emirates stadium guide",     "impressions_90d": 5200, "avg_position": 18.4, "priority": "HIGH", "verdict": "Google shows your page for this but you rank position 18. Adding content on this topic could push you to page 1." } },
+    { "topic": "arsenal away tickets",        "gsc_signal": { "keyword": "arsenal away tickets",       "impressions_90d": 4100, "avg_position": 9.1,  "priority": "MEDIUM","verdict": "Already ranking position 9 — strengthen content to improve further." } }
+  ]
+}

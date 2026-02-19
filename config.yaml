@@ -27,6 +27,11 @@ pages:
     my_url: https://www.livefootballtickets.com/world-cup-tickets.html
     competitor_url: https://seatpick.com/world-cup-tickets
 
+gsc:
+  site_url: "https://www.livefootballtickets.com"
+  days_lookback: 90
+  max_keywords_per_page: 20
+
 settings:
   change_threshold_pct: 5
   scrape_delay_min: 2

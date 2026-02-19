@@ -196,7 +196,7 @@ def _run_comparisons(pages_config: list) -> list[dict]:
     return comparisons
 
 
-def write_dashboard_data(pages_config: list, comparisons: list, significant_diffs: list) -> None:
+def write_dashboard_data(pages_config: list, comparisons: list, significant_diffs: list, gsc_data: dict = None) -> None:
     """
     Write docs/data/latest.json (always overwrite) and append to
     docs/data/history.json (keeps last 90 days of daily entries).
@@ -347,6 +347,37 @@ def write_dashboard_data(pages_config: list, comparisons: list, significant_diff
     history_path.write_text(json.dumps(history, indent=2, default=str), encoding="utf-8")
     logger.info("Dashboard history.json updated at %s", history_path)
 
+    # ── gsc_summary.json — aggregate across all pages ─────────────────────────
+    if gsc_data:
+        total_clicks  = sum(v["summary"]["total_clicks_90d"]      for v in gsc_data.values())
+        total_impr    = sum(v["summary"]["total_impressions_90d"]  for v in gsc_data.values())
+        losing_count  = sum(v["summary"]["losing_rank_count"]      for v in gsc_data.values())
+        opp_count     = sum(v["summary"]["opportunities_count"]    for v in gsc_data.values())
+        gsc_summary = {
+            "generated_at":            now_iso,
+            "total_clicks_90d":        total_clicks,
+            "total_impressions_90d":   total_impr,
+            "keywords_losing_rank":    losing_count,
+            "quick_win_opportunities": opp_count,
+        }
+        gsc_sum_path = docs_data / "gsc_summary.json"
+        gsc_sum_path.write_text(json.dumps(gsc_summary, indent=2), encoding="utf-8")
+        logger.info("GSC summary written to %s", gsc_sum_path)
+
+
+def _run_gsc(pages_config: list, config: dict, comparisons: list) -> dict:
+    """Fetch GSC data for all pages. Skips gracefully if not configured."""
+    gsc_config = config.get("gsc", {})
+    if not gsc_config.get("site_url"):
+        logger.info("GSC not configured in config.yaml — skipping")
+        return {}
+    try:
+        from analysis.gsc import run_gsc_pipeline
+        return run_gsc_pipeline(pages_config, gsc_config, comparisons)
+    except Exception as exc:
+        logger.warning("GSC pipeline failed: %s — skipping", exc)
+        return {}
+
 
 def run_full_pipeline():
     """Entry point called by the scheduler and --run-now."""
@@ -367,18 +398,22 @@ def run_full_pipeline():
     logger.info("=== Starting comparison phase ===")
     comparisons = _run_comparisons(pages)
 
+    logger.info("=== Starting GSC data fetch ===")
+    gsc_data = _run_gsc(pages, config, comparisons)
+
     logger.info("=== Writing report ===")
     from notifications.alerts import write_json_report
     report_path = write_json_report(significant_diffs, comparisons)
     logger.info("Report written to %s", report_path)
 
     logger.info("=== Writing dashboard data ===")
-    write_dashboard_data(pages, comparisons, significant_diffs)
+    write_dashboard_data(pages, comparisons, significant_diffs, gsc_data=gsc_data)
 
     logger.info(
-        "Pipeline complete — %d significant changes, %d comparisons",
+        "Pipeline complete — %d significant changes, %d comparisons, %d pages with GSC data",
         len(significant_diffs),
         len(comparisons),
+        len(gsc_data),
     )
 
 
