@@ -1,0 +1,16 @@
+# Environment — never commit secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+
+# Database and logs
+competitor_monitor.db
+monitor.log
+
+# macOS
+.DS_Store
