@@ -349,14 +349,14 @@ def write_dashboard_data(pages_config: list, comparisons: list, significant_diff
 
     # ── gsc_summary.json — aggregate across all pages ─────────────────────────
     if gsc_data:
-        total_clicks  = sum(v["summary"]["total_clicks_90d"]      for v in gsc_data.values())
-        total_impr    = sum(v["summary"]["total_impressions_90d"]  for v in gsc_data.values())
+        total_clicks  = sum(v["summary"]["total_clicks_7d"]      for v in gsc_data.values())
+        total_impr    = sum(v["summary"]["total_impressions_7d"]  for v in gsc_data.values())
         losing_count  = sum(v["summary"]["losing_rank_count"]      for v in gsc_data.values())
         opp_count     = sum(v["summary"]["opportunities_count"]    for v in gsc_data.values())
         gsc_summary = {
             "generated_at":            now_iso,
-            "total_clicks_90d":        total_clicks,
-            "total_impressions_90d":   total_impr,
+            "total_clicks_7d":         total_clicks,
+            "total_impressions_7d":    total_impr,
             "keywords_losing_rank":    losing_count,
             "quick_win_opportunities": opp_count,
         }

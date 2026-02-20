@@ -356,6 +356,12 @@
       padding: 3px 8px;
       border-radius: 20px;
     }
+    .gap-pill-hp {
+      background: rgba(244,67,54,.1);
+      color: #ff7b6b;
+      border-color: rgba(244,67,54,.45);
+      font-weight: 600;
+    }
     .no-gaps { font-size: 12px; color: var(--text-muted); font-style: italic; }
 
     /* card footer */
@@ -712,6 +718,19 @@
       vertical-align: middle;
       white-space: nowrap;
     }
+    .gsc-badge-hp {
+      display: inline-block;
+      font-size: 9px;
+      background: rgba(244,67,54,.18);
+      color: #ff6b6b;
+      border: 1px solid rgba(244,67,54,.45);
+      padding: 1px 6px;
+      border-radius: 8px;
+      margin-left: 4px;
+      vertical-align: middle;
+      white-space: nowrap;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
@@ -749,14 +768,14 @@
 </div>
 
 <!-- ── GSC Summary bar ─────────────────────────────────────────────────────── -->
-<div class="gsc-bar-divider" id="gscBarDivider" style="display:none;">Search Console &mdash; 90-day overview</div>
+<div class="gsc-bar-divider" id="gscBarDivider" style="display:none;">Search Console &mdash; 7-day overview</div>
 <div class="summary-bar summary-bar-gsc" id="gscSummaryBar" style="display:none;">
   <div class="kpi">
-    <span class="kpi-label">Organic clicks (90d)</span>
+    <span class="kpi-label">Organic clicks (7d)</span>
     <span class="kpi-value green" id="gscKpiClicks">—</span>
   </div>
   <div class="kpi">
-    <span class="kpi-label">Impressions (90d)</span>
+    <span class="kpi-label">Impressions (7d)</span>
     <span class="kpi-value" id="gscKpiImpressions">—</span>
   </div>
   <div class="kpi">
@@ -941,8 +960,8 @@
     if (!gscSummary) return;
     document.getElementById('gscBarDivider').style.display = '';
     document.getElementById('gscSummaryBar').style.display = '';
-    setText('gscKpiClicks',      gscSummary.total_clicks_90d.toLocaleString());
-    setText('gscKpiImpressions', (gscSummary.total_impressions_90d / 1000).toFixed(0) + 'k');
+    setText('gscKpiClicks',      gscSummary.total_clicks_7d.toLocaleString());
+    setText('gscKpiImpressions', (gscSummary.total_impressions_7d / 1000).toFixed(0) + 'k');
     setText('gscKpiLosing',      gscSummary.keywords_losing_rank);
     setText('gscKpiOpps',        gscSummary.quick_win_opportunities);
   }
@@ -1015,10 +1034,14 @@
             const tLow = c.topic.toLowerCase();
             return tLow.includes(gLow.slice(0, 12)) || gLow.includes(tLow.slice(0, 12));
           });
-          const badge = corr
-            ? `<span class="gsc-badge" title="${esc(corr.gsc_signal.verdict)}">GSC: ${corr.gsc_signal.impressions_90d.toLocaleString()} imp @ pos ${Math.round(corr.gsc_signal.avg_position)}</span>`
+          const sig = corr && corr.gsc_signal ? corr.gsc_signal : null;
+          const isHigh = sig && sig.priority === 'HIGH';
+          const badge = sig
+            ? isHigh
+              ? `<span class="gsc-badge-hp" title="${esc(sig.verdict)}">&#9888; HIGH PRIORITY &middot; ${sig.impressions_7d.toLocaleString()} imp &middot; pos ${Math.round(sig.avg_position)}</span>`
+              : `<span class="gsc-badge" title="${esc(sig.verdict)}">GSC: ${sig.impressions_7d.toLocaleString()} imp @ pos ${Math.round(sig.avg_position)}</span>`
             : '';
-          return `<span class="gap-pill">${esc(g)}${badge}</span>`;
+          return `<span class="gap-pill${isHigh ? ' gap-pill-hp' : ''}">${esc(g)}${badge}</span>`;
         }).join('')
       : '<span class="no-gaps">No gaps identified yet</span>';
 
@@ -1235,10 +1258,13 @@
       const tCls  = k.trend === 'dropping' ? 'td' : k.trend === 'improving' ? 'ti' : 'ts';
       const tIcon = k.trend === 'dropping' ? '&#8595;' : k.trend === 'improving' ? '&#8593;' : '&#8594;';
       const isL   = losing.some(l => l.keyword === k.keyword);
-      return `<tr class="${isL ? 'kw-losing' : ''}">
-        <td class="kwt-kw" title="${esc(k.keyword)}">${esc(k.keyword)}</td>
-        <td class="kwt-num">${k.clicks}</td>
+      const impStr = k.impressions >= 1000 ? (k.impressions / 1000).toFixed(1) + 'k' : k.impressions;
+      const title = `${k.keyword} — CTR ${k.ctr}%`;
+      return `<tr class="${isL ? 'kw-losing' : ''}" title="${esc(title)}">
+        <td class="kwt-kw">${esc(k.keyword)}</td>
         <td class="kwt-num">${k.avg_position.toFixed(1)}</td>
+        <td class="kwt-num">${k.clicks}</td>
+        <td class="kwt-num">${impStr}</td>
         <td class="kwt-trend ${tCls}">${tIcon}</td>
       </tr>`;
     };
@@ -1272,9 +1298,10 @@
           <table class="kwt">
             <thead><tr>
               <th class="kwt-kw">Keyword</th>
-              <th class="kwt-num">Clicks</th>
               <th class="kwt-num">Pos</th>
-              <th class="kwt-trend">Trend</th>
+              <th class="kwt-num">Clicks</th>
+              <th class="kwt-num">Imp</th>
+              <th class="kwt-trend">&#9650;</th>
             </tr></thead>
             <tbody>${top5}</tbody>
             ${hasMore ? `<tbody id="kwe_${slugId}" style="display:none;">${rest}</tbody>` : ''}

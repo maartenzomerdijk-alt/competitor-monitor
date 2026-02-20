@@ -29,7 +29,7 @@ pages:
 
 gsc:
   site_url: "https://www.livefootballtickets.com"
-  days_lookback: 90
+  days_lookback: 7
   max_keywords_per_page: 20
 
 settings:

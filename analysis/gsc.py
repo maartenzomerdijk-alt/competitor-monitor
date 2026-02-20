@@ -4,6 +4,9 @@ Google Search Console data fetcher.
 Fetches top keywords, position trends, losing-rank alerts, and quick-win
 opportunities for each monitored page. Writes results to docs/data/gsc/[slug].json.
 
+Default lookback: 7 days. Trend is compared across the first vs second half of
+the lookback window (e.g. days 4–7 vs days 1–3 for a 7-day window).
+
 Authentication: Service Account JSON (set GSC_SERVICE_ACCOUNT_JSON env var).
 """
 
@@ -103,14 +106,15 @@ def _fetch_by_date(service, site_url: str, page_url: str,
 
 # ── Trend calculation ─────────────────────────────────────────────────────────
 
-def _compute_trends(top_rows: list, date_rows: list, today: datetime) -> list:
+def _compute_trends(top_rows: list, date_rows: list, today: datetime,
+                    days_lookback: int = 7) -> list:
     """
     For each top keyword, compute:
-      position_30d_ago  — avg position days 60–90 ago
-      position_last_7d  — avg position last 7 days
-      position_delta    — recent − old  (negative = improved, positive = dropped)
-      trend             — "improving" | "dropping" | "stable"
-      opportunity       — impressions ≥ 500, position 5–20, CTR < 3 %
+      position_prev_half — avg position over the first half of the lookback window
+      position_last_half — avg position over the second (most recent) half
+      position_delta     — recent − older  (negative = improved, positive = dropped)
+      trend              — "improving" | "dropping" | "stable"
+      opportunity        — impressions ≥ 35 (7-day equiv), position 5–20, CTR < 3 %
     """
     # Group date rows by keyword
     by_kw: dict[str, list] = {}
@@ -120,39 +124,44 @@ def _compute_trends(top_rows: list, date_rows: list, today: datetime) -> list:
             {"date": row["keys"][1], "position": row["position"]}
         )
 
-    cut_7d  = _ds(today - timedelta(days=7))
-    cut_60d = _ds(today - timedelta(days=60))
-    cut_90d = _ds(today - timedelta(days=90))
+    # Split the lookback window in half for trend comparison
+    half          = max(days_lookback // 2, 1)
+    cut_recent    = _ds(today - timedelta(days=half))           # recent  >= this date
+    cut_old_end   = _ds(today - timedelta(days=half + 1))       # older   <= this date
+    cut_old_start = _ds(today - timedelta(days=days_lookback))  # older   >= this date
+
+    # Opportunity threshold scaled to the lookback window (~500 imp per 90 days → ~35 per 7 days)
+    imp_threshold = max(int(500 * days_lookback / 90), 5)
 
     results = []
     for row in top_rows:
-        kw       = row["keys"][0]
-        dates    = by_kw.get(kw, [])
-        old_pos  = [d["position"] for d in dates if cut_90d <= d["date"] <= cut_60d]
-        new_pos  = [d["position"] for d in dates if d["date"] >= cut_7d]
+        kw      = row["keys"][0]
+        dates   = by_kw.get(kw, [])
+        old_pos = [d["position"] for d in dates if cut_old_start <= d["date"] <= cut_old_end]
+        new_pos = [d["position"] for d in dates if d["date"] >= cut_recent]
 
-        pos_30d = round(sum(old_pos) / len(old_pos), 1) if old_pos else None
-        pos_7d  = round(sum(new_pos) / len(new_pos), 1) if new_pos else None
-        avg_pos = round(row["position"], 1)
-        ctr     = round(row["ctr"] * 100, 2)
+        pos_prev = round(sum(old_pos) / len(old_pos), 1) if old_pos else None
+        pos_curr = round(sum(new_pos) / len(new_pos), 1) if new_pos else None
+        avg_pos  = round(row["position"], 1)
+        ctr      = round(row["ctr"] * 100, 2)
 
-        if pos_30d is not None and pos_7d is not None:
-            delta = round(pos_7d - pos_30d, 1)
+        if pos_prev is not None and pos_curr is not None:
+            delta = round(pos_curr - pos_prev, 1)
             trend = "improving" if delta <= -2 else "dropping" if delta >= 3 else "stable"
         else:
             delta, trend = None, "stable"
 
         results.append({
-            "keyword":           kw,
-            "clicks":            row["clicks"],
-            "impressions":       row["impressions"],
-            "ctr":               ctr,
-            "avg_position":      avg_pos,
-            "position_30d_ago":  pos_30d,
-            "position_last_7d":  pos_7d,
-            "position_delta":    delta,
-            "trend":             trend,
-            "opportunity":       (row["impressions"] >= 500 and 5 <= avg_pos <= 20 and ctr < 3.0),
+            "keyword":            kw,
+            "clicks":             row["clicks"],
+            "impressions":        row["impressions"],
+            "ctr":                ctr,
+            "avg_position":       avg_pos,
+            "position_prev_half": pos_prev,
+            "position_last_half": pos_curr,
+            "position_delta":     delta,
+            "trend":              trend,
+            "opportunity":        (row["impressions"] >= imp_threshold and 5 <= avg_pos <= 20 and ctr < 3.0),
         })
     return results
 
@@ -188,15 +197,18 @@ def cross_reference_gaps(gsc_data: dict, keywords_they_cover: list) -> list:
             if gap_lower in gsc_kw or gsc_kw in gap_lower:
                 pos = data["avg_position"]
                 entry["gsc_signal"] = {
-                    "keyword":         data["keyword"],
-                    "impressions_90d": data["impressions"],
+                    "keyword":        data["keyword"],
+                    "impressions_7d": data["impressions"],
+                    "clicks_7d":      data["clicks"],
                     "avg_position":    pos,
-                    "priority":        "HIGH" if pos > 20 else "MEDIUM",
+                    "ctr":             data["ctr"],
+                    # HIGH = ranking below page 1 (pos > 10); MEDIUM = on page 1 but not top 5
+                    "priority":        "HIGH" if pos > 10 else "MEDIUM",
                     "verdict": (
-                        f"Google shows your page for this but you rank position {pos:.0f}. "
-                        "Adding content on this topic could push you to page 1."
+                        f"You're already showing up for this — but at position {pos:.0f}. "
+                        "Adding dedicated content could push you to page 1."
                         if pos > 10 else
-                        f"Already ranking position {pos:.0f} — strengthen content to improve further."
+                        f"Ranking position {pos:.0f} — strengthen this content to climb into the top 5."
                     ),
                 }
                 break
@@ -211,7 +223,7 @@ def fetch_page_gsc_data(
     site_url: str,
     slug: str,
     page_url: str,
-    days_lookback: int = 90,
+    days_lookback: int = 7,
     max_keywords: int = 20,
 ) -> dict:
     today      = datetime.now(timezone.utc)
@@ -222,7 +234,7 @@ def fetch_page_gsc_data(
 
     top_rows   = _fetch_top_keywords(service, site_url, page_url, start_date, end_date, max_keywords)
     date_rows  = _fetch_by_date(service, site_url, page_url, start_date, end_date)
-    keywords   = _compute_trends(top_rows, date_rows, today)
+    keywords   = _compute_trends(top_rows, date_rows, today, days_lookback)
     losing     = _losing_rank(keywords)
     opps       = _opportunities(keywords)
 
@@ -239,8 +251,8 @@ def fetch_page_gsc_data(
         "fetched_at": today.isoformat(),
         "date_range": {"start": start_date, "end": end_date},
         "summary": {
-            "total_clicks_90d":      total_clicks,
-            "total_impressions_90d": total_impr,
+            "total_clicks_7d":      total_clicks,
+            "total_impressions_7d": total_impr,
             "avg_position":          avg_pos,
             "top_keyword":           top_kw["keyword"]      if top_kw else None,
             "top_keyword_position":  top_kw["avg_position"] if top_kw else None,
@@ -268,7 +280,7 @@ def run_gsc_pipeline(
     write docs/data/gsc/[slug].json. Returns {slug: gsc_data}.
     """
     site_url = gsc_config.get("site_url", "").rstrip("/")
-    days     = int(gsc_config.get("days_lookback", 90))
+    days     = int(gsc_config.get("days_lookback", 7))
     max_kw   = int(gsc_config.get("max_keywords_per_page", 20))
 
     if not site_url:
