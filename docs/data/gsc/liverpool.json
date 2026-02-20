@@ -4,8 +4,8 @@
   "fetched_at": "2026-02-19T08:00:00Z",
   "date_range": { "start": "2025-11-21", "end": "2026-02-17" },
   "summary": {
-    "total_clicks_90d": 3210,
-    "total_impressions_90d": 74800,
+    "total_clicks_7d": 3210,
+    "total_impressions_7d": 74800,
     "avg_position": 9.2,
     "top_keyword": "liverpool tickets",
     "top_keyword_position": 3.8,
@@ -14,32 +14,32 @@
     "opportunities_count": 2
   },
   "keywords": [
-    { "keyword": "liverpool tickets",           "clicks": 880, "impressions": 13400, "ctr": 6.6, "avg_position": 3.8,  "position_30d_ago": 3.9,  "position_last_7d": 3.6,  "position_delta": -0.3, "trend": "stable",    "opportunity": false },
-    { "keyword": "buy liverpool tickets",        "clicks": 490, "impressions": 8800,  "ctr": 5.6, "avg_position": 5.4,  "position_30d_ago": 5.1,  "position_last_7d": 5.8,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
-    { "keyword": "liverpool fc tickets",         "clicks": 360, "impressions": 6800,  "ctr": 5.3, "avg_position": 6.1,  "position_30d_ago": 5.8,  "position_last_7d": 6.4,  "position_delta": 0.6,  "trend": "stable",    "opportunity": false },
-    { "keyword": "anfield tickets",              "clicks": 280, "impressions": 5200,  "ctr": 5.4, "avg_position": 7.2,  "position_30d_ago": 7.0,  "position_last_7d": 7.4,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
-    { "keyword": "liverpool home tickets",       "clicks": 220, "impressions": 4400,  "ctr": 5.0, "avg_position": 8.1,  "position_30d_ago": 7.6,  "position_last_7d": 8.8,  "position_delta": 1.2,  "trend": "stable",    "opportunity": false },
-    { "keyword": "liverpool hospitality",        "clicks": 95,  "impressions": 5800,  "ctr": 1.6, "avg_position": 14.8, "position_30d_ago": 11.2, "position_last_7d": 19.6, "position_delta": 8.4,  "trend": "dropping",  "opportunity": false },
-    { "keyword": "cheap liverpool tickets",      "clicks": 88,  "impressions": 4600,  "ctr": 1.9, "avg_position": 12.4, "position_30d_ago": 12.8, "position_last_7d": 11.9, "position_delta": -0.9, "trend": "stable",    "opportunity": false },
-    { "keyword": "liverpool away tickets",       "clicks": 76,  "impressions": 3200,  "ctr": 2.4, "avg_position": 10.6, "position_30d_ago": 10.2, "position_last_7d": 11.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
-    { "keyword": "anfield stadium guide",        "clicks": 42,  "impressions": 5600,  "ctr": 0.8, "avg_position": 16.8, "position_30d_ago": 16.2, "position_last_7d": 17.4, "position_delta": 1.2,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "liverpool champions league",   "clicks": 38,  "impressions": 4200,  "ctr": 0.9, "avg_position": 18.2, "position_30d_ago": 17.8, "position_last_7d": 18.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "liverpool ticket prices",      "clicks": 34,  "impressions": 2800,  "ctr": 1.2, "avg_position": 13.4, "position_30d_ago": 13.1, "position_last_7d": 13.8, "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
-    { "keyword": "liverpool season tickets",     "clicks": 28,  "impressions": 1600,  "ctr": 1.8, "avg_position": 9.8,  "position_30d_ago": 9.4,  "position_last_7d": 10.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "liverpool vs man utd tickets", "clicks": 24,  "impressions": 1800,  "ctr": 1.3, "avg_position": 11.2, "position_30d_ago": 10.8, "position_last_7d": 11.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "liverpool vip hospitality",    "clicks": 18,  "impressions": 3200,  "ctr": 0.6, "avg_position": 19.4, "position_30d_ago": 18.8, "position_last_7d": 20.1, "position_delta": 1.3,  "trend": "stable",    "opportunity": false },
-    { "keyword": "liverpool europa league",      "clicks": 14,  "impressions": 1400,  "ctr": 1.0, "avg_position": 14.6, "position_30d_ago": 14.2, "position_last_7d": 15.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false }
+    { "keyword": "liverpool tickets",           "clicks": 880, "impressions": 13400, "ctr": 6.6, "avg_position": 3.8,  "position_prev_half": 3.9,  "position_last_half": 3.6,  "position_delta": -0.3, "trend": "stable",    "opportunity": false },
+    { "keyword": "buy liverpool tickets",        "clicks": 490, "impressions": 8800,  "ctr": 5.6, "avg_position": 5.4,  "position_prev_half": 5.1,  "position_last_half": 5.8,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
+    { "keyword": "liverpool fc tickets",         "clicks": 360, "impressions": 6800,  "ctr": 5.3, "avg_position": 6.1,  "position_prev_half": 5.8,  "position_last_half": 6.4,  "position_delta": 0.6,  "trend": "stable",    "opportunity": false },
+    { "keyword": "anfield tickets",              "clicks": 280, "impressions": 5200,  "ctr": 5.4, "avg_position": 7.2,  "position_prev_half": 7.0,  "position_last_half": 7.4,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
+    { "keyword": "liverpool home tickets",       "clicks": 220, "impressions": 4400,  "ctr": 5.0, "avg_position": 8.1,  "position_prev_half": 7.6,  "position_last_half": 8.8,  "position_delta": 1.2,  "trend": "stable",    "opportunity": false },
+    { "keyword": "liverpool hospitality",        "clicks": 95,  "impressions": 5800,  "ctr": 1.6, "avg_position": 14.8, "position_prev_half": 11.2, "position_last_half": 19.6, "position_delta": 8.4,  "trend": "dropping",  "opportunity": false },
+    { "keyword": "cheap liverpool tickets",      "clicks": 88,  "impressions": 4600,  "ctr": 1.9, "avg_position": 12.4, "position_prev_half": 12.8, "position_last_half": 11.9, "position_delta": -0.9, "trend": "stable",    "opportunity": false },
+    { "keyword": "liverpool away tickets",       "clicks": 76,  "impressions": 3200,  "ctr": 2.4, "avg_position": 10.6, "position_prev_half": 10.2, "position_last_half": 11.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
+    { "keyword": "anfield stadium guide",        "clicks": 42,  "impressions": 5600,  "ctr": 0.8, "avg_position": 16.8, "position_prev_half": 16.2, "position_last_half": 17.4, "position_delta": 1.2,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "liverpool champions league",   "clicks": 38,  "impressions": 4200,  "ctr": 0.9, "avg_position": 18.2, "position_prev_half": 17.8, "position_last_half": 18.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "liverpool ticket prices",      "clicks": 34,  "impressions": 2800,  "ctr": 1.2, "avg_position": 13.4, "position_prev_half": 13.1, "position_last_half": 13.8, "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
+    { "keyword": "liverpool season tickets",     "clicks": 28,  "impressions": 1600,  "ctr": 1.8, "avg_position": 9.8,  "position_prev_half": 9.4,  "position_last_half": 10.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "liverpool vs man utd tickets", "clicks": 24,  "impressions": 1800,  "ctr": 1.3, "avg_position": 11.2, "position_prev_half": 10.8, "position_last_half": 11.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "liverpool vip hospitality",    "clicks": 18,  "impressions": 3200,  "ctr": 0.6, "avg_position": 19.4, "position_prev_half": 18.8, "position_last_half": 20.1, "position_delta": 1.3,  "trend": "stable",    "opportunity": false },
+    { "keyword": "liverpool europa league",      "clicks": 14,  "impressions": 1400,  "ctr": 1.0, "avg_position": 14.6, "position_prev_half": 14.2, "position_last_half": 15.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false }
   ],
   "losing_rank": [
-    { "keyword": "liverpool hospitality", "position_30d_ago": 11.2, "position_last_7d": 19.6, "position_delta": 8.4, "impressions_last_7d": 450 }
+    { "keyword": "liverpool hospitality", "position_prev_half": 11.2, "position_last_half": 19.6, "position_delta": 8.4, "impressions_last_7d": 450 }
   ],
   "opportunities": [
-    { "keyword": "anfield stadium guide",      "clicks": 42, "impressions": 5600, "ctr": 0.8, "avg_position": 16.8, "position_30d_ago": 16.2, "position_last_7d": 17.4, "position_delta": 1.2, "trend": "stable", "opportunity": true },
-    { "keyword": "liverpool champions league", "clicks": 38, "impressions": 4200, "ctr": 0.9, "avg_position": 18.2, "position_30d_ago": 17.8, "position_last_7d": 18.6, "position_delta": 0.8, "trend": "stable", "opportunity": true }
+    { "keyword": "anfield stadium guide",      "clicks": 42, "impressions": 5600, "ctr": 0.8, "avg_position": 16.8, "position_prev_half": 16.2, "position_last_half": 17.4, "position_delta": 1.2, "trend": "stable", "opportunity": true },
+    { "keyword": "liverpool champions league", "clicks": 38, "impressions": 4200, "ctr": 0.9, "avg_position": 18.2, "position_prev_half": 17.8, "position_last_half": 18.6, "position_delta": 0.8, "trend": "stable", "opportunity": true }
   ],
   "gap_correlations": [
-    { "topic": "liverpool hospitality",    "gsc_signal": { "keyword": "liverpool hospitality",    "impressions_90d": 5800, "avg_position": 14.8, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 15. Adding hospitality content could push you to page 1." } },
-    { "topic": "anfield stadium guide",   "gsc_signal": { "keyword": "anfield stadium guide",   "impressions_90d": 5600, "avg_position": 16.8, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 17. Adding a travel guide could push you to page 1." } },
-    { "topic": "liverpool away tickets",  "gsc_signal": { "keyword": "liverpool away tickets",  "impressions_90d": 3200, "avg_position": 10.6, "priority": "MEDIUM", "verdict": "Already ranking position 11 — strengthen content to improve further." } }
+    { "topic": "liverpool hospitality",    "gsc_signal": { "keyword": "liverpool hospitality",    "impressions_7d": 5800, "avg_position": 14.8, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 15. Adding hospitality content could push you to page 1." } },
+    { "topic": "anfield stadium guide",   "gsc_signal": { "keyword": "anfield stadium guide",   "impressions_7d": 5600, "avg_position": 16.8, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 17. Adding a travel guide could push you to page 1." } },
+    { "topic": "liverpool away tickets",  "gsc_signal": { "keyword": "liverpool away tickets",  "impressions_7d": 3200, "avg_position": 10.6, "priority": "MEDIUM", "verdict": "Already ranking position 11 — strengthen content to improve further." } }
   ]
 }

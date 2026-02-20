@@ -958,12 +958,18 @@
 
   function renderGscSummary() {
     if (!gscSummary) return;
-    document.getElementById('gscBarDivider').style.display = '';
-    document.getElementById('gscSummaryBar').style.display = '';
-    setText('gscKpiClicks',      gscSummary.total_clicks_7d.toLocaleString());
-    setText('gscKpiImpressions', (gscSummary.total_impressions_7d / 1000).toFixed(0) + 'k');
-    setText('gscKpiLosing',      gscSummary.keywords_losing_rank);
-    setText('gscKpiOpps',        gscSummary.quick_win_opportunities);
+    try {
+      document.getElementById('gscBarDivider').style.display = '';
+      document.getElementById('gscSummaryBar').style.display = '';
+      const clicks = gscSummary.total_clicks_7d ?? gscSummary.total_clicks_90d ?? 0;
+      const impr   = gscSummary.total_impressions_7d ?? gscSummary.total_impressions_90d ?? 0;
+      setText('gscKpiClicks',      clicks.toLocaleString());
+      setText('gscKpiImpressions', (impr / 1000).toFixed(0) + 'k');
+      setText('gscKpiLosing',      gscSummary.keywords_losing_rank ?? '—');
+      setText('gscKpiOpps',        gscSummary.quick_win_opportunities ?? '—');
+    } catch (e) {
+      console.warn('GSC summary render failed:', e);
+    }
   }
 
   /* ── Cards ───────────────────────────────────────────────────────────────── */
@@ -1036,10 +1042,11 @@
           });
           const sig = corr && corr.gsc_signal ? corr.gsc_signal : null;
           const isHigh = sig && sig.priority === 'HIGH';
+          const sigImpr = sig ? (sig.impressions_7d ?? sig.impressions_90d ?? 0) : 0;
           const badge = sig
             ? isHigh
-              ? `<span class="gsc-badge-hp" title="${esc(sig.verdict)}">&#9888; HIGH PRIORITY &middot; ${sig.impressions_7d.toLocaleString()} imp &middot; pos ${Math.round(sig.avg_position)}</span>`
-              : `<span class="gsc-badge" title="${esc(sig.verdict)}">GSC: ${sig.impressions_7d.toLocaleString()} imp @ pos ${Math.round(sig.avg_position)}</span>`
+              ? `<span class="gsc-badge-hp" title="${esc(sig.verdict)}">&#9888; HIGH PRIORITY &middot; ${sigImpr.toLocaleString()} imp &middot; pos ${Math.round(sig.avg_position)}</span>`
+              : `<span class="gsc-badge" title="${esc(sig.verdict)}">GSC: ${sigImpr.toLocaleString()} imp @ pos ${Math.round(sig.avg_position)}</span>`
             : '';
           return `<span class="gap-pill${isHigh ? ' gap-pill-hp' : ''}">${esc(g)}${badge}</span>`;
         }).join('')

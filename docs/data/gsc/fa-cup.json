@@ -4,8 +4,8 @@
   "fetched_at": "2026-02-19T08:00:00Z",
   "date_range": { "start": "2025-11-21", "end": "2026-02-17" },
   "summary": {
-    "total_clicks_90d": 1840,
-    "total_impressions_90d": 42600,
+    "total_clicks_7d": 1840,
+    "total_impressions_7d": 42600,
     "avg_position": 11.2,
     "top_keyword": "fa cup tickets",
     "top_keyword_position": 5.4,
@@ -14,26 +14,26 @@
     "opportunities_count": 2
   },
   "keywords": [
-    { "keyword": "fa cup tickets",             "clicks": 580, "impressions": 9800,  "ctr": 5.9, "avg_position": 5.4,  "position_30d_ago": 5.2,  "position_last_7d": 5.6,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
-    { "keyword": "buy fa cup tickets",          "clicks": 320, "impressions": 6400,  "ctr": 5.0, "avg_position": 7.2,  "position_30d_ago": 7.0,  "position_last_7d": 7.4,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup final tickets",        "clicks": 280, "impressions": 5800,  "ctr": 4.8, "avg_position": 8.1,  "position_30d_ago": 7.8,  "position_last_7d": 8.4,  "position_delta": 0.6,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup semi final tickets",   "clicks": 180, "impressions": 4200,  "ctr": 4.3, "avg_position": 9.4,  "position_30d_ago": 9.0,  "position_last_7d": 9.8,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "wembley fa cup tickets",      "clicks": 140, "impressions": 3600,  "ctr": 3.9, "avg_position": 10.2, "position_30d_ago": 9.8,  "position_last_7d": 10.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup 2026 tickets",         "clicks": 120, "impressions": 3200,  "ctr": 3.8, "avg_position": 8.8,  "position_30d_ago": 8.4,  "position_last_7d": 9.2,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup quarter final tickets","clicks": 88,  "impressions": 2400,  "ctr": 3.7, "avg_position": 11.4, "position_30d_ago": 11.0, "position_last_7d": 11.8, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup fifth round tickets",  "clicks": 62,  "impressions": 1800,  "ctr": 3.4, "avg_position": 12.6, "position_30d_ago": 12.2, "position_last_7d": 13.0, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup tickets price",        "clicks": 48,  "impressions": 4400,  "ctr": 1.1, "avg_position": 14.8, "position_30d_ago": 14.4, "position_last_7d": 15.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "cheap fa cup tickets",        "clicks": 38,  "impressions": 3600,  "ctr": 1.1, "avg_position": 16.4, "position_30d_ago": 16.0, "position_last_7d": 16.8, "position_delta": 0.8,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "fa cup hospitality",          "clicks": 24,  "impressions": 3400,  "ctr": 0.7, "avg_position": 18.2, "position_30d_ago": 17.8, "position_last_7d": 18.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "wembley stadium guide fa cup","clicks": 18,  "impressions": 2200,  "ctr": 0.8, "avg_position": 19.6, "position_30d_ago": 19.2, "position_last_7d": 20.0, "position_delta": 0.8,  "trend": "stable",    "opportunity": false }
+    { "keyword": "fa cup tickets",             "clicks": 580, "impressions": 9800,  "ctr": 5.9, "avg_position": 5.4,  "position_prev_half": 5.2,  "position_last_half": 5.6,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
+    { "keyword": "buy fa cup tickets",          "clicks": 320, "impressions": 6400,  "ctr": 5.0, "avg_position": 7.2,  "position_prev_half": 7.0,  "position_last_half": 7.4,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
+    { "keyword": "fa cup final tickets",        "clicks": 280, "impressions": 5800,  "ctr": 4.8, "avg_position": 8.1,  "position_prev_half": 7.8,  "position_last_half": 8.4,  "position_delta": 0.6,  "trend": "stable",    "opportunity": false },
+    { "keyword": "fa cup semi final tickets",   "clicks": 180, "impressions": 4200,  "ctr": 4.3, "avg_position": 9.4,  "position_prev_half": 9.0,  "position_last_half": 9.8,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "wembley fa cup tickets",      "clicks": 140, "impressions": 3600,  "ctr": 3.9, "avg_position": 10.2, "position_prev_half": 9.8,  "position_last_half": 10.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "fa cup 2026 tickets",         "clicks": 120, "impressions": 3200,  "ctr": 3.8, "avg_position": 8.8,  "position_prev_half": 8.4,  "position_last_half": 9.2,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "fa cup quarter final tickets","clicks": 88,  "impressions": 2400,  "ctr": 3.7, "avg_position": 11.4, "position_prev_half": 11.0, "position_last_half": 11.8, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "fa cup fifth round tickets",  "clicks": 62,  "impressions": 1800,  "ctr": 3.4, "avg_position": 12.6, "position_prev_half": 12.2, "position_last_half": 13.0, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "fa cup tickets price",        "clicks": 48,  "impressions": 4400,  "ctr": 1.1, "avg_position": 14.8, "position_prev_half": 14.4, "position_last_half": 15.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "cheap fa cup tickets",        "clicks": 38,  "impressions": 3600,  "ctr": 1.1, "avg_position": 16.4, "position_prev_half": 16.0, "position_last_half": 16.8, "position_delta": 0.8,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "fa cup hospitality",          "clicks": 24,  "impressions": 3400,  "ctr": 0.7, "avg_position": 18.2, "position_prev_half": 17.8, "position_last_half": 18.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "wembley stadium guide fa cup","clicks": 18,  "impressions": 2200,  "ctr": 0.8, "avg_position": 19.6, "position_prev_half": 19.2, "position_last_half": 20.0, "position_delta": 0.8,  "trend": "stable",    "opportunity": false }
   ],
   "losing_rank": [],
   "opportunities": [
-    { "keyword": "cheap fa cup tickets", "clicks": 38, "impressions": 3600, "ctr": 1.1, "avg_position": 16.4, "position_30d_ago": 16.0, "position_last_7d": 16.8, "position_delta": 0.8, "trend": "stable", "opportunity": true },
-    { "keyword": "fa cup hospitality",   "clicks": 24, "impressions": 3400, "ctr": 0.7, "avg_position": 18.2, "position_30d_ago": 17.8, "position_last_7d": 18.6, "position_delta": 0.8, "trend": "stable", "opportunity": true }
+    { "keyword": "cheap fa cup tickets", "clicks": 38, "impressions": 3600, "ctr": 1.1, "avg_position": 16.4, "position_prev_half": 16.0, "position_last_half": 16.8, "position_delta": 0.8, "trend": "stable", "opportunity": true },
+    { "keyword": "fa cup hospitality",   "clicks": 24, "impressions": 3400, "ctr": 0.7, "avg_position": 18.2, "position_prev_half": 17.8, "position_last_half": 18.6, "position_delta": 0.8, "trend": "stable", "opportunity": true }
   ],
   "gap_correlations": [
-    { "topic": "fa cup semi final tickets", "gsc_signal": { "keyword": "fa cup semi final tickets",  "impressions_90d": 4200, "avg_position": 9.4,  "priority": "MEDIUM", "verdict": "Already ranking position 9 — strengthen content to improve further." } },
-    { "topic": "wembley fa cup tickets",    "gsc_signal": { "keyword": "wembley fa cup tickets",     "impressions_90d": 3600, "avg_position": 10.2, "priority": "MEDIUM", "verdict": "Already ranking position 10 — strengthen content to improve further." } }
+    { "topic": "fa cup semi final tickets", "gsc_signal": { "keyword": "fa cup semi final tickets",  "impressions_7d": 4200, "avg_position": 9.4,  "priority": "MEDIUM", "verdict": "Already ranking position 9 — strengthen content to improve further." } },
+    { "topic": "wembley fa cup tickets",    "gsc_signal": { "keyword": "wembley fa cup tickets",     "impressions_7d": 3600, "avg_position": 10.2, "priority": "MEDIUM", "verdict": "Already ranking position 10 — strengthen content to improve further." } }
   ]
 }

@@ -4,8 +4,8 @@
   "fetched_at": "2026-02-19T08:00:00Z",
   "date_range": { "start": "2025-11-21", "end": "2026-02-17" },
   "summary": {
-    "total_clicks_90d": 2180,
-    "total_impressions_90d": 58200,
+    "total_clicks_7d": 2180,
+    "total_impressions_7d": 58200,
     "avg_position": 11.6,
     "top_keyword": "chelsea tickets",
     "top_keyword_position": 6.1,
@@ -14,29 +14,29 @@
     "opportunities_count": 2
   },
   "keywords": [
-    { "keyword": "chelsea tickets",            "clicks": 620, "impressions": 11200, "ctr": 5.5, "avg_position": 6.1,  "position_30d_ago": 5.8,  "position_last_7d": 6.4,  "position_delta": 0.6,  "trend": "stable",    "opportunity": false },
-    { "keyword": "buy chelsea tickets",         "clicks": 380, "impressions": 7400,  "ctr": 5.1, "avg_position": 7.8,  "position_30d_ago": 7.4,  "position_last_7d": 8.2,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "chelsea fc tickets",          "clicks": 290, "impressions": 5800,  "ctr": 5.0, "avg_position": 8.4,  "position_30d_ago": 8.1,  "position_last_7d": 8.8,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
-    { "keyword": "stamford bridge tickets",     "clicks": 210, "impressions": 4600,  "ctr": 4.6, "avg_position": 9.2,  "position_30d_ago": 8.8,  "position_last_7d": 9.6,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "chelsea home tickets",        "clicks": 170, "impressions": 3800,  "ctr": 4.5, "avg_position": 10.1, "position_30d_ago": 9.6,  "position_last_7d": 10.8, "position_delta": 1.2,  "trend": "stable",    "opportunity": false },
-    { "keyword": "chelsea hospitality tickets", "clicks": 88,  "impressions": 5400,  "ctr": 1.6, "avg_position": 16.2, "position_30d_ago": 12.4, "position_last_7d": 22.8, "position_delta": 10.4, "trend": "dropping",  "opportunity": false },
-    { "keyword": "cheap chelsea tickets",       "clicks": 82,  "impressions": 4800,  "ctr": 1.7, "avg_position": 13.4, "position_30d_ago": 13.0, "position_last_7d": 13.9, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
-    { "keyword": "chelsea away tickets",        "clicks": 68,  "impressions": 3200,  "ctr": 2.1, "avg_position": 11.8, "position_30d_ago": 11.4, "position_last_7d": 12.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "stamford bridge guide",       "clicks": 44,  "impressions": 5200,  "ctr": 0.8, "avg_position": 17.6, "position_30d_ago": 17.1, "position_last_7d": 18.2, "position_delta": 1.1,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "chelsea ticket prices",       "clicks": 38,  "impressions": 2800,  "ctr": 1.4, "avg_position": 12.6, "position_30d_ago": 12.2, "position_last_7d": 13.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
-    { "keyword": "chelsea europa conference",   "clicks": 24,  "impressions": 3800,  "ctr": 0.6, "avg_position": 18.8, "position_30d_ago": 18.2, "position_last_7d": 19.4, "position_delta": 1.2,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "chelsea season tickets",      "clicks": 18,  "impressions": 1200,  "ctr": 1.5, "avg_position": 9.8,  "position_30d_ago": 9.4,  "position_last_7d": 10.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false }
+    { "keyword": "chelsea tickets",            "clicks": 620, "impressions": 11200, "ctr": 5.5, "avg_position": 6.1,  "position_prev_half": 5.8,  "position_last_half": 6.4,  "position_delta": 0.6,  "trend": "stable",    "opportunity": false },
+    { "keyword": "buy chelsea tickets",         "clicks": 380, "impressions": 7400,  "ctr": 5.1, "avg_position": 7.8,  "position_prev_half": 7.4,  "position_last_half": 8.2,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "chelsea fc tickets",          "clicks": 290, "impressions": 5800,  "ctr": 5.0, "avg_position": 8.4,  "position_prev_half": 8.1,  "position_last_half": 8.8,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
+    { "keyword": "stamford bridge tickets",     "clicks": 210, "impressions": 4600,  "ctr": 4.6, "avg_position": 9.2,  "position_prev_half": 8.8,  "position_last_half": 9.6,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "chelsea home tickets",        "clicks": 170, "impressions": 3800,  "ctr": 4.5, "avg_position": 10.1, "position_prev_half": 9.6,  "position_last_half": 10.8, "position_delta": 1.2,  "trend": "stable",    "opportunity": false },
+    { "keyword": "chelsea hospitality tickets", "clicks": 88,  "impressions": 5400,  "ctr": 1.6, "avg_position": 16.2, "position_prev_half": 12.4, "position_last_half": 22.8, "position_delta": 10.4, "trend": "dropping",  "opportunity": false },
+    { "keyword": "cheap chelsea tickets",       "clicks": 82,  "impressions": 4800,  "ctr": 1.7, "avg_position": 13.4, "position_prev_half": 13.0, "position_last_half": 13.9, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
+    { "keyword": "chelsea away tickets",        "clicks": 68,  "impressions": 3200,  "ctr": 2.1, "avg_position": 11.8, "position_prev_half": 11.4, "position_last_half": 12.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "stamford bridge guide",       "clicks": 44,  "impressions": 5200,  "ctr": 0.8, "avg_position": 17.6, "position_prev_half": 17.1, "position_last_half": 18.2, "position_delta": 1.1,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "chelsea ticket prices",       "clicks": 38,  "impressions": 2800,  "ctr": 1.4, "avg_position": 12.6, "position_prev_half": 12.2, "position_last_half": 13.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
+    { "keyword": "chelsea europa conference",   "clicks": 24,  "impressions": 3800,  "ctr": 0.6, "avg_position": 18.8, "position_prev_half": 18.2, "position_last_half": 19.4, "position_delta": 1.2,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "chelsea season tickets",      "clicks": 18,  "impressions": 1200,  "ctr": 1.5, "avg_position": 9.8,  "position_prev_half": 9.4,  "position_last_half": 10.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false }
   ],
   "losing_rank": [
-    { "keyword": "chelsea hospitality tickets", "position_30d_ago": 12.4, "position_last_7d": 22.8, "position_delta": 10.4, "impressions_last_7d": 418 }
+    { "keyword": "chelsea hospitality tickets", "position_prev_half": 12.4, "position_last_half": 22.8, "position_delta": 10.4, "impressions_last_7d": 418 }
   ],
   "opportunities": [
-    { "keyword": "stamford bridge guide",     "clicks": 44, "impressions": 5200, "ctr": 0.8, "avg_position": 17.6, "position_30d_ago": 17.1, "position_last_7d": 18.2, "position_delta": 1.1, "trend": "stable", "opportunity": true },
-    { "keyword": "chelsea europa conference", "clicks": 24, "impressions": 3800, "ctr": 0.6, "avg_position": 18.8, "position_30d_ago": 18.2, "position_last_7d": 19.4, "position_delta": 1.2, "trend": "stable", "opportunity": true }
+    { "keyword": "stamford bridge guide",     "clicks": 44, "impressions": 5200, "ctr": 0.8, "avg_position": 17.6, "position_prev_half": 17.1, "position_last_half": 18.2, "position_delta": 1.1, "trend": "stable", "opportunity": true },
+    { "keyword": "chelsea europa conference", "clicks": 24, "impressions": 3800, "ctr": 0.6, "avg_position": 18.8, "position_prev_half": 18.2, "position_last_half": 19.4, "position_delta": 1.2, "trend": "stable", "opportunity": true }
   ],
   "gap_correlations": [
-    { "topic": "stamford bridge guide",       "gsc_signal": { "keyword": "stamford bridge guide",       "impressions_90d": 5200, "avg_position": 17.6, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 18. Adding a stadium guide could push you to page 1." } },
-    { "topic": "chelsea hospitality",         "gsc_signal": { "keyword": "chelsea hospitality tickets", "impressions_90d": 5400, "avg_position": 16.2, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 16. Adding hospitality content could push you to page 1." } },
-    { "topic": "chelsea away tickets",        "gsc_signal": { "keyword": "chelsea away tickets",        "impressions_90d": 3200, "avg_position": 11.8, "priority": "MEDIUM", "verdict": "Already ranking position 12 — strengthen content to improve further." } }
+    { "topic": "stamford bridge guide",       "gsc_signal": { "keyword": "stamford bridge guide",       "impressions_7d": 5200, "avg_position": 17.6, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 18. Adding a stadium guide could push you to page 1." } },
+    { "topic": "chelsea hospitality",         "gsc_signal": { "keyword": "chelsea hospitality tickets", "impressions_7d": 5400, "avg_position": 16.2, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 16. Adding hospitality content could push you to page 1." } },
+    { "topic": "chelsea away tickets",        "gsc_signal": { "keyword": "chelsea away tickets",        "impressions_7d": 3200, "avg_position": 11.8, "priority": "MEDIUM", "verdict": "Already ranking position 12 — strengthen content to improve further." } }
   ]
 }

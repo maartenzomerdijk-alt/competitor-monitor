@@ -4,8 +4,8 @@
   "fetched_at": "2026-02-19T08:00:00Z",
   "date_range": { "start": "2025-11-21", "end": "2026-02-17" },
   "summary": {
-    "total_clicks_90d": 2940,
-    "total_impressions_90d": 68400,
+    "total_clicks_7d": 2940,
+    "total_impressions_7d": 68400,
     "avg_position": 10.8,
     "top_keyword": "manchester united tickets",
     "top_keyword_position": 5.2,
@@ -14,33 +14,33 @@
     "opportunities_count": 2
   },
   "keywords": [
-    { "keyword": "manchester united tickets",    "clicks": 740, "impressions": 12200, "ctr": 6.1, "avg_position": 5.2,  "position_30d_ago": 5.0,  "position_last_7d": 5.4,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
-    { "keyword": "man utd tickets",              "clicks": 520, "impressions": 9800,  "ctr": 5.3, "avg_position": 6.4,  "position_30d_ago": 6.1,  "position_last_7d": 6.8,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
-    { "keyword": "buy man utd tickets",          "clicks": 380, "impressions": 7200,  "ctr": 5.3, "avg_position": 7.1,  "position_30d_ago": 6.8,  "position_last_7d": 7.5,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
-    { "keyword": "old trafford tickets",         "clicks": 290, "impressions": 5800,  "ctr": 5.0, "avg_position": 8.4,  "position_30d_ago": 7.9,  "position_last_7d": 9.1,  "position_delta": 1.2,  "trend": "stable",    "opportunity": false },
-    { "keyword": "manchester united home tickets","clicks": 220, "impressions": 4400,  "ctr": 5.0, "avg_position": 9.2,  "position_30d_ago": 8.8,  "position_last_7d": 9.8,  "position_delta": 1.0,  "trend": "stable",    "opportunity": false },
-    { "keyword": "man utd hospitality",          "clicks": 98,  "impressions": 6200,  "ctr": 1.6, "avg_position": 15.4, "position_30d_ago": 11.8, "position_last_7d": 20.2, "position_delta": 8.4,  "trend": "dropping",  "opportunity": false },
-    { "keyword": "old trafford tour tickets",    "clicks": 84,  "impressions": 5400,  "ctr": 1.6, "avg_position": 13.8, "position_30d_ago": 12.4, "position_last_7d": 16.8, "position_delta": 4.4,  "trend": "dropping",  "opportunity": false },
-    { "keyword": "cheap manchester united tickets","clicks": 76, "impressions": 4200, "ctr": 1.8, "avg_position": 11.6, "position_30d_ago": 11.2, "position_last_7d": 12.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
-    { "keyword": "man utd away tickets",         "clicks": 64,  "impressions": 2800,  "ctr": 2.3, "avg_position": 10.4, "position_30d_ago": 10.1, "position_last_7d": 10.8, "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
-    { "keyword": "old trafford stadium guide",   "clicks": 48,  "impressions": 5800,  "ctr": 0.8, "avg_position": 17.2, "position_30d_ago": 16.8, "position_last_7d": 17.8, "position_delta": 1.0,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "man utd ticket prices",        "clicks": 42,  "impressions": 3200,  "ctr": 1.3, "avg_position": 12.8, "position_30d_ago": 12.4, "position_last_7d": 13.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "manchester united season tickets","clicks": 36,"impressions": 1800,  "ctr": 2.0, "avg_position": 9.6,  "position_30d_ago": 9.2,  "position_last_7d": 10.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
-    { "keyword": "man utd europa league tickets","clicks": 28,  "impressions": 4800,  "ctr": 0.6, "avg_position": 19.4, "position_30d_ago": 18.8, "position_last_7d": 20.2, "position_delta": 1.4,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "manchester united vip",        "clicks": 22,  "impressions": 2400,  "ctr": 0.9, "avg_position": 16.8, "position_30d_ago": 16.2, "position_last_7d": 17.4, "position_delta": 1.2,  "trend": "stable",    "opportunity": false },
-    { "keyword": "man utd vs liverpool tickets", "clicks": 18,  "impressions": 1400,  "ctr": 1.3, "avg_position": 11.4, "position_30d_ago": 11.0, "position_last_7d": 11.8, "position_delta": 0.8,  "trend": "stable",    "opportunity": false }
+    { "keyword": "manchester united tickets",    "clicks": 740, "impressions": 12200, "ctr": 6.1, "avg_position": 5.2,  "position_prev_half": 5.0,  "position_last_half": 5.4,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
+    { "keyword": "man utd tickets",              "clicks": 520, "impressions": 9800,  "ctr": 5.3, "avg_position": 6.4,  "position_prev_half": 6.1,  "position_last_half": 6.8,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
+    { "keyword": "buy man utd tickets",          "clicks": 380, "impressions": 7200,  "ctr": 5.3, "avg_position": 7.1,  "position_prev_half": 6.8,  "position_last_half": 7.5,  "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
+    { "keyword": "old trafford tickets",         "clicks": 290, "impressions": 5800,  "ctr": 5.0, "avg_position": 8.4,  "position_prev_half": 7.9,  "position_last_half": 9.1,  "position_delta": 1.2,  "trend": "stable",    "opportunity": false },
+    { "keyword": "manchester united home tickets","clicks": 220, "impressions": 4400,  "ctr": 5.0, "avg_position": 9.2,  "position_prev_half": 8.8,  "position_last_half": 9.8,  "position_delta": 1.0,  "trend": "stable",    "opportunity": false },
+    { "keyword": "man utd hospitality",          "clicks": 98,  "impressions": 6200,  "ctr": 1.6, "avg_position": 15.4, "position_prev_half": 11.8, "position_last_half": 20.2, "position_delta": 8.4,  "trend": "dropping",  "opportunity": false },
+    { "keyword": "old trafford tour tickets",    "clicks": 84,  "impressions": 5400,  "ctr": 1.6, "avg_position": 13.8, "position_prev_half": 12.4, "position_last_half": 16.8, "position_delta": 4.4,  "trend": "dropping",  "opportunity": false },
+    { "keyword": "cheap manchester united tickets","clicks": 76, "impressions": 4200, "ctr": 1.8, "avg_position": 11.6, "position_prev_half": 11.2, "position_last_half": 12.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
+    { "keyword": "man utd away tickets",         "clicks": 64,  "impressions": 2800,  "ctr": 2.3, "avg_position": 10.4, "position_prev_half": 10.1, "position_last_half": 10.8, "position_delta": 0.7,  "trend": "stable",    "opportunity": false },
+    { "keyword": "old trafford stadium guide",   "clicks": 48,  "impressions": 5800,  "ctr": 0.8, "avg_position": 17.2, "position_prev_half": 16.8, "position_last_half": 17.8, "position_delta": 1.0,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "man utd ticket prices",        "clicks": 42,  "impressions": 3200,  "ctr": 1.3, "avg_position": 12.8, "position_prev_half": 12.4, "position_last_half": 13.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
+    { "keyword": "manchester united season tickets","clicks": 36,"impressions": 1800,  "ctr": 2.0, "avg_position": 9.6,  "position_prev_half": 9.2,  "position_last_half": 10.1, "position_delta": 0.9,  "trend": "stable",    "opportunity": false },
+    { "keyword": "man utd europa league tickets","clicks": 28,  "impressions": 4800,  "ctr": 0.6, "avg_position": 19.4, "position_prev_half": 18.8, "position_last_half": 20.2, "position_delta": 1.4,  "trend": "stable",    "opportunity": true  },
+    { "keyword": "manchester united vip",        "clicks": 22,  "impressions": 2400,  "ctr": 0.9, "avg_position": 16.8, "position_prev_half": 16.2, "position_last_half": 17.4, "position_delta": 1.2,  "trend": "stable",    "opportunity": false },
+    { "keyword": "man utd vs liverpool tickets", "clicks": 18,  "impressions": 1400,  "ctr": 1.3, "avg_position": 11.4, "position_prev_half": 11.0, "position_last_half": 11.8, "position_delta": 0.8,  "trend": "stable",    "opportunity": false }
   ],
   "losing_rank": [
-    { "keyword": "man utd hospitality",       "position_30d_ago": 11.8, "position_last_7d": 20.2, "position_delta": 8.4, "impressions_last_7d": 481 },
-    { "keyword": "old trafford tour tickets", "position_30d_ago": 12.4, "position_last_7d": 16.8, "position_delta": 4.4, "impressions_last_7d": 418 }
+    { "keyword": "man utd hospitality",       "position_prev_half": 11.8, "position_last_half": 20.2, "position_delta": 8.4, "impressions_last_7d": 481 },
+    { "keyword": "old trafford tour tickets", "position_prev_half": 12.4, "position_last_half": 16.8, "position_delta": 4.4, "impressions_last_7d": 418 }
   ],
   "opportunities": [
-    { "keyword": "old trafford stadium guide",    "clicks": 48, "impressions": 5800, "ctr": 0.8, "avg_position": 17.2, "position_30d_ago": 16.8, "position_last_7d": 17.8, "position_delta": 1.0, "trend": "stable", "opportunity": true },
-    { "keyword": "man utd europa league tickets", "clicks": 28, "impressions": 4800, "ctr": 0.6, "avg_position": 19.4, "position_30d_ago": 18.8, "position_last_7d": 20.2, "position_delta": 1.4, "trend": "stable", "opportunity": true }
+    { "keyword": "old trafford stadium guide",    "clicks": 48, "impressions": 5800, "ctr": 0.8, "avg_position": 17.2, "position_prev_half": 16.8, "position_last_half": 17.8, "position_delta": 1.0, "trend": "stable", "opportunity": true },
+    { "keyword": "man utd europa league tickets", "clicks": 28, "impressions": 4800, "ctr": 0.6, "avg_position": 19.4, "position_prev_half": 18.8, "position_last_half": 20.2, "position_delta": 1.4, "trend": "stable", "opportunity": true }
   ],
   "gap_correlations": [
-    { "topic": "old trafford tour",   "gsc_signal": { "keyword": "old trafford tour tickets",   "impressions_90d": 5400, "avg_position": 13.8, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 14. Adding tour content could push you to page 1." } },
-    { "topic": "man utd hospitality", "gsc_signal": { "keyword": "man utd hospitality",          "impressions_90d": 6200, "avg_position": 15.4, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 15. Adding hospitality content could push you to page 1." } },
-    { "topic": "manchester united away tickets", "gsc_signal": { "keyword": "man utd away tickets", "impressions_90d": 2800, "avg_position": 10.4, "priority": "MEDIUM", "verdict": "Already ranking position 10 — strengthen content to improve further." } }
+    { "topic": "old trafford tour",   "gsc_signal": { "keyword": "old trafford tour tickets",   "impressions_7d": 5400, "avg_position": 13.8, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 14. Adding tour content could push you to page 1." } },
+    { "topic": "man utd hospitality", "gsc_signal": { "keyword": "man utd hospitality",          "impressions_7d": 6200, "avg_position": 15.4, "priority": "HIGH",   "verdict": "Google shows your page for this but you rank position 15. Adding hospitality content could push you to page 1." } },
+    { "topic": "manchester united away tickets", "gsc_signal": { "keyword": "man utd away tickets", "impressions_7d": 2800, "avg_position": 10.4, "priority": "MEDIUM", "verdict": "Already ranking position 10 — strengthen content to improve further." } }
   ]
 }
