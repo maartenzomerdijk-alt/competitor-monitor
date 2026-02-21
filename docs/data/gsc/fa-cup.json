@@ -1,39 +1,290 @@
 {
   "slug": "fa-cup",
   "page_url": "https://www.livefootballtickets.com/fa-cup-tickets.html",
-  "fetched_at": "2026-02-19T08:00:00Z",
-  "date_range": { "start": "2025-11-21", "end": "2026-02-17" },
+  "fetched_at": "2026-02-21T09:18:09.910876+00:00",
+  "date_range": {
+    "start": "2026-02-14",
+    "end": "2026-02-19"
+  },
   "summary": {
-    "total_clicks_7d": 1840,
-    "total_impressions_7d": 42600,
-    "avg_position": 11.2,
+    "total_clicks_7d": 83,
+    "total_impressions_7d": 974,
+    "avg_position": 5.7,
     "top_keyword": "fa cup tickets",
-    "top_keyword_position": 5.4,
-    "keywords_tracked": 12,
-    "losing_rank_count": 0,
-    "opportunities_count": 2
+    "top_keyword_position": 5.0,
+    "keywords_tracked": 20,
+    "losing_rank_count": 1,
+    "opportunities_count": 1
   },
   "keywords": [
-    { "keyword": "fa cup tickets",             "clicks": 580, "impressions": 9800,  "ctr": 5.9, "avg_position": 5.4,  "position_prev_half": 5.2,  "position_last_half": 5.6,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
-    { "keyword": "buy fa cup tickets",          "clicks": 320, "impressions": 6400,  "ctr": 5.0, "avg_position": 7.2,  "position_prev_half": 7.0,  "position_last_half": 7.4,  "position_delta": 0.4,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup final tickets",        "clicks": 280, "impressions": 5800,  "ctr": 4.8, "avg_position": 8.1,  "position_prev_half": 7.8,  "position_last_half": 8.4,  "position_delta": 0.6,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup semi final tickets",   "clicks": 180, "impressions": 4200,  "ctr": 4.3, "avg_position": 9.4,  "position_prev_half": 9.0,  "position_last_half": 9.8,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "wembley fa cup tickets",      "clicks": 140, "impressions": 3600,  "ctr": 3.9, "avg_position": 10.2, "position_prev_half": 9.8,  "position_last_half": 10.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup 2026 tickets",         "clicks": 120, "impressions": 3200,  "ctr": 3.8, "avg_position": 8.8,  "position_prev_half": 8.4,  "position_last_half": 9.2,  "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup quarter final tickets","clicks": 88,  "impressions": 2400,  "ctr": 3.7, "avg_position": 11.4, "position_prev_half": 11.0, "position_last_half": 11.8, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup fifth round tickets",  "clicks": 62,  "impressions": 1800,  "ctr": 3.4, "avg_position": 12.6, "position_prev_half": 12.2, "position_last_half": 13.0, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "fa cup tickets price",        "clicks": 48,  "impressions": 4400,  "ctr": 1.1, "avg_position": 14.8, "position_prev_half": 14.4, "position_last_half": 15.2, "position_delta": 0.8,  "trend": "stable",    "opportunity": false },
-    { "keyword": "cheap fa cup tickets",        "clicks": 38,  "impressions": 3600,  "ctr": 1.1, "avg_position": 16.4, "position_prev_half": 16.0, "position_last_half": 16.8, "position_delta": 0.8,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "fa cup hospitality",          "clicks": 24,  "impressions": 3400,  "ctr": 0.7, "avg_position": 18.2, "position_prev_half": 17.8, "position_last_half": 18.6, "position_delta": 0.8,  "trend": "stable",    "opportunity": true  },
-    { "keyword": "wembley stadium guide fa cup","clicks": 18,  "impressions": 2200,  "ctr": 0.8, "avg_position": 19.6, "position_prev_half": 19.2, "position_last_half": 20.0, "position_delta": 0.8,  "trend": "stable",    "opportunity": false }
+    {
+      "keyword": "fa cup tickets",
+      "clicks": 46,
+      "impressions": 519,
+      "ctr": 8.86,
+      "avg_position": 5.0,
+      "position_prev_half": 6.1,
+      "position_last_half": 3.2,
+      "position_delta": -2.9,
+      "trend": "improving",
+      "opportunity": false
+    },
+    {
+      "keyword": "fa cup 5th round tickets",
+      "clicks": 10,
+      "impressions": 71,
+      "ctr": 14.08,
+      "avg_position": 6.9,
+      "position_prev_half": 6.9,
+      "position_last_half": 6.4,
+      "position_delta": -0.5,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "fa cup final tickets",
+      "clicks": 7,
+      "impressions": 163,
+      "ctr": 4.29,
+      "avg_position": 6.0,
+      "position_prev_half": 6.0,
+      "position_last_half": 6.5,
+      "position_delta": 0.5,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "how to get fa cup tickets",
+      "clicks": 5,
+      "impressions": 34,
+      "ctr": 14.71,
+      "avg_position": 5.3,
+      "position_prev_half": 5.1,
+      "position_last_half": 4.0,
+      "position_delta": -1.1,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "how to buy fa cup tickets",
+      "clicks": 4,
+      "impressions": 27,
+      "ctr": 14.81,
+      "avg_position": 5.0,
+      "position_prev_half": 5.2,
+      "position_last_half": null,
+      "position_delta": null,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "fa cup.tickets",
+      "clicks": 2,
+      "impressions": 16,
+      "ctr": 12.5,
+      "avg_position": 2.9,
+      "position_prev_half": 4.6,
+      "position_last_half": 1.9,
+      "position_delta": -2.7,
+      "trend": "improving",
+      "opportunity": false
+    },
+    {
+      "keyword": "when do fa cup 5th round tickets go on sale",
+      "clicks": 2,
+      "impressions": 41,
+      "ctr": 4.88,
+      "avg_position": 9.4,
+      "position_prev_half": 9.6,
+      "position_last_half": 9.5,
+      "position_delta": -0.1,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "fa cup final tickets ticketmaster",
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 12.5,
+      "avg_position": 7,
+      "position_prev_half": 7.0,
+      "position_last_half": null,
+      "position_delta": null,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "fa cup semi final tickets",
+      "clicks": 1,
+      "impressions": 39,
+      "ctr": 2.56,
+      "avg_position": 9.4,
+      "position_prev_half": 10.2,
+      "position_last_half": 4.2,
+      "position_delta": -6.0,
+      "trend": "improving",
+      "opportunity": true
+    },
+    {
+      "keyword": "fa cup tickets final",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 20.0,
+      "avg_position": 3.2,
+      "position_prev_half": 2.0,
+      "position_last_half": 5.5,
+      "position_delta": 3.5,
+      "trend": "dropping",
+      "opportunity": false
+    },
+    {
+      "keyword": "fa cup tockets",
+      "clicks": 1,
+      "impressions": 7,
+      "ctr": 14.29,
+      "avg_position": 6.3,
+      "position_prev_half": 7.0,
+      "position_last_half": 2.0,
+      "position_delta": -5.0,
+      "trend": "improving",
+      "opportunity": false
+    },
+    {
+      "keyword": "when do fa cup tickets come out",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 33.33,
+      "avg_position": 7,
+      "position_prev_half": 7.0,
+      "position_last_half": null,
+      "position_delta": null,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "when will fa cup tickets be released",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 33.33,
+      "avg_position": 6.7,
+      "position_prev_half": 11.0,
+      "position_last_half": 4.5,
+      "position_delta": -6.5,
+      "trend": "improving",
+      "opportunity": false
+    },
+    {
+      "keyword": "where to buy fa cup tickets",
+      "clicks": 1,
+      "impressions": 24,
+      "ctr": 4.17,
+      "avg_position": 3.9,
+      "position_prev_half": 3.9,
+      "position_last_half": 3.5,
+      "position_delta": -0.4,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "arsenal tickets fa cup",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "avg_position": 5,
+      "position_prev_half": 5.0,
+      "position_last_half": null,
+      "position_delta": null,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "best football ticket sites uk",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "avg_position": 2,
+      "position_prev_half": 2.0,
+      "position_last_half": null,
+      "position_delta": null,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "best place to buy football tickets uk",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "avg_position": 2,
+      "position_prev_half": 2.0,
+      "position_last_half": null,
+      "position_delta": null,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "best site for fa cup final tickets?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "avg_position": 2,
+      "position_prev_half": 2.0,
+      "position_last_half": null,
+      "position_delta": null,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "best site for football tickets",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "avg_position": 11.6,
+      "position_prev_half": 11.3,
+      "position_last_half": 12.0,
+      "position_delta": 0.7,
+      "trend": "stable",
+      "opportunity": false
+    },
+    {
+      "keyword": "biglietti fa cup",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "avg_position": 10,
+      "position_prev_half": null,
+      "position_last_half": 10.0,
+      "position_delta": null,
+      "trend": "stable",
+      "opportunity": false
+    }
   ],
-  "losing_rank": [],
+  "losing_rank": [
+    {
+      "keyword": "fa cup tickets final",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 20.0,
+      "avg_position": 3.2,
+      "position_prev_half": 2.0,
+      "position_last_half": 5.5,
+      "position_delta": 3.5,
+      "trend": "dropping",
+      "opportunity": false
+    }
+  ],
   "opportunities": [
-    { "keyword": "cheap fa cup tickets", "clicks": 38, "impressions": 3600, "ctr": 1.1, "avg_position": 16.4, "position_prev_half": 16.0, "position_last_half": 16.8, "position_delta": 0.8, "trend": "stable", "opportunity": true },
-    { "keyword": "fa cup hospitality",   "clicks": 24, "impressions": 3400, "ctr": 0.7, "avg_position": 18.2, "position_prev_half": 17.8, "position_last_half": 18.6, "position_delta": 0.8, "trend": "stable", "opportunity": true }
+    {
+      "keyword": "fa cup semi final tickets",
+      "clicks": 1,
+      "impressions": 39,
+      "ctr": 2.56,
+      "avg_position": 9.4,
+      "position_prev_half": 10.2,
+      "position_last_half": 4.2,
+      "position_delta": -6.0,
+      "trend": "improving",
+      "opportunity": true
+    }
   ],
-  "gap_correlations": [
-    { "topic": "fa cup semi final tickets", "gsc_signal": { "keyword": "fa cup semi final tickets",  "impressions_7d": 4200, "avg_position": 9.4,  "priority": "MEDIUM", "verdict": "Already ranking position 9 — strengthen content to improve further." } },
-    { "topic": "wembley fa cup tickets",    "gsc_signal": { "keyword": "wembley fa cup tickets",     "impressions_7d": 3600, "avg_position": 10.2, "priority": "MEDIUM", "verdict": "Already ranking position 10 — strengthen content to improve further." } }
-  ]
+  "gap_correlations": []
 }
